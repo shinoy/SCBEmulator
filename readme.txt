@@ -1,0 +1,1 @@
+this is a solution for hardware emulation of EVO
