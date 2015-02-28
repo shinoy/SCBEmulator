@@ -1,0 +1,2312 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly SCBProtocalWrapper, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly CanBusChannel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct SCBProtocalWrapper.SCBCtlReset: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte Byte0 : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBCtlResetPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Byte): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBCtlReset data : Public
+  Properties:
+    Boolean RESET_OTCTBL 'get set' : 
+    Boolean RESET_WSD 'get set' : 
+    Boolean RESET_OTCAB 'get set' : 
+    Boolean RESET_OTCXYZ 'get set' : 
+  Methods:
+    get_RESET_OTCXYZ(): PrivateScope, Public, HideBySig, SpecialName
+    set_RESET_OTCXYZ(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_RESET_OTCAB(): PrivateScope, Public, HideBySig, SpecialName
+    set_RESET_OTCAB(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_RESET_WSD(): PrivateScope, Public, HideBySig, SpecialName
+    set_RESET_WSD(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_RESET_OTCTBL(): PrivateScope, Public, HideBySig, SpecialName
+    set_RESET_OTCTBL(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBAutoAbt: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBAutoAbtPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBAutoAbt data : Public
+Struct SCBProtocalWrapper.SCBAutoEn: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte Byte0 : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBAutoEnPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBAutoEn data : Public
+  Properties:
+    Boolean CONTINUE_NEED 'get set' : 
+  Methods:
+    get_CONTINUE_NEED(): PrivateScope, Public, HideBySig, SpecialName
+    set_CONTINUE_NEED(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBAutoVfy: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBAutoVfyPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBAutoVfy data : Public
+Struct SCBProtocalWrapper.SCBAutoCont: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBAutoContPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBAutoCont data : Public
+Struct SCBProtocalWrapper.SCBTomoPara: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte RequestType : Public
+    Byte SweepAngle : Public
+    Byte LayerHeightL : Public
+    Byte LayerHeightM : Public
+    UInt16 LayerHeight : Public
+    Byte SweepTimeL : Public
+    Byte SweepTimeM : Public
+    UInt16 SweepTime : Public
+    Byte DelayTimeL : Public
+    Byte DelayTimeM : Public
+    UInt16 DelayTime : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBTomoParaPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBTomoPara data : Public
+  Properties:
+    UInt16 DELAY_TIME 'get ' : 
+    UInt16 SWEEP_TIME 'get ' : 
+    UInt16 LAYER_HEIGHT 'get ' : 
+    UInt16 SWEEP_ANGLE 'get ' : 
+    Boolean TOMO_TRUE 'get ' : 
+  Methods:
+    get_TOMO_TRUE(): PrivateScope, Public, HideBySig, SpecialName
+    get_SWEEP_ANGLE(): PrivateScope, Public, HideBySig, SpecialName
+    get_LAYER_HEIGHT(): PrivateScope, Public, HideBySig, SpecialName
+    get_SWEEP_TIME(): PrivateScope, Public, HideBySig, SpecialName
+    get_DELAY_TIME(): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBCtrlStatusReq: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte CommandTarget : Public
+    Byte RequestType : Public
+    UInt16 Frame : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBCtrlStatusReqPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBCtrlStatusReq data : Public
+  Properties:
+    Boolean LLIPOS_REQ 'get set' : 
+    Boolean ERRSTA_REQ 'get set' : 
+    Boolean KEYSTA_REQ 'get set' : 
+    Boolean CONTSTA_REQ 'get set' : 
+    Boolean POSUPDATE_REQ 'get set' : 
+    Boolean TBL_RT 'get set' : 
+    Boolean WSD_RT 'get set' : 
+    Boolean OTCAB_RT 'get set' : 
+    Boolean OTCXYZ_RT 'get set' : 
+  Methods:
+    get_OTCXYZ_RT(): PrivateScope, Public, HideBySig, SpecialName
+    set_OTCXYZ_RT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_OTCAB_RT(): PrivateScope, Public, HideBySig, SpecialName
+    set_OTCAB_RT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_WSD_RT(): PrivateScope, Public, HideBySig, SpecialName
+    set_WSD_RT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_TBL_RT(): PrivateScope, Public, HideBySig, SpecialName
+    set_TBL_RT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_POSUPDATE_REQ(): PrivateScope, Public, HideBySig, SpecialName
+    set_POSUPDATE_REQ(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CONTSTA_REQ(): PrivateScope, Public, HideBySig, SpecialName
+    set_CONTSTA_REQ(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_KEYSTA_REQ(): PrivateScope, Public, HideBySig, SpecialName
+    set_KEYSTA_REQ(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ERRSTA_REQ(): PrivateScope, Public, HideBySig, SpecialName
+    set_ERRSTA_REQ(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_LLIPOS_REQ(): PrivateScope, Public, HideBySig, SpecialName
+    set_LLIPOS_REQ(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.SCBSoftDtReq: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte CommandTarget : Public
+    Byte MotionPlane : Public
+    UInt16 Frame : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBSoftDtReqPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(UInt16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBSoftDtReq data : Public
+  Properties:
+    Boolean YPLANE 'get set' : 
+    Boolean XPLANE 'get set' : 
+    Boolean ZPLANE 'get set' : 
+    Boolean TBL_DT 'get set' : 
+    Boolean WSD_DT 'get set' : 
+    Boolean OTCXYZ_DT 'get set' : 
+  Methods:
+    get_OTCXYZ_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_OTCXYZ_DT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_WSD_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_WSD_DT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_TBL_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_TBL_DT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ZPLANE(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZPLANE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_XPLANE(): PrivateScope, Public, HideBySig, SpecialName
+    set_XPLANE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_YPLANE(): PrivateScope, Public, HideBySig, SpecialName
+    set_YPLANE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBSoftDtSet: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte CommandTarget : Public
+    Byte MotionPlane : Public
+    Byte DetentIndex : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBSoftDtSetPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Byte[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBSoftDtSet data : Public
+  Properties:
+    Byte SOFT_INDEX 'get set' : 
+    Boolean YPLANE 'get set' : 
+    Boolean XPLANE 'get set' : 
+    Boolean ZPLANE 'get set' : 
+    Boolean TBL_DT 'get set' : 
+    Boolean WSD_DT 'get set' : 
+    Boolean OTCXYZ_DT 'get set' : 
+  Methods:
+    get_OTCXYZ_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_OTCXYZ_DT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_WSD_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_WSD_DT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_TBL_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_TBL_DT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ZPLANE(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZPLANE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_XPLANE(): PrivateScope, Public, HideBySig, SpecialName
+    set_XPLANE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_YPLANE(): PrivateScope, Public, HideBySig, SpecialName
+    set_YPLANE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_SOFT_INDEX(): PrivateScope, Public, HideBySig, SpecialName
+    set_SOFT_INDEX(Byte): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBSoftDtClear: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte CommandTarget : Public
+    Byte MotionPlane : Public
+    Byte DetentIndex : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBSoftDtClearPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Byte[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBSoftDtClear data : Public
+  Properties:
+    Byte SOFT_INDEX 'get set' : 
+    Boolean YPLANE 'get set' : 
+    Boolean XPLANE 'get set' : 
+    Boolean ZPLANE 'get set' : 
+    Boolean TBL_DT 'get set' : 
+    Boolean WSD_DT 'get set' : 
+    Boolean OTCXYZ_DT 'get set' : 
+  Methods:
+    get_OTCXYZ_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_OTCXYZ_DT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_WSD_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_WSD_DT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_TBL_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_TBL_DT(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ZPLANE(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZPLANE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_XPLANE(): PrivateScope, Public, HideBySig, SpecialName
+    set_XPLANE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_YPLANE(): PrivateScope, Public, HideBySig, SpecialName
+    set_YPLANE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_SOFT_INDEX(): PrivateScope, Public, HideBySig, SpecialName
+    set_SOFT_INDEX(Byte): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBClrCal: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte CommandTarget : Public
+    Byte CalibrationType : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBClrCalPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBClrCal data : Public
+  Properties:
+    Boolean PIN_TYPE 'get set' : 
+    Boolean CAL_TYPE7 'get set' : 
+    Boolean CAL_TYPE6 'get set' : 
+    Boolean CAL_TYPE5 'get set' : 
+    Boolean CAL_TYPE4 'get set' : 
+    Boolean CAL_TYPE3 'get set' : 
+    Boolean CAL_TYPE2 'get set' : 
+    Boolean CAL_TYPE1 'get set' : 
+    Boolean TBL_Clear 'get set' : 
+    Boolean WSD_CLEAR 'get set' : 
+    Boolean OTC_CLEAR 'get set' : 
+  Methods:
+    get_OTC_CLEAR(): PrivateScope, Public, HideBySig, SpecialName
+    set_OTC_CLEAR(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_WSD_CLEAR(): PrivateScope, Public, HideBySig, SpecialName
+    set_WSD_CLEAR(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_TBL_Clear(): PrivateScope, Public, HideBySig, SpecialName
+    set_TBL_Clear(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CAL_TYPE1(): PrivateScope, Public, HideBySig, SpecialName
+    set_CAL_TYPE1(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CAL_TYPE2(): PrivateScope, Public, HideBySig, SpecialName
+    set_CAL_TYPE2(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CAL_TYPE3(): PrivateScope, Public, HideBySig, SpecialName
+    set_CAL_TYPE3(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CAL_TYPE4(): PrivateScope, Public, HideBySig, SpecialName
+    set_CAL_TYPE4(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CAL_TYPE5(): PrivateScope, Public, HideBySig, SpecialName
+    set_CAL_TYPE5(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CAL_TYPE6(): PrivateScope, Public, HideBySig, SpecialName
+    set_CAL_TYPE6(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CAL_TYPE7(): PrivateScope, Public, HideBySig, SpecialName
+    set_CAL_TYPE7(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_PIN_TYPE(): PrivateScope, Public, HideBySig, SpecialName
+    set_PIN_TYPE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.SCBAutoTrack: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte TrackTarget : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBAutoTrackPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(SCBProtocalWrapper.TrackMode): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBAutoTrack data : Public
+  Properties:
+    SCBProtocalWrapper.TrackMode Mode 'get set' : 
+  Methods:
+    get_Mode(): PrivateScope, Public, HideBySig, SpecialName
+    set_Mode(TrackMode): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBConfigReq: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte ResponseReq : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBConfigReqPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBConfigReq data : Public
+  Properties:
+    Boolean TBL_REQ 'get set' : 
+    Boolean WSD_REQ 'get set' : 
+    Boolean OTCAB_REQ 'get set' : 
+    Boolean OTCXYZ_REQ 'get set' : 
+  Methods:
+    get_OTCXYZ_REQ(): PrivateScope, Public, HideBySig, SpecialName
+    set_OTCXYZ_REQ(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_OTCAB_REQ(): PrivateScope, Public, HideBySig, SpecialName
+    set_OTCAB_REQ(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_WSD_REQ(): PrivateScope, Public, HideBySig, SpecialName
+    set_WSD_REQ(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_TBL_REQ(): PrivateScope, Public, HideBySig, SpecialName
+    set_TBL_REQ(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBFileTranReqMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte DownloadTarget : Public
+    Byte TransferType : Public
+    Byte TransSizeL : Public
+    Byte TransSizeC : Public
+    Byte TransSizeM : Public
+    Byte PlaceHolder : Public
+    UInt32 TransSize IsLong : Public
+    Byte SFCode : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBFileTranReqMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBFileTranReqMsg data : Public
+  Properties:
+    SCBProtocalWrapper.SCBSFCode SFCODE 'get set' : 
+    UInt32 TRANSFER_SIZE 'get set' : 
+    SCBProtocalWrapper.SCBTransferType TRANSFER_TYPE 'get set' : 
+    SCBProtocalWrapper.SCBDownloadTarget DOWNLOAD_TARGET 'get set' : 
+  Methods:
+    get_DOWNLOAD_TARGET(): PrivateScope, Public, HideBySig, SpecialName
+    set_DOWNLOAD_TARGET(SCBDownloadTarget): PrivateScope, Public, HideBySig, SpecialName
+    get_TRANSFER_TYPE(): PrivateScope, Public, HideBySig, SpecialName
+    set_TRANSFER_TYPE(SCBTransferType): PrivateScope, Public, HideBySig, SpecialName
+    get_TRANSFER_SIZE(): PrivateScope, Public, HideBySig, SpecialName
+    set_TRANSFER_SIZE(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_SFCODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_SFCODE(SCBSFCode): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBFileTranRespMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte TransferSource : Public
+    Byte TransferType : Public
+    Byte Status : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBFileTranRespMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBFileTranRespMsg data : Public
+  Properties:
+    Byte STATUS 'get set' : 
+    SCBProtocalWrapper.SCBTransferType TRANS_TYPE 'get set' : 
+    SCBProtocalWrapper.SCBDownloadTarget TRANS_SOURCE 'get set' : 
+  Methods:
+    get_TRANS_SOURCE(): PrivateScope, Public, HideBySig, SpecialName
+    set_TRANS_SOURCE(SCBDownloadTarget): PrivateScope, Public, HideBySig, SpecialName
+    get_TRANS_TYPE(): PrivateScope, Public, HideBySig, SpecialName
+    set_TRANS_TYPE(SCBTransferType): PrivateScope, Public, HideBySig, SpecialName
+    get_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_STATUS(Byte): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBBLKTranRespMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte TransferSource : Public
+    Byte TransferSize : Public
+    Byte BLKSeqNumL : Public
+    Byte BLKSeqNumM : Public
+    UInt16 BLKSeqNum : Public
+    Byte Status : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBBLKTranRespMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBBLKTranRespMsg data : Public
+  Properties:
+    Byte STATUS 'get set' : 
+    UInt16 BLK_SEQNUM 'get set' : 
+    UInt16 TRAN_SIZE 'get set' : 
+    SCBProtocalWrapper.SCBDownloadTarget TRAN_SOURCE 'get set' : 
+  Methods:
+    get_TRAN_SOURCE(): PrivateScope, Public, HideBySig, SpecialName
+    set_TRAN_SOURCE(SCBDownloadTarget): PrivateScope, Public, HideBySig, SpecialName
+    get_TRAN_SIZE(): PrivateScope, Public, HideBySig, SpecialName
+    set_TRAN_SIZE(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_BLK_SEQNUM(): PrivateScope, Public, HideBySig, SpecialName
+    set_BLK_SEQNUM(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_STATUS(Byte): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.AxisSyncRespMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte SyncMoveStatus : Public
+    Byte ErrorCode : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.AxisSyncRespMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ControlType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.AxisSyncRespMsg data : Public
+  Properties:
+    Byte ERROR_CODE 'set' : 
+    SCBProtocalWrapper.SyncStatus SYNC_STATUS 'set' : 
+  Methods:
+    set_SYNC_STATUS(SyncStatus): PrivateScope, Public, HideBySig, SpecialName
+    set_ERROR_CODE(Byte): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.AxisFileTranRespMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte DownloadTarget : Public
+    Byte DownloadType : Public
+    Byte Status : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.AxisFileTranRespMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.AxisFileTranRespMsg data : Public
+  Properties:
+    Byte STATUSCODE 'get set' : 
+    SCBProtocalWrapper.SCBTransferType DOWNLOAD_TYPE 'get set' : 
+    SCBProtocalWrapper.SCBDownloadTarget DOWNLOAD_TARGET 'get set' : 
+  Methods:
+    get_DOWNLOAD_TARGET(): PrivateScope, Public, HideBySig, SpecialName
+    set_DOWNLOAD_TARGET(SCBDownloadTarget): PrivateScope, Public, HideBySig, SpecialName
+    get_DOWNLOAD_TYPE(): PrivateScope, Public, HideBySig, SpecialName
+    set_DOWNLOAD_TYPE(SCBTransferType): PrivateScope, Public, HideBySig, SpecialName
+    get_STATUSCODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_STATUSCODE(Byte): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.AxisFileTranReqMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte TransferType : Public
+    Byte TransferSizeL : Public
+    Byte TransferSizeC : Public
+    Byte TransferSizeM : Public
+    Byte PlaceHolder : Public
+    UInt32 TransferSize IsLong : Public
+    Byte SFCode : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.AxisFileTranReqMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ControlType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.AxisFileTranReqMsg data : Public
+  Properties:
+    SCBProtocalWrapper.SCBSFCode SFCODE 'get set' : 
+    UInt32 TRANSFER_SIZE 'get set' : 
+  Methods:
+    get_TRANSFER_SIZE(): PrivateScope, Public, HideBySig, SpecialName
+    set_TRANSFER_SIZE(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_SFCODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_SFCODE(SCBSFCode): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.AxisFileTranCfgMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte SWCodeB7 : Public
+    Byte SWCodeB6 : Public
+    Byte SWCodeB5 : Public
+    Byte SWCodeB4 : Public
+    Byte SWCodeB3 : Public
+    Byte SWCodeB2 : Public
+    Byte SWCodeB1 : Public
+    Byte SWCodeB0 : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.AxisFileTranCfgMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Byte): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.AxisFileTranCfgMsg data : Public
+  Properties:
+    Byte SWCODE 'get set' : 
+  Methods:
+    get_SWCODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_SWCODE(Byte): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.CtlBLKUPReqMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte TransferSource : Public
+    Byte TransferSize : Public
+    Byte BKLSeqNumL : Public
+    Byte BKLSeqNumM : Public
+    UInt16 BKLSeqNum : Public
+    Byte CheckSumL : Public
+    Byte CheckSumM : Public
+    UInt16 CheckSum : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.CtlBLKUPReqMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.CtlBLKUPReqMsg data : Public
+  Properties:
+    UInt16 CHECKSUM 'get set' : 
+    UInt16 BLOCK_SEQNUM 'get set' : 
+    UInt16 TRANS_SIZE 'get set' : 
+    SCBProtocalWrapper.SCBDownloadTarget TRANS_SOURCE 'get set' : 
+  Methods:
+    get_TRANS_SOURCE(): PrivateScope, Public, HideBySig, SpecialName
+    set_TRANS_SOURCE(SCBDownloadTarget): PrivateScope, Public, HideBySig, SpecialName
+    get_TRANS_SIZE(): PrivateScope, Public, HideBySig, SpecialName
+    set_TRANS_SIZE(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_BLOCK_SEQNUM(): PrivateScope, Public, HideBySig, SpecialName
+    set_BLOCK_SEQNUM(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_CHECKSUM(): PrivateScope, Public, HideBySig, SpecialName
+    set_CHECKSUM(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.AxisDataUpMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte RecordByte0 : Public
+    Byte RecordByte1 : Public
+    Byte RecordByte2 : Public
+    Byte RecordByte3 : Public
+    Byte RecordByte4 : Public
+    Byte RecordByte5 : Public
+    Byte RecordByte6 : Public
+    Byte RecordByte7 : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.AxisDataUpMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.AxisDataUpMsg data : Public
+    UInt32 dataCount : Public
+  Properties:
+    Byte RD_BYTE7 'get set' : 
+    Byte RD_BYTE6 'get set' : 
+    Byte RD_BYTE5 'get set' : 
+    Byte RD_BYTE4 'get set' : 
+    Byte RD_BYTE3 'get set' : 
+    Byte RD_BYTE2 'get set' : 
+    Byte RD_BYTE1 'get set' : 
+    Byte RD_BYTE0 'get set' : 
+  Methods:
+    get_RD_BYTE0(): PrivateScope, Public, HideBySig, SpecialName
+    set_RD_BYTE0(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_RD_BYTE1(): PrivateScope, Public, HideBySig, SpecialName
+    set_RD_BYTE1(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_RD_BYTE2(): PrivateScope, Public, HideBySig, SpecialName
+    set_RD_BYTE2(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_RD_BYTE3(): PrivateScope, Public, HideBySig, SpecialName
+    set_RD_BYTE3(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_RD_BYTE4(): PrivateScope, Public, HideBySig, SpecialName
+    set_RD_BYTE4(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_RD_BYTE5(): PrivateScope, Public, HideBySig, SpecialName
+    set_RD_BYTE5(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_RD_BYTE6(): PrivateScope, Public, HideBySig, SpecialName
+    set_RD_BYTE6(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_RD_BYTE7(): PrivateScope, Public, HideBySig, SpecialName
+    set_RD_BYTE7(Byte): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.CtlConfigResp: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte BoardInfo : Public
+    Byte SWCode : Public
+    Byte BootTagVer : Public
+    Byte BootRevL : Public
+    Byte BootRevM : Public
+    UInt16 BootRev : Public
+    Byte FPGATagVer : Public
+    Byte FPGARevL : Public
+    Byte FPGARevM : Public
+    UInt16 FPGARev : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.CtlConfigRespPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ControlType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.CtlConfigResp data : Public
+  Properties:
+    UInt16 FPGA_REV 'get set' : 
+    Byte FPGA_TAG 'get set' : 
+    UInt16 BOOT_REV 'get set' : 
+    Byte BOOT_TAG 'get set' : 
+    Byte SWITCH_CODE 'get set' : 
+    Byte HARDWARE_VERSION 'get set' : 
+    ControlHardType BoardType 'get set' : 
+    SCBProtocalWrapper.ControlHWMode MODE 'get set' : 
+  Methods:
+    get_MODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_MODE(ControlHWMode): PrivateScope, Public, HideBySig, SpecialName
+    get_BoardType(): PrivateScope, Public, HideBySig, SpecialName
+    set_BoardType(ControlHardType): PrivateScope, Public, HideBySig, SpecialName
+    get_HARDWARE_VERSION(): PrivateScope, Public, HideBySig, SpecialName
+    set_HARDWARE_VERSION(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_SWITCH_CODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_SWITCH_CODE(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_BOOT_TAG(): PrivateScope, Public, HideBySig, SpecialName
+    set_BOOT_TAG(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_BOOT_REV(): PrivateScope, Public, HideBySig, SpecialName
+    set_BOOT_REV(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_FPGA_TAG(): PrivateScope, Public, HideBySig, SpecialName
+    set_FPGA_TAG(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_FPGA_REV(): PrivateScope, Public, HideBySig, SpecialName
+    set_FPGA_REV(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.CtlAppVerRsp: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte AppTagVer : Public
+    Byte AppRevL : Public
+    Byte AppRevM : Public
+    UInt16 AppRev : Public
+    Byte MtParaTagVer : Public
+    Byte MtParaRevL : Public
+    Byte MtParaRevM : Public
+    UInt16 MtParaRev : Public
+    Byte Options : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.CtlAppVerRspPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ControlType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.CtlAppVerRsp data : Public
+  Properties:
+    Byte OPTIONS 'get set' : 
+    UInt16 MT_PARA_REV 'get set' : 
+    Byte MT_TAG_VER 'get set' : 
+    UInt16 APP_REVISION 'get set' : 
+    Byte APP_TAG_VER 'get set' : 
+  Methods:
+    get_APP_TAG_VER(): PrivateScope, Public, HideBySig, SpecialName
+    set_APP_TAG_VER(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_APP_REVISION(): PrivateScope, Public, HideBySig, SpecialName
+    set_APP_REVISION(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_MT_TAG_VER(): PrivateScope, Public, HideBySig, SpecialName
+    set_MT_TAG_VER(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_MT_PARA_REV(): PrivateScope, Public, HideBySig, SpecialName
+    set_MT_PARA_REV(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_OPTIONS(): PrivateScope, Public, HideBySig, SpecialName
+    set_OPTIONS(Byte): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.CtlBootStrapVerRsp: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte BootStrapTag : Public
+    Byte BootStrapRevL : Public
+    Byte BootStrapRevM : Public
+    UInt16 BootStrapRev : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.CtlBootStrapVerRspPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ControlType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.CtlBootStrapVerRsp data : Public
+  Properties:
+    UInt16 BOOTSTRAP_REV 'get set' : 
+    Byte BOOTSTRAP_TAG_VER 'get set' : 
+  Methods:
+    get_BOOTSTRAP_TAG_VER(): PrivateScope, Public, HideBySig, SpecialName
+    set_BOOTSTRAP_TAG_VER(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_BOOTSTRAP_REV(): PrivateScope, Public, HideBySig, SpecialName
+    set_BOOTSTRAP_REV(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.WSDTiltCenterVectMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte RadTiltCenterByte0 : Public
+    Byte RadTiltCenterByte1 : Public
+    Byte RadTiltCenterByte2 : Public
+    Byte RadTiltCenterByte3 : Public
+    UInt32 RadTiltCenter IsLong : Public
+    Byte AngTiltCenterByte0 : Public
+    Byte AngTiltCenterByte1 : Public
+    Byte AngTiltCenterByte2 : Public
+    Byte AngTiltCenterByte3 : Public
+    UInt32 AngTiltCenter IsLong : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.WSDTiltCenterVectMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.WSDTiltCenterVectMsg data : Public
+  Properties:
+    Double ANG_TILTCENTER 'get set' : 
+    Double RAD_TILTCENTER 'get set' : 
+  Methods:
+    get_RAD_TILTCENTER(): PrivateScope, Public, HideBySig, SpecialName
+    set_RAD_TILTCENTER(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ANG_TILTCENTER(): PrivateScope, Public, HideBySig, SpecialName
+    set_ANG_TILTCENTER(Double): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.AutoMoveRespMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte AutoMoveStatus : Public
+    Byte SWSetting : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.AutoMoveRespMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ControlType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.AutoMoveRespMsg data : Public
+  Properties:
+    Byte SW_SETTING 'get set' : 
+    SCBProtocalWrapper.AMoveStatus AUTOMOVE_STATUS 'get set' : 
+  Methods:
+    get_AUTOMOVE_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_AUTOMOVE_STATUS(AMoveStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_SW_SETTING(): PrivateScope, Public, HideBySig, SpecialName
+    set_SW_SETTING(Byte): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.CtlErrStatRespMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte ErrorCodeL : Public
+    Byte ErrorCodeM : Public
+    UInt16 ErrorCode : Public
+    Byte UpdateReason : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.CtlErrStatRespMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ControlType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.CtlErrStatRespMsg data : Public
+  Properties:
+    SCBProtocalWrapper.CtlErrStatRespUpdateReason UPDATEREASON 'get set' : 
+    UInt16 ERROR_CODE 'get set' : 
+  Methods:
+    get_ERROR_CODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_ERROR_CODE(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATEREASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATEREASON(CtlErrStatRespUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.SCBXYZSetAutoDesMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte XPosL : Public
+    Byte XPosM : Public
+    UInt16 XPos : Public
+    Byte YPosL : Public
+    Byte YPosM : Public
+    UInt16 YPos : Public
+    Byte ZPosL : Public
+    Byte ZPosM : Public
+    UInt16 ZPos : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBXYZSetAutoDesMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBXYZSetAutoDesMsg data : Public
+  Properties:
+    Double Z_POS 'get set' : 
+    Double Y_POS 'get set' : 
+    Double X_POS 'get set' : 
+  Methods:
+    get_X_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBABSetAutoDesMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte APosL : Public
+    Byte APosM : Public
+    UInt16 APos : Public
+    Byte BPosL : Public
+    Byte BPosM : Public
+    UInt16 BPos : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBABSetAutoDesMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBABSetAutoDesMsg data : Public
+  Properties:
+    Double B_POS 'get set' : 
+    Double A_POS 'get set' : 
+  Methods:
+    get_A_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_A_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_B_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_B_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.OTCXYZSetRMCalMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte XPosL : Public
+    Byte XPosM : Public
+    UInt16 XPos : Public
+    Byte YPosL : Public
+    Byte YPosM : Public
+    UInt16 YPos : Public
+    Byte ZPosL : Public
+    Byte ZPosM : Public
+    UInt16 ZPos : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.OTCXYZSetRMCalMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.OTCXYZSetRMCalMsg data : Public
+  Properties:
+    Double Z_POS 'get set' : 
+    Double Y_POS 'get set' : 
+    Double X_POS 'get set' : 
+  Methods:
+    get_X_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.OTCXYZSetAxisCalMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte PinAxisCal : Public
+    Byte ABCal : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.OTCXYZSetAxisCalMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.OTCXYZSetAxisCalMsg data : Public
+  Properties:
+    Boolean PIN_SET 'get set' : 
+    Boolean BMAX_SET 'get set' : 
+    Boolean BMIN_SET 'get set' : 
+    Boolean AMAX_SET 'get set' : 
+    Boolean AMIN_SET 'get set' : 
+    Boolean ZMAX_SET 'get set' : 
+    Boolean ZMIN_SET 'get set' : 
+    Boolean YMAX_SET 'get set' : 
+    Boolean YMIN_SET 'get set' : 
+    Boolean XMAX_SET 'get set' : 
+    Boolean XMIN_SET 'get set' : 
+  Methods:
+    get_XMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_XMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_XMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_XMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_YMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_YMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_YMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_YMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ZMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ZMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_AMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_AMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_AMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_AMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_BMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_BMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_BMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_BMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_PIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_PIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.SCBTBLSetAutoDesMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte XPosL : Public
+    Byte XPosM : Public
+    UInt16 XPos : Public
+    Byte YPosL : Public
+    Byte YPosM : Public
+    UInt16 YPos : Public
+    Byte ZPosL : Public
+    Byte ZPosM : Public
+    UInt16 ZPos : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBTBLSetAutoDesMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBTBLSetAutoDesMsg data : Public
+  Properties:
+    Double Z_POS 'get ' : 
+    Double Y_POS 'get ' : 
+    Double X_POS 'get ' : 
+  Methods:
+    get_X_POS(): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POS(): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_POS(): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.TBLSetRMCalMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte XPosL : Public
+    Byte XPosM : Public
+    UInt16 XPos : Public
+    Byte YPosL : Public
+    Byte YPosM : Public
+    UInt16 YPos : Public
+    Byte ZPosL : Public
+    Byte ZPosM : Public
+    UInt16 ZPos : Public
+    Byte Orientation : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.TBLSetRMCalMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.TBLSetRMCalMsg data : Public
+  Properties:
+    SCBProtocalWrapper.TBLRMOrientation ORIENTATION 'get set' : 
+    Double Z_POS 'get set' : 
+    Double Y_POS 'get set' : 
+    Double X_POS 'get set' : 
+  Methods:
+    get_X_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ORIENTATION(): PrivateScope, Public, HideBySig, SpecialName
+    set_ORIENTATION(TBLRMOrientation): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.TBLSetAxisCalMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte AxisCal : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.TBLSetAxisCalMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.TBLSetAxisCalMsg data : Public
+  Properties:
+    Boolean PIN_CAL 'get set' : 
+    Boolean LONGMAX_SET 'get set' : 
+    Boolean ZMAX_SET 'get set' : 
+    Boolean LONGMIN_SET 'get set' : 
+    Boolean ZMIN_SET 'get set' : 
+  Methods:
+    get_ZMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_LONGMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_LONGMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ZMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_LONGMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_LONGMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_PIN_CAL(): PrivateScope, Public, HideBySig, SpecialName
+    set_PIN_CAL(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.SCBWSDSetAutoDesMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte ZPosL : Public
+    Byte ZPosM : Public
+    UInt16 ZPos : Public
+    Byte TiltPosL : Public
+    Byte TiltPosM : Public
+    UInt16 TiltPos : Public
+    Byte XPosL : Public
+    Byte XPosM : Public
+    UInt16 XPos : Public
+    Byte YPosL : Public
+    Byte YPosM : Public
+    UInt16 YPos : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.SCBWSDSetAutoDesMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.SCBWSDSetAutoDesMsg data : Public
+  Properties:
+    Double Y_POS 'get ' : 
+    Double X_POS 'get ' : 
+    Double TILT_POS 'get ' : 
+    Double Z_POS 'get ' : 
+  Methods:
+    get_Z_POS(): PrivateScope, Public, HideBySig, SpecialName
+    get_TILT_POS(): PrivateScope, Public, HideBySig, SpecialName
+    get_X_POS(): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POS(): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.WSDSetRMCalMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte XPosL : Public
+    Byte XPosM : Public
+    UInt16 XPos : Public
+    Byte YPosL : Public
+    Byte YPosM : Public
+    UInt16 YPos : Public
+    Byte ZPosL : Public
+    Byte ZPosM : Public
+    UInt16 ZPos : Public
+    Byte Orientation : Public
+    Byte UpdateType : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.WSDSetRMCalMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.WSDSetRMCalMsg data : Public
+  Properties:
+    SCBProtocalWrapper.WSDRMCalUpdateType UPDATETYPE 'get set' : 
+    SCBProtocalWrapper.WSDRMOrientation ORIENTATION 'get set' : 
+    Double Z_POS 'get set' : 
+    Double Y_POS 'get set' : 
+    Double X_POS 'get set' : 
+  Methods:
+    get_X_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ORIENTATION(): PrivateScope, Public, HideBySig, SpecialName
+    set_ORIENTATION(WSDRMOrientation): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATETYPE(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATETYPE(WSDRMCalUpdateType): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.WSDSetAxisCalMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte AxisCal : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.WSDSetAxisCalMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.WSDSetAxisCalMsg data : Public
+  Properties:
+    Boolean PIN_SET 'get set' : 
+    Boolean XRAILMAX_SET 'get set' : 
+    Boolean XRAILMIN_SET 'get set' : 
+    Boolean ZMAX_SET 'get set' : 
+    Boolean ZMIN_SET 'get set' : 
+  Methods:
+    get_ZMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ZMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_XRAILMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_XRAILMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_XRAILMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_XRAILMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_PIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_PIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.XYZSyncMovePara: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte SyncMoveDelayL : Public
+    Byte SyncMoveDelayM : Public
+    UInt16 SyncMoveDelay : Public
+    Byte TBLMoveDirection : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.XYZSyncMoveParaPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.XYZSyncMovePara data : Public
+  Properties:
+    SCBProtocalWrapper.TBLMoveDict TBLMOVE_DICT 'get set' : 
+    UInt16 SYNC_DELAY 'get set' : 
+  Methods:
+    get_SYNC_DELAY(): PrivateScope, Public, HideBySig, SpecialName
+    set_SYNC_DELAY(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    get_TBLMOVE_DICT(): PrivateScope, Public, HideBySig, SpecialName
+    set_TBLMOVE_DICT(TBLMoveDict): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.OTCXYZStaMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte MResSWStatus : Public
+    Byte XAxisStatus : Public
+    Byte YAxisStatus : Public
+    Byte ZAxisStatus : Public
+    Byte OpMode : Public
+    Byte XYSoftDtStatus : Public
+    Byte ZSoftDtAuxSWStatus : Public
+    Byte UpdateReason : Public
+    UInt16 id : Public
+Struct SCBProtocalWrapper.MSwStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean xPressed : Public
+    Boolean yPressed : Public
+    Boolean zPressed : Public
+    Boolean xyzPressed : Public
+    Boolean aPressed : Public
+    Boolean bPressed : Public
+    Boolean dtSwPressed : Public
+Struct SCBProtocalWrapper.ControlMSStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean mtEn : Public
+    Boolean clutchEn : Public
+    Boolean breakEn : Public
+Struct SCBProtocalWrapper.EstopSW: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean conEstopEn : Public
+    Boolean conAutoPosEn : Public
+    Boolean otcEstopEn : Public
+    Boolean conAutoPosIdOn : Public
+Struct SCBProtocalWrapper.OTCXYZStaMsgUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean relSWChange : Public
+    Boolean xStaChange : Public
+    Boolean yStaChange : Public
+    Boolean zStaChange : Public
+    Boolean OpModeChange : Public
+    Boolean auxSWChange : Public
+    Boolean softDTChange : Public
+    Boolean scbRequest : Public
+Class SCBProtocalWrapper.OTCXYZStaMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.OTCXYZStaMsg data : Public
+  Properties:
+    SCBProtocalWrapper.OTCXYZStaMsgUpdateReason UPDATE_REASON 'get set' : 
+    SCBProtocalWrapper.EstopSW ESTOP_SW 'get set' : 
+    UInt32 Z_DT_STA 'get set' : 
+    UInt32 Y_DT_STA 'get set' : 
+    UInt32 X_DT_STA 'get set' : 
+    ControlOpMode OP_MODE 'get set' : 
+    SCBProtocalWrapper.ControlMSStatus Z_STATUS 'get set' : 
+    SCBProtocalWrapper.ControlMSStatus Y_STATUS 'get set' : 
+    SCBProtocalWrapper.ControlMSStatus X_STATUS 'get set' : 
+    SCBProtocalWrapper.MSwStatus RES_SW_STA 'get set' : 
+  Methods:
+    get_RES_SW_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_RES_SW_STA(MSwStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_X_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_STATUS(ControlMSStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_STATUS(ControlMSStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_STATUS(ControlMSStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_OP_MODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_OP_MODE(ControlOpMode): PrivateScope, Public, HideBySig, SpecialName
+    get_X_DT_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_DT_STA(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_DT_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_DT_STA(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_DT_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_DT_STA(UInt32): PrivateScope, Public, HideBySig, SpecialName
+    get_ESTOP_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_ESTOP_SW(EstopSW): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATE_REASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATE_REASON(OTCXYZStaMsgUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.OTCIRStaMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte SimpleMSStatus : Public
+    Byte TiltSWStatus : Public
+    Byte ComplexMSStatus : Public
+    Byte ColPSSWStatus : Public
+    Byte ColBPSWStatus : Public
+    Byte ColLPSWStatus : Public
+    Byte UpdataReason : Public
+    UInt16 id : Public
+Struct SCBProtocalWrapper.IRSimpleMSStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean hSUpSW : Public
+    Boolean lSUpSW : Public
+    Boolean hSDownSW : Public
+    Boolean lSDownSW : Public
+    Boolean hSLeftSW : Public
+    Boolean lSLeftSW : Public
+    Boolean hSRightSW : Public
+    Boolean lSRightSW : Public
+Struct SCBProtocalWrapper.IRTiltSWStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean tiltUpSW : Public
+    Boolean tiltDownSW : Public
+Struct SCBProtocalWrapper.IRComplexMSStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean autoCenterSW : Public
+    Boolean autoTrackSW : Public
+    Boolean autoPosSW : Public
+    Boolean autoCenter2SW : Public
+Struct SCBProtocalWrapper.IRColPSSWStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean pre1SW : Public
+    Boolean pre2SW : Public
+    Boolean pre3SW : Public
+Struct SCBProtocalWrapper.IRColBPSWStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean horiOpenSW : Public
+    Boolean horiCloseSW : Public
+    Boolean vertOpenSW : Public
+    Boolean vertCloseSW : Public
+Struct SCBProtocalWrapper.IRStaUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean simMSStaChange : Public
+    Boolean tiltStaChange : Public
+    Boolean comMSStaChange : Public
+    Boolean colPSStaChange : Public
+    Boolean colBSStaChange : Public
+    Boolean lampStaChange : Public
+    Boolean scbRequest : Public
+Class SCBProtocalWrapper.OTCIRStaMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.OTCIRStaMsg data : Public
+  Properties:
+    SCBProtocalWrapper.IRStaUpdateReason UPDATE_REASON 'get set' : 
+    Boolean LAMP_STA 'get set' : 
+    SCBProtocalWrapper.IRColBPSWStatus COL_BP_STA 'get set' : 
+    SCBProtocalWrapper.IRColPSSWStatus COL_PS_STA 'get set' : 
+    SCBProtocalWrapper.IRComplexMSStatus COM_MS_STA 'get set' : 
+    SCBProtocalWrapper.IRTiltSWStatus TILT_SW_STA 'get set' : 
+    SCBProtocalWrapper.IRSimpleMSStatus SIM_MS_STA 'get set' : 
+  Methods:
+    get_SIM_MS_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_SIM_MS_STA(IRSimpleMSStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_TILT_SW_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_TILT_SW_STA(IRTiltSWStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_COM_MS_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_COM_MS_STA(IRComplexMSStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_COL_PS_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_COL_PS_STA(IRColPSSWStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_COL_BP_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_COL_BP_STA(IRColBPSWStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_LAMP_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_LAMP_STA(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATE_REASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATE_REASON(IRStaUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.OTCXYZHBMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte XPosL : Public
+    Byte XposM : Public
+    UInt16 Xpos : Public
+    Byte YPosL : Public
+    Byte YPosM : Public
+    UInt16 Ypos : Public
+    Byte ZPosL : Public
+    Byte ZPosM : Public
+    UInt16 Zpos : Public
+    Byte AxisCalStatus : Public
+    Byte UpdataReason : Public
+    UInt16 id : Public
+Struct SCBProtocalWrapper.OTCXYZHBUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean hbTimeOut : Public
+    Boolean scbRequest : Public
+    Boolean axisMove : Public
+    Boolean CalStaChange : Public
+Class SCBProtocalWrapper.OTCXYZHBMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.OTCXYZHBMsg data : Public
+  Properties:
+    SCBProtocalWrapper.OTCXYZHBUpdateReason UPDATE_REASON 'get set' : 
+    Double Z_POSITION 'get set' : 
+    Double Y_POSITION 'get set' : 
+    Double X_POSITION 'get set' : 
+    Boolean PINCAL_DONE 'get set' : 
+    Boolean RMCAL_DONE 'get set' : 
+    Boolean ZMAX_SET 'get set' : 
+    Boolean YMAX_SET 'get set' : 
+    Boolean XMAX_SET 'get set' : 
+    Boolean ZMIN_SET 'get set' : 
+    Boolean YMIN_SET 'get set' : 
+    Boolean XMIN_SET 'get set' : 
+  Methods:
+    get_XMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_XMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_YMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_YMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ZMIN_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZMIN_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_XMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_XMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_YMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_YMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ZMAX_SET(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZMAX_SET(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_RMCAL_DONE(): PrivateScope, Public, HideBySig, SpecialName
+    set_RMCAL_DONE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_PINCAL_DONE(): PrivateScope, Public, HideBySig, SpecialName
+    set_PINCAL_DONE(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_X_POSITION(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_POSITION(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POSITION(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_POSITION(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_POSITION(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_POSITION(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATE_REASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATE_REASON(OTCXYZHBUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.OTCLLIStatusMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte XYTravEndL : Public
+    Byte XYTravEndM : Public
+    UInt16 XYTravEnd : Public
+    Byte XYTravStartL : Public
+    Byte XYTravStartM : Public
+    UInt16 XYTravStart : Public
+    Byte ZTravEndL : Public
+    Byte ZTravEndM : Public
+    UInt16 ZTravEnd : Public
+    Byte ZTravStartL : Public
+    Byte ZTravStartM : Public
+    UInt16 ZTravStart : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.OTCLLIStatusMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.OTCLLIStatusMsg data : Public
+  Properties:
+    Double ZTRAV_END 'get set' : 
+    Double ZTRAV_START 'get set' : 
+    Double XYTRAV_START 'get set' : 
+    Double XYTRAV_END 'get set' : 
+  Methods:
+    get_XYTRAV_END(): PrivateScope, Public, HideBySig, SpecialName
+    set_XYTRAV_END(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_XYTRAV_START(): PrivateScope, Public, HideBySig, SpecialName
+    set_XYTRAV_START(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ZTRAV_START(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZTRAV_START(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ZTRAV_END(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZTRAV_END(Double): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.ABStatusMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte AStatus : Public
+    Byte BStatus : Public
+    Byte OpMode : Public
+    Byte UpdataReason : Public
+    UInt16 id : Public
+Struct SCBProtocalWrapper.ABStaUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean aStatusChange : Public
+    Boolean bStatusChange : Public
+    Boolean opModeChange : Public
+    Boolean scbRequest : Public
+Struct SCBProtocalWrapper.AStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean mtRun : Public
+    Boolean brakeEn : Public
+    Boolean hmSensor : Public
+    Boolean inDetent : Public
+Struct SCBProtocalWrapper.BStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean mtRun : Public
+    Boolean dtSoEn : Public
+    Boolean dtEn : Public
+Class SCBProtocalWrapper.ABStatusMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.ABStatusMsg data : Public
+  Properties:
+    SCBProtocalWrapper.ABStaUpdateReason UPDATE_REASON 'get set' : 
+    ControlOpMode OP_MODE 'get set' : 
+    SCBProtocalWrapper.BStatus B_STA 'get set' : 
+    SCBProtocalWrapper.AStatus A_STA 'get set' : 
+  Methods:
+    get_A_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_A_STA(AStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_B_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_B_STA(BStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_OP_MODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_OP_MODE(ControlOpMode): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATE_REASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATE_REASON(ABStaUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.OTCABHBMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte APosL : Public
+    Byte APosM : Public
+    UInt16 APos : Public
+    Byte BPosL : Public
+    Byte BPosM : Public
+    UInt16 BPos : Public
+    Byte AxisCalStatus : Public
+    Byte UpdataReason : Public
+    UInt16 id : Public
+Struct SCBProtocalWrapper.OTCABHBUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean hbTimeOut : Public
+    Boolean scbRequest : Public
+    Boolean axisMove : Public
+    Boolean CalStaChange : Public
+Struct SCBProtocalWrapper.OTCABCalStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean AMinSet : Public
+    Boolean BMinSet : Public
+    Boolean AMaxSet : Public
+    Boolean BMaxSet : Public
+    Boolean PinCalSet : Public
+Class SCBProtocalWrapper.OTCABHBMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.OTCABHBMsg data : Public
+  Properties:
+    SCBProtocalWrapper.OTCABHBUpdateReason UPDATE_REASON 'get set' : 
+    Double B_POSITION 'get set' : 
+    Double A_POSITION 'get set' : 
+    SCBProtocalWrapper.OTCABCalStatus CAL_STA 'get set' : 
+  Methods:
+    get_CAL_STA(): PrivateScope, Public, HideBySig, SpecialName
+    set_CAL_STA(OTCABCalStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_A_POSITION(): PrivateScope, Public, HideBySig, SpecialName
+    set_A_POSITION(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_B_POSITION(): PrivateScope, Public, HideBySig, SpecialName
+    set_B_POSITION(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATE_REASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATE_REASON(OTCABHBUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.TBLSyncMoveStart: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte AtSpeedDelayM : Public
+    Byte AtSpeedDelayL : Public
+    UInt16 AtSpeedDelay : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.TBLSyncMoveStartPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.TBLSyncMoveStart data : Public
+  Properties:
+    UInt16 AT_SPEED_DELAY 'get set' : 
+  Methods:
+    get_AT_SPEED_DELAY(): PrivateScope, Public, HideBySig, SpecialName
+    set_AT_SPEED_DELAY(UInt16): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.TBLStatusMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte SwStatus : Public
+    Byte MtControl : Public
+    Byte MtSensor : Public
+    Byte BuckyZdt : Public
+    Byte OpMode : Public
+    Byte UpdateReason : Public
+    Byte KeyPadStatus : Public
+    Byte IndDetctorId : Public
+    UInt16 id : Public
+Struct SCBProtocalWrapper.TBLSwStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean autoCenterSW : Public
+    Boolean autoTrackSW : Public
+    Boolean estopSW : Public
+    Boolean zUpPedal : Public
+    Boolean zDownPedal : Public
+    Boolean floatPedal : Public
+Struct SCBProtocalWrapper.TBLMtControls: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean longMotorRun : Public
+    Boolean zMotorRun : Public
+    Boolean floatSolenAssert : Public
+Struct SCBProtocalWrapper.TBLMtSensors: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean longBuckySensor : Public
+    Boolean gridPresent : Public
+    Boolean dtIntable : Public
+    Boolean dtExtend : Public
+    Boolean buckyInPortrait : Public
+    Boolean buckyInLand : Public
+    Boolean floatCollison : Public
+Struct SCBProtocalWrapper.TBLStatusUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean swStatusChange : Public
+    Boolean xAxisStatusChange : Public
+    Boolean mtSensorChange : Public
+    Boolean softDtChange : Public
+    Boolean opModeChange : Public
+    Boolean scbRequest : Public
+    Boolean detectorIdCHANGE : Public
+Struct SCBProtocalWrapper.TBLKeyPadStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean relTransSW : Public
+    Boolean relLongSW : Public
+    Boolean relBothSW : Public
+    Boolean tblDownSW : Public
+    Boolean tblUpSW : Public
+Struct SCBProtocalWrapper.TBLIndicatorStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean gridPresent : Public
+    Boolean autoTrack : Public
+Class SCBProtocalWrapper.TBLStatusMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.TBLStatusMsg data : Public
+  Properties:
+    Byte DETECTOR_ID 'get set' : 
+    SCBProtocalWrapper.TBLIndicatorStatus INDICATOR_STATUS 'get set' : 
+    SCBProtocalWrapper.TBLKeyPadStatus KEYPAD_STATUS 'get set' : 
+    SCBProtocalWrapper.TBLStatusUpdateReason UPDATE_REASON 'get set' : 
+    ControlOpMode OP_MODE 'get set' : 
+    Byte Z_DT  'get set' : 
+    Byte BUCKY_DT 'get set' : 
+    SCBProtocalWrapper.TBLMtSensors MTSENSORS 'get set' : 
+    SCBProtocalWrapper.TBLMtControls MTCONTROLS 'get set' : 
+    SCBProtocalWrapper.TBLSwStatus SW_STATUS 'get set' : 
+  Methods:
+    get_SW_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_SW_STATUS(TBLSwStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_MTCONTROLS(): PrivateScope, Public, HideBySig, SpecialName
+    set_MTCONTROLS(TBLMtControls): PrivateScope, Public, HideBySig, SpecialName
+    get_MTSENSORS(): PrivateScope, Public, HideBySig, SpecialName
+    set_MTSENSORS(TBLMtSensors): PrivateScope, Public, HideBySig, SpecialName
+    get_BUCKY_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_BUCKY_DT(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_DT(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_OP_MODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_OP_MODE(ControlOpMode): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATE_REASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATE_REASON(TBLStatusUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    get_KEYPAD_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_KEYPAD_STATUS(TBLKeyPadStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_INDICATOR_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_INDICATOR_STATUS(TBLIndicatorStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_DETECTOR_ID(): PrivateScope, Public, HideBySig, SpecialName
+    set_DETECTOR_ID(Byte): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.TBLHBMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte XPosL : Public
+    Byte XPosM : Public
+    UInt16 XPos : Public
+    Byte YPosL : Public
+    Byte YPosM : Public
+    UInt16 YPos : Public
+    Byte ZPosL : Public
+    Byte ZPosM : Public
+    UInt16 ZPos : Public
+    Byte AxisCalStatus : Public
+    Byte UpdatereasonOr : Public
+    UInt16 id : Public
+Struct SCBProtocalWrapper.TBLHBUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean hbTimeOut : Public
+    Boolean scbRequest : Public
+    Boolean movementOccur : Public
+    Boolean calStatusChange : Public
+Struct SCBProtocalWrapper.TBLCalStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean zMinSet : Public
+    Boolean longMinSet : Public
+    Boolean zMaxSet : Public
+    Boolean longMaxSet : Public
+    Boolean tblLocEst : Public
+    Boolean rmCalDone : Public
+    Boolean pinCalDone : Public
+Class SCBProtocalWrapper.TBLHBMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.TBLHBMsg data : Public
+  Properties:
+    SCBProtocalWrapper.TBLRoomLayout LAYOUT 'get set' : 
+    SCBProtocalWrapper.TBLHBUpdateReason UPDATEREASON 'get set' : 
+    SCBProtocalWrapper.TBLCalStatus CALSTATUS 'get set' : 
+    Double Z_POS 'get set' : 
+    Double Y_POS 'get set' : 
+    Double X_POS 'get set' : 
+  Methods:
+    get_X_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_CALSTATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_CALSTATUS(TBLCalStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATEREASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATEREASON(TBLHBUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    get_LAYOUT(): PrivateScope, Public, HideBySig, SpecialName
+    set_LAYOUT(TBLRoomLayout): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.TBLLLIStatusMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte BuckyLLIPosByte4 : Public
+    Byte BuckyLLIPosByte3 : Public
+    Byte BuckyLLIPosByte2 : Public
+    Byte BuckyLLIPosByte1 : Public
+    UInt32 BuckyLLIPos IsLong : Public
+    Byte BuckyTravEndL : Public
+    Byte BuckyTravEndM : Public
+    UInt16 BuckyTravEnd : Public
+    Byte BuckyTravStartL : Public
+    Byte BuckyTravStartM : Public
+    UInt16 BuckyTravStart : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.TBLLLIStatusMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.TBLLLIStatusMsg data : Public
+  Properties:
+    Double BUCKYTRAV_START 'get set' : 
+    Double BUCKYTRAV_END 'get set' : 
+    Int32 BUCKY_LLIPOS 'get set' : 
+  Methods:
+    get_BUCKY_LLIPOS(): PrivateScope, Public, HideBySig, SpecialName
+    set_BUCKY_LLIPOS(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_BUCKYTRAV_END(): PrivateScope, Public, HideBySig, SpecialName
+    set_BUCKYTRAV_END(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_BUCKYTRAV_START(): PrivateScope, Public, HideBySig, SpecialName
+    set_BUCKYTRAV_START(Double): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.WSDStatusMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte SWIndStatus : Public
+    Byte MtControl : Public
+    Byte DetGrSensor : Public
+    Byte Sensors : Public
+    Byte OpMode : Public
+    Byte ZXDetent : Public
+    Byte TlDtDetectId : Public
+    Byte UpdateReason : Public
+    UInt16 id : Public
+Struct SCBProtocalWrapper.WSDSWStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean zPressed : Public
+    Boolean xPressed : Public
+    Boolean estopPressed : Public
+Struct SCBProtocalWrapper.WSDMotionControls: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean zMotorRun : Public
+    Boolean zBrakeEn : Public
+    Boolean xMotorRun : Public
+    Boolean tiltMotorRun : Public
+Struct SCBProtocalWrapper.DetGridSensor: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean buckyInPort : Public
+    Boolean buckyInLand : Public
+    Boolean detInPort : Public
+    Boolean detInLand : Public
+Struct SCBProtocalWrapper.Sensors: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean isTrayIn : Public
+    Boolean buckyRetract : Public
+    Boolean buckyExtend : Public
+Struct SCBProtocalWrapper.WSDStatusMsgUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean swIndStateChange : Public
+    Boolean motionCtlChange : Public
+    Boolean buckyGridChange : Public
+    Boolean sensorChange : Public
+    Boolean opModeChange : Public
+    Boolean detIdChange : Public
+    Boolean detentChange : Public
+    Boolean scbRequest : Public
+Class SCBProtocalWrapper.WSDStatusMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.WSDStatusMsg data : Public
+  Properties:
+    SCBProtocalWrapper.WSDStatusMsgUpdateReason UPDATE_REASON 'get set' : 
+    Byte DETECTOR_ID 'get set' : 
+    Byte TILT_DT 'get set' : 
+    Byte Z_DT  'get set' : 
+    Byte X_DT  'get set' : 
+    ControlOpMode OP_MODE 'get set' : 
+    SCBProtocalWrapper.Sensors SENSORS 'get set' : 
+    SCBProtocalWrapper.GridType GRID_TYPE 'get set' : 
+    SCBProtocalWrapper.DetGridSensor DT_SENSOR 'get set' : 
+    SCBProtocalWrapper.WSDMotionControls MT_CONTROL 'get set' : 
+    SCBProtocalWrapper.WSDSWStatus SW_STATUS 'get set' : 
+  Methods:
+    get_SW_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_SW_STATUS(WSDSWStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_MT_CONTROL(): PrivateScope, Public, HideBySig, SpecialName
+    set_MT_CONTROL(WSDMotionControls): PrivateScope, Public, HideBySig, SpecialName
+    get_DT_SENSOR(): PrivateScope, Public, HideBySig, SpecialName
+    set_DT_SENSOR(DetGridSensor): PrivateScope, Public, HideBySig, SpecialName
+    get_GRID_TYPE(): PrivateScope, Public, HideBySig, SpecialName
+    set_GRID_TYPE(GridType): PrivateScope, Public, HideBySig, SpecialName
+    get_SENSORS(): PrivateScope, Public, HideBySig, SpecialName
+    set_SENSORS(Sensors): PrivateScope, Public, HideBySig, SpecialName
+    get_OP_MODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_OP_MODE(ControlOpMode): PrivateScope, Public, HideBySig, SpecialName
+    get_X_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_DT(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_DT(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_TILT_DT(): PrivateScope, Public, HideBySig, SpecialName
+    set_TILT_DT(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_DETECTOR_ID(): PrivateScope, Public, HideBySig, SpecialName
+    set_DETECTOR_ID(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATE_REASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATE_REASON(WSDStatusMsgUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.WSDKeyStatusMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte SimMtSW : Public
+    Byte TiltSW : Public
+    Byte ComMtSW : Public
+    Byte KeyIndt : Public
+    Byte ColPsetSW : Public
+    Byte ColBPSW : Public
+    Byte ColLampSW : Public
+    Byte UpdateReason : Public
+    UInt16 id : Public
+Struct SCBProtocalWrapper.SimpleMotionSW: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean hsUpSW : Public
+    Boolean lsUpSW : Public
+    Boolean hsDownSW : Public
+    Boolean lsDownSW : Public
+    Boolean hsLeftSW : Public
+    Boolean lsLeftSW : Public
+    Boolean hsRightSW : Public
+    Boolean lsRightSW : Public
+Struct SCBProtocalWrapper.TiltSW: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean tiltUpSW : Public
+    Boolean tiltDownSW : Public
+Struct SCBProtocalWrapper.ComplexMotionSW: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean autoCenterSW : Public
+    Boolean autoTrackSW : Public
+    Boolean autoPosSW : Public
+    Boolean autoCenter2SW : Public
+Struct SCBProtocalWrapper.KeyIndicator: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean autoTrackInd : Public
+    Boolean autoPosInd : Public
+    Boolean autoCenterInd : Public
+Struct SCBProtocalWrapper.ColPresetSW: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean Pre1SW : Public
+    Boolean Pre2SW : Public
+    Boolean Pre3SW : Public
+Struct SCBProtocalWrapper.ColBladePosSW: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean openHBSW : Public
+    Boolean closeHBSW : Public
+    Boolean openVBSW : Public
+    Boolean closeVBSW : Public
+    Boolean openHBTapped : Public
+    Boolean closeHBTapped : Public
+    Boolean openVBTapped : Public
+    Boolean closeVBTapped : Public
+Struct SCBProtocalWrapper.WSDKEYStatusMsgUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean simMtSWChange : Public
+    Boolean tiltSWChange : Public
+    Boolean comMtSWChange : Public
+    Boolean colPSChange : Public
+    Boolean colBSChange : Public
+    Boolean colLampSWChange : Public
+    Boolean scbRequest : Public
+Class SCBProtocalWrapper.WSDKeyStatusMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.WSDKeyStatusMsg data : Public
+  Properties:
+    SCBProtocalWrapper.WSDKEYStatusMsgUpdateReason UPDATE_REASON 'get set' : 
+    Boolean LAMP_SW 'get set' : 
+    SCBProtocalWrapper.ColBladePosSW COL_BLADE_SW 'get set' : 
+    SCBProtocalWrapper.ColPresetSW COL_PRESET_SW 'get set' : 
+    SCBProtocalWrapper.KeyIndicator KEY_INDICATOR 'get set' : 
+    SCBProtocalWrapper.ComplexMotionSW COM_MT_SW 'get set' : 
+    SCBProtocalWrapper.TiltSW TILT_SW 'get set' : 
+    SCBProtocalWrapper.SimpleMotionSW SIM_MT_SW 'get set' : 
+  Methods:
+    get_SIM_MT_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_SIM_MT_SW(SimpleMotionSW): PrivateScope, Public, HideBySig, SpecialName
+    get_TILT_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_TILT_SW(TiltSW): PrivateScope, Public, HideBySig, SpecialName
+    get_COM_MT_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_COM_MT_SW(ComplexMotionSW): PrivateScope, Public, HideBySig, SpecialName
+    get_KEY_INDICATOR(): PrivateScope, Public, HideBySig, SpecialName
+    set_KEY_INDICATOR(KeyIndicator): PrivateScope, Public, HideBySig, SpecialName
+    get_COL_PRESET_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_COL_PRESET_SW(ColPresetSW): PrivateScope, Public, HideBySig, SpecialName
+    get_COL_BLADE_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_COL_BLADE_SW(ColBladePosSW): PrivateScope, Public, HideBySig, SpecialName
+    get_LAMP_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_LAMP_SW(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATE_REASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATE_REASON(WSDKEYStatusMsgUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.WSDHBMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte XPosL : Public
+    Byte XPosM : Public
+    UInt16 XPos : Public
+    Byte YPosL : Public
+    Byte YPosM : Public
+    UInt16 YPos : Public
+    Byte ZPosL : Public
+    Byte ZPosM : Public
+    UInt16 ZPos : Public
+    Byte AxisCalStatus : Public
+    Byte UpdatereasonOr : Public
+    UInt16 id : Public
+Struct SCBProtocalWrapper.WSDCalStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean ZMinSet : Public
+    Boolean ZMaxSet : Public
+    Boolean XMinSet : Public
+    Boolean XMaxSet : Public
+    Boolean HorRMCalDone : Public
+    Boolean VertRMCalDone : Public
+    Boolean PinCalDone : Public
+Struct SCBProtocalWrapper.WSDHBUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean hbTimeOut : Public
+    Boolean scbRequest : Public
+    Boolean movementOccur : Public
+    Boolean calStatusChange : Public
+Class SCBProtocalWrapper.WSDHBMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.WSDHBMsg data : Public
+  Properties:
+    SCBProtocalWrapper.WSDRoomLayout LAYOUT 'get set' : 
+    SCBProtocalWrapper.WSDHBUpdateReason UPDATE_REASON 'get set' : 
+    SCBProtocalWrapper.WSDCalStatus CAL_STATUS 'get set' : 
+    Double Z_POS 'get set' : 
+    Double Y_POS 'get set' : 
+    Double X_POS 'get set' : 
+  Methods:
+    get_X_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_CAL_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_CAL_STATUS(WSDCalStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATE_REASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATE_REASON(WSDHBUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    get_LAYOUT(): PrivateScope, Public, HideBySig, SpecialName
+    set_LAYOUT(WSDRoomLayout): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.WSDTiltPosMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte TiltPosL : Public
+    Byte TiltPosM : Public
+    UInt16 TiltPos : Public
+    Byte AngPosL : Public
+    Byte AngPosM : Public
+    UInt16 AngPos : Public
+    Byte AxisCalStatus : Public
+    Byte UpdateReason : Public
+    UInt16 id : Public
+Struct SCBProtocalWrapper.WSDTiltCalStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean TiltMinSet : Public
+    Boolean TiltVertSet : Public
+    Boolean TiltHorSet : Public
+Struct SCBProtocalWrapper.WSDTiltPosUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Boolean hbTimeOut : Public
+    Boolean scbRequest : Public
+    Boolean movementOccur : Public
+    Boolean calStaChange : Public
+Class SCBProtocalWrapper.WSDTiltPosMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.WSDTiltPosMsg data : Public
+  Properties:
+    SCBProtocalWrapper.WSDTiltPosUpdateReason UPDATE_REASON 'get set' : 
+    SCBProtocalWrapper.WSDTiltCalStatus CAL_STATUS 'get set' : 
+    Double ANG_POS 'get set' : 
+    Double TILT_POS 'get set' : 
+  Methods:
+    get_TILT_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_TILT_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ANG_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_ANG_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_CAL_STATUS(): PrivateScope, Public, HideBySig, SpecialName
+    set_CAL_STATUS(WSDTiltCalStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_UPDATE_REASON(): PrivateScope, Public, HideBySig, SpecialName
+    set_UPDATE_REASON(WSDTiltPosUpdateReason): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.WSDLLIStatusMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte ZLLIPosByte4 : Public
+    Byte ZLLIPosByte3 : Public
+    Byte ZLLIPosByte2 : Public
+    Byte ZLLIPosByte1 : Public
+    UInt32 ZLLIPos IsLong : Public
+    Byte ZTravEndL : Public
+    Byte ZTravEndM : Public
+    UInt16 ZTravEnd : Public
+    Byte ZTravStartL : Public
+    Byte ZTravStartM : Public
+    UInt16 ZTravStart : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.WSDLLIStatusMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.WSDLLIStatusMsg data : Public
+  Properties:
+    Double ZTRAV_START 'get set' : 
+    Double ZTRAV_END 'get set' : 
+    Int32 Z_LLIPOS 'get set' : 
+  Methods:
+    get_Z_LLIPOS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_LLIPOS(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ZTRAV_END(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZTRAV_END(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ZTRAV_START(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZTRAV_START(Double): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.ASR1ModelMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte Byte0 : Public
+    Byte Byte1 : Public
+    Byte Byte2 : Public
+    Byte Byte3 : Public
+    Byte Byte4 : Public
+    Byte Byte5 : Public
+    Byte Byte6 : Public
+    Byte Byte7 : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.ASR1ModelMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.ASR1ModelMsg data : Public
+  Properties:
+    System.String MODEL 'get set' : 
+  Methods:
+    get_MODEL(): PrivateScope, Public, HideBySig, SpecialName
+    set_MODEL(String): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.ASR2ModelMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte Byte0 : Public
+    Byte Byte1 : Public
+    Byte Byte2 : Public
+    Byte Byte3 : Public
+    Byte Byte4 : Public
+    Byte Byte5 : Public
+    Byte Byte6 : Public
+    Byte Byte7 : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.ASR2ModelMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.ASR2ModelMsg data : Public
+  Properties:
+    System.String MODEL 'get set' : 
+  Methods:
+    get_MODEL(): PrivateScope, Public, HideBySig, SpecialName
+    set_MODEL(String): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.ASR1SNMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte Byte0 : Public
+    Byte Byte1 : Public
+    Byte Byte2 : Public
+    Byte Byte3 : Public
+    Byte Byte4 : Public
+    Byte Byte5 : Public
+    Byte Byte6 : Public
+    Byte Byte7 : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.ASR1SNMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.ASR1SNMsg data : Public
+  Properties:
+    System.String SN 'get set' : 
+  Methods:
+    get_SN(): PrivateScope, Public, HideBySig, SpecialName
+    set_SN(String): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.ASR2Status1Msg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte Mode_Lamp : Public
+    Byte Byte1 : Public
+    Byte Byte2 : Public
+    Byte VSID : Public
+    Byte VCrossL : Public
+    Byte VCrossM : Public
+    UInt16 VCross : Public
+    Byte VLongL : Public
+    Byte VLongM : Public
+    UInt16 VLong : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.ASR2Status1MsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.ASR2Status1Msg data : Public
+  Properties:
+    Boolean LAMP_ON 'get set' : 
+    Int32 LONG_SIZE 'get set' : 
+    Int32 CROSS_SIZE 'get set' : 
+    Int32 V_SID 'get set' : 
+    SCBProtocalWrapper.CollimatorMode Mode 'get set' : 
+  Methods:
+    get_Mode(): PrivateScope, Public, HideBySig, SpecialName
+    set_Mode(CollimatorMode): PrivateScope, Public, HideBySig, SpecialName
+    get_V_SID(): PrivateScope, Public, HideBySig, SpecialName
+    set_V_SID(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CROSS_SIZE(): PrivateScope, Public, HideBySig, SpecialName
+    set_CROSS_SIZE(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_LONG_SIZE(): PrivateScope, Public, HideBySig, SpecialName
+    set_LONG_SIZE(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_LAMP_ON(): PrivateScope, Public, HideBySig, SpecialName
+    set_LAMP_ON(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.ASR2Status2Msg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte Byte0 : Public
+    Byte Byte1 : Public
+    Byte Byte2 : Public
+    Byte Filter : Public
+    Byte LSidL : Public
+    Byte LSidM : Public
+    UInt16 LSid : Public
+    Byte Byte6 : Public
+    Byte Byte7 : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.ASR2Status2MsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.ASR2Status2Msg data : Public
+  Properties:
+    Int32 L_SID 'get set' : 
+    Byte FILTER_TYPE 'get set' : 
+  Methods:
+    get_FILTER_TYPE(): PrivateScope, Public, HideBySig, SpecialName
+    set_FILTER_TYPE(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_L_SID(): PrivateScope, Public, HideBySig, SpecialName
+    set_L_SID(Int32): PrivateScope, Public, HideBySig, SpecialName
+    GetFrame(): PrivateScope, Public, HideBySig
+Struct SCBProtocalWrapper.ASR2CtlMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte Byte0 : Public
+    Byte Byte1 : Public
+    Byte Byte2 : Public
+    Byte VSid : Public
+    Byte CrossSizeL : Public
+    Byte CrossSizeM : Public
+    UInt16 CrossSize : Public
+    Byte LongSizeL : Public
+    Byte LongSizeM : Public
+    UInt16 LongSize : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.ASR2CtlMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.ASR2CtlMsg data : Public
+  Properties:
+    Int32 LONG_SIZE 'get ' : 
+    Int32 CROSS_SIZE 'get ' : 
+    Int32 V_SID 'get ' : 
+    Boolean LAMP_ON 'get ' : 
+    SCBProtocalWrapper.CollimatorMode MODE 'get ' : 
+  Methods:
+    get_MODE(): PrivateScope, Public, HideBySig, SpecialName
+    get_LAMP_ON(): PrivateScope, Public, HideBySig, SpecialName
+    get_V_SID(): PrivateScope, Public, HideBySig, SpecialName
+    get_CROSS_SIZE(): PrivateScope, Public, HideBySig, SpecialName
+    get_LONG_SIZE(): PrivateScope, Public, HideBySig, SpecialName
+Struct SCBProtocalWrapper.ASR2Ctl2Msg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Byte CMD : Public
+    Byte Byte1 : Public
+    Byte Byte2 : Public
+    UInt16 LampTime : Public
+    Byte RampTime : Public
+    Byte Byte4 : Public
+    Byte Byte5 : Public
+    Byte Byte6 : Public
+    Byte Byte7 : Public
+    UInt16 id : Public
+Class SCBProtocalWrapper.ASR2Ctl2MsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.AxisCtlProtoStuct): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    SCBProtocalWrapper.ASR2Ctl2Msg data : Public
+  Properties:
+    Double RAMP_TIME 'get ' : 
+    Double LAMP_TIME 'get ' : 
+    Boolean LAMP_ABORT 'get ' : 
+    Boolean FAN_OFF 'get ' : 
+    Boolean FAN_ON 'get ' : 
+    Boolean LASER_OFF 'get ' : 
+    Boolean LASER_ON 'get ' : 
+    Boolean IS_LAMPCYCLE 'get ' : 
+  Methods:
+    get_IS_LAMPCYCLE(): PrivateScope, Public, HideBySig, SpecialName
+    get_LASER_ON(): PrivateScope, Public, HideBySig, SpecialName
+    get_LASER_OFF(): PrivateScope, Public, HideBySig, SpecialName
+    get_FAN_ON(): PrivateScope, Public, HideBySig, SpecialName
+    get_FAN_OFF(): PrivateScope, Public, HideBySig, SpecialName
+    get_LAMP_ABORT(): PrivateScope, Public, HideBySig, SpecialName
+    get_LAMP_TIME(): PrivateScope, Public, HideBySig, SpecialName
+    get_RAMP_TIME(): PrivateScope, Public, HideBySig, SpecialName
+Struct ControlHardType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ControlHardType DMC = 0 : Public, Static, Literal, HasDefault
+    ControlHardType TMC = 1 : Public, Static, Literal, HasDefault
+    ControlHardType Invalid = 2 : Public, Static, Literal, HasDefault
+Struct ControlType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ControlType OTCXYZ = 0 : Public, Static, Literal, HasDefault
+    ControlType OTCAB = 1 : Public, Static, Literal, HasDefault
+    ControlType WSD = 2 : Public, Static, Literal, HasDefault
+    ControlType TBL = 3 : Public, Static, Literal, HasDefault
+Struct ControlOpMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ControlOpMode NoInit = 0 : Public, Static, Literal, HasDefault
+    ControlOpMode Init = 1 : Public, Static, Literal, HasDefault
+    ControlOpMode NMtPara = 2 : Public, Static, Literal, HasDefault
+    ControlOpMode MLock = 3 : Public, Static, Literal, HasDefault
+    ControlOpMode ESTOP = 4 : Public, Static, Literal, HasDefault
+    ControlOpMode NRmCal = 5 : Public, Static, Literal, HasDefault
+    ControlOpMode SoftDTMod = 6 : Public, Static, Literal, HasDefault
+    ControlOpMode MMReq = 7 : Public, Static, Literal, HasDefault
+    ControlOpMode AMTP = 8 : Public, Static, Literal, HasDefault
+    ControlOpMode TkWSD = 9 : Public, Static, Literal, HasDefault
+    ControlOpMode TkTBL = 10 : Public, Static, Literal, HasDefault
+    ControlOpMode TKOTC = 11 : Public, Static, Literal, HasDefault
+    ControlOpMode MtNoInit = 12 : Public, Static, Literal, HasDefault
+    ControlOpMode LT = 13 : Public, Static, Literal, HasDefault
+    ControlOpMode AsyCollim = 14 : Public, Static, Literal, HasDefault
+    ControlOpMode Idle = 15 : Public, Static, Literal, HasDefault
+    ControlOpMode AsyTkWSD = 16 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.TrackMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.TrackMode ABORT_AT = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TrackMode OTC_ATWSD = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TrackMode OTC_ATTBL = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TrackMode WSD_ATOTC = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TrackMode TBL_ATOTC = 4 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.SCBDownloadTarget: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.SCBDownloadTarget OTCXYZ = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBDownloadTarget OTCAB = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBDownloadTarget WSD = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBDownloadTarget TBL = 3 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.SCBTransferType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.SCBTransferType BootStrap = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType BootCode = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType AppCode = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType FPGACode = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType MotorPara = 4 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType CalFileDown = 5 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType CalFileUp = 6 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.SCBSFCode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.SCBSFCode TransferStart = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBSFCode TransferFinish = 1 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.SyncStatus: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.SyncStatus SyncACK = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SyncStatus SyncDeny = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SyncStatus SyncComplete = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SyncStatus AbortReq = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SyncStatus AbortErr = 4 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SyncStatus AbortMM = 5 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.ControlHWMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.ControlHWMode APP = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.ControlHWMode BOOT = 1 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.AMoveStatus: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.AMoveStatus Complete = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.AMoveStatus Abort = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.AMoveStatus Error = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.AMoveStatus EnAccepted = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.AMoveStatus AModeAccepted = 4 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.CtlErrStatRespUpdateReason: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.CtlErrStatRespUpdateReason SCBRequest = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.CtlErrStatRespUpdateReason PeriodicUpdate = 1 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.TBLRMOrientation: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.TBLRMOrientation LeftWall = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRMOrientation BackWall = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRMOrientation RightWall = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRMOrientation FrontWall = 3 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.WSDRMOrientation: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.WSDRMOrientation LeftWall = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMOrientation BackWall = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMOrientation RightWall = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMOrientation FrontWall = 3 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.WSDRMCalUpdateType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.WSDRMCalUpdateType Vertical = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMCalUpdateType Horizontal = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMCalUpdateType VertToHoriz = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMCalUpdateType HorizToVert = 3 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.TBLMoveDict: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.TBLMoveDict LTR = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLMoveDict RTL = 1 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.TBLRoomLayout: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.TBLRoomLayout NotSet = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRoomLayout Layout1 = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRoomLayout Layout2 = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRoomLayout Layout3 = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRoomLayout Layout4 = 4 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.GridType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Byte value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.GridType NotPresent = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type1 = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type2 = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type3 = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type4 = 4 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type5 = 5 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type6 = 6 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type7 = 7 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.WSDRoomLayout: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.WSDRoomLayout NotSet = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRoomLayout Layout1 = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRoomLayout Layout2 = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRoomLayout Layout3 = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRoomLayout Layout4 = 4 : Public, Static, Literal, HasDefault
+Struct SCBProtocalWrapper.CollimatorMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.CollimatorMode Auto = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.CollimatorMode Manual = 1 : Public, Static, Literal, HasDefault

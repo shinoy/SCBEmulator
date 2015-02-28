@@ -1,0 +1,43 @@
+ImageRuntimeVersion: v2.0.50727
+Assembly CanBusChannel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Struct CanBusChannelNS.AxisCtlProtoStuct: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    UInt32 id : Public
+    Byte[] frameData : Public
+    UInt32 size : Public
+    Boolean isRemote : Public
+Class CanBusChannelNS.CanDataReceivedDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(List`1): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(List`1, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class CanBusChannelNS.CanBusChannelCls: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    CanBusChannelNS.CanDataReceivedDelegate CanDataReceivedEvent: SpecialName
+  Methods:
+    add_CanDataReceivedEvent(CanDataReceivedDelegate): PrivateScope, Public, HideBySig, SpecialName
+    remove_CanDataReceivedEvent(CanDataReceivedDelegate): PrivateScope, Public, HideBySig, SpecialName
+    TestSend(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    TestSend(): PrivateScope, Public, HideBySig
+    GetRceiveQueSize(): PrivateScope, Public, HideBySig
+    GetSendQueSize(): PrivateScope, Public, HideBySig
+    Connect(): PrivateScope, Public, HideBySig
+    Disconnect(): PrivateScope, Public, HideBySig
+    StartBus(): PrivateScope, Public, HideBySig
+    StopBus(): PrivateScope, Public, HideBySig
+    Send(List`1): PrivateScope, Public, HideBySig

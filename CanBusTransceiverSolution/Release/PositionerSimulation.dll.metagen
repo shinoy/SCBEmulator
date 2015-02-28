@@ -1,0 +1,260 @@
+ImageRuntimeVersion: v2.0.50727
+Assembly PositionerSimulation, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly CanBusChannel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly SCBProtocalWrapper, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class PositionerSimulationNS.CollimatorCLS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.CanBusChannelCls): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean POW_ON 'get ' : 
+  Methods:
+    PowerUp(): PrivateScope, Public, HideBySig
+    PowerOff(): PrivateScope, Public, HideBySig
+    OnCanDataReceivedEvent(List`1): PrivateScope, Public, HideBySig
+    CanDataHandlerFunc(): PrivateScope, Public, HideBySig
+    get_POW_ON(): PrivateScope, Public, HideBySig, SpecialName
+Class PositionerSimulationNS.OTCABControllerCLS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.CanBusChannelCls): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ControlOpMode OP_MODE 'get set' : 
+    Boolean B_REL_BTN 'get set' : 
+    Boolean A_REL_BTN 'get set' : 
+    Double MOVE_STEP 'get set' : 
+    Double B_POS 'get set' : 
+    Double A_POS 'get set' : 
+  Methods:
+    get_A_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_A_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_B_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_B_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_MOVE_STEP(): PrivateScope, Public, HideBySig, SpecialName
+    set_MOVE_STEP(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_A_REL_BTN(): PrivateScope, Public, HideBySig, SpecialName
+    set_A_REL_BTN(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_B_REL_BTN(): PrivateScope, Public, HideBySig, SpecialName
+    set_B_REL_BTN(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_OP_MODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_OP_MODE(ControlOpMode): PrivateScope, Public, HideBySig, SpecialName
+    PowerUp(): PrivateScope, Public, HideBySig
+    PowerOff(): PrivateScope, Public, HideBySig
+    OnCanDataReceivedEvent(List`1): PrivateScope, Public, HideBySig
+    CanDataHandlerFunc(): PrivateScope, Public, HideBySig
+    HeartBeatFunc(): PrivateScope, Public, HideBySig
+Class PositionerSimulationNS.PositonUpdateDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class PositionerSimulationNS.OTCXYZControllerCLS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.CanBusChannelCls): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ControlOpMode AB_OPMODE 'get ' : 
+    ControlOpMode OP_MODE 'get ' : 
+    Double B_POS 'get set' : 
+    Double A_POS 'get set' : 
+    Double Z_POS 'get set' : 
+    Double Y_POS 'get set' : 
+    Double X_POS 'get set' : 
+  Events:
+    PositionerSimulationNS.PositonUpdateDelegate PositionUpdateEvent: SpecialName
+  Methods:
+    add_PositionUpdateEvent(PositonUpdateDelegate): PrivateScope, Public, HideBySig, SpecialName
+    remove_PositionUpdateEvent(PositonUpdateDelegate): PrivateScope, Public, HideBySig, SpecialName
+    get_X_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_A_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_A_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_B_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_B_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_OP_MODE(): PrivateScope, Public, HideBySig, SpecialName
+    get_AB_OPMODE(): PrivateScope, Public, HideBySig, SpecialName
+    XStepUp(): PrivateScope, Public, HideBySig
+    XStepDown(): PrivateScope, Public, HideBySig
+    YStepUp(): PrivateScope, Public, HideBySig
+    YStepDown(): PrivateScope, Public, HideBySig
+    ZStepUp(): PrivateScope, Public, HideBySig
+    ZStepDown(): PrivateScope, Public, HideBySig
+    AStepUp(): PrivateScope, Public, HideBySig
+    AStepDown(): PrivateScope, Public, HideBySig
+    BStepUp(): PrivateScope, Public, HideBySig
+    XRelBtnPress(): PrivateScope, Public, HideBySig
+    XRelBtnRelease(): PrivateScope, Public, HideBySig
+    YRelBtnPress(): PrivateScope, Public, HideBySig
+    YRelBtnRelease(): PrivateScope, Public, HideBySig
+    ZRelBtnPress(): PrivateScope, Public, HideBySig
+    ZRelBtnRelease(): PrivateScope, Public, HideBySig
+    XYZRelBtnPress(): PrivateScope, Public, HideBySig
+    XYZRelBtnRelease(): PrivateScope, Public, HideBySig
+    ARelBtnPress(): PrivateScope, Public, HideBySig
+    ARelBtnRelease(): PrivateScope, Public, HideBySig
+    BRelBtnPress(): PrivateScope, Public, HideBySig
+    BRelBtnRelease(): PrivateScope, Public, HideBySig
+    DtPassPress(): PrivateScope, Public, HideBySig
+    DtPassRelease(): PrivateScope, Public, HideBySig
+    BStepDown(): PrivateScope, Public, HideBySig
+    PowerUp(): PrivateScope, Public, HideBySig
+    PowerOff(): PrivateScope, Public, HideBySig
+    OnCanDataReceivedEvent(List`1): PrivateScope, Public, HideBySig
+    CanDataHandlerFunc(): PrivateScope, Public, HideBySig
+    HeartBeatFunc(): PrivateScope, Public, HideBySig
+Class PositionerSimulationNS.TBLControllerCLS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.CanBusChannelCls): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ControlOpMode OP_MODE 'get ' : 
+    Boolean FLOAT_SW 'get set' : 
+    Boolean ZDOWN_SW 'get set' : 
+    Boolean ZUP_SW 'get set' : 
+    Boolean ESTOP_SW 'get set' : 
+    Boolean AUTOTK_SW 'get set' : 
+    Boolean AUTOCENTER_SW 'get set' : 
+    Double AXIS_MOVE_STEP 'get set' : 
+    Double Z_POS 'get set' : 
+    Double Y_POS 'get set' : 
+    Double X_POS 'get set' : 
+    Int32 DET_ID 'get ' : 
+  Methods:
+    get_DET_ID(): PrivateScope, Public, HideBySig, SpecialName
+    get_X_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_AXIS_MOVE_STEP(): PrivateScope, Public, HideBySig, SpecialName
+    set_AXIS_MOVE_STEP(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_AUTOCENTER_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_AUTOCENTER_SW(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_AUTOTK_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_AUTOTK_SW(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ESTOP_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_ESTOP_SW(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ZUP_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZUP_SW(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_ZDOWN_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZDOWN_SW(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_FLOAT_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_FLOAT_SW(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    ZUpBtnDown(): PrivateScope, Public, HideBySig
+    ZUpBtnUp(): PrivateScope, Public, HideBySig
+    ZDownBtnDown(): PrivateScope, Public, HideBySig
+    ZDownBtnUp(): PrivateScope, Public, HideBySig
+    AutoCenterBtnDown(): PrivateScope, Public, HideBySig
+    AutoCenterBtnUp(): PrivateScope, Public, HideBySig
+    AutoTKBtnDown(): PrivateScope, Public, HideBySig
+    AutoTKBtnUp(): PrivateScope, Public, HideBySig
+    EstopBtnDown(): PrivateScope, Public, HideBySig
+    EstopBtnUp(): PrivateScope, Public, HideBySig
+    FloatBtnDown(): PrivateScope, Public, HideBySig
+    FloatBtnUp(): PrivateScope, Public, HideBySig
+    XStepUp(): PrivateScope, Public, HideBySig
+    XStepDown(): PrivateScope, Public, HideBySig
+    YStepUp(): PrivateScope, Public, HideBySig
+    YStepDown(): PrivateScope, Public, HideBySig
+    get_OP_MODE(): PrivateScope, Public, HideBySig, SpecialName
+    PowerUp(): PrivateScope, Public, HideBySig
+    PowerOff(): PrivateScope, Public, HideBySig
+    OnCanDataReceivedEvent(List`1): PrivateScope, Public, HideBySig
+    CanDataHandlerFunc(): PrivateScope, Public, HideBySig
+    HeartBeatFunc(): PrivateScope, Public, HideBySig
+    InsertDetector(Byte): PrivateScope, Public, HideBySig
+    EjectDetector(): PrivateScope, Public, HideBySig
+    SetGrid(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    BuckyStartEventHandler(): PrivateScope, Public, HideBySig
+Struct PositionerSimulationNS.DetectorType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    PositionerSimulationNS.DetectorType Undefined = 3 : Public, Static, Literal, HasDefault
+    PositionerSimulationNS.DetectorType DRX1 = 2 : Public, Static, Literal, HasDefault
+    PositionerSimulationNS.DetectorType Varian = 1 : Public, Static, Literal, HasDefault
+    PositionerSimulationNS.DetectorType Trixell = 0 : Public, Static, Literal, HasDefault
+Class PositionerSimulationNS.WSDKeypadCLS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.CanBusChannelCls): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean AUTO_CENTER_IND 'get set' : 
+    Boolean AUTO_CENTER_SW 'get set' : 
+    Boolean AUTO_POS_IND 'get set' : 
+    Boolean AUTO_POS_SW 'get set' : 
+  Methods:
+    get_AUTO_POS_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_AUTO_POS_SW(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_AUTO_POS_IND(): PrivateScope, Public, HideBySig, SpecialName
+    set_AUTO_POS_IND(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_AUTO_CENTER_SW(): PrivateScope, Public, HideBySig, SpecialName
+    set_AUTO_CENTER_SW(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_AUTO_CENTER_IND(): PrivateScope, Public, HideBySig, SpecialName
+    set_AUTO_CENTER_IND(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+Class PositionerSimulationNS.WSDControllerCLS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(CanBusChannelNS.CanBusChannelCls): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    PositionerSimulationNS.WSDKeypadCLS keypad : Public
+  Properties:
+    ControlOpMode OP_MODE 'get set' : 
+    Boolean X_REL_BTN 'get set' : 
+    Boolean Z_REL_BTN 'get set' : 
+    Double ANG_MOVE_STEP 'get set' : 
+    Double AXIS_MOVE_STEP 'get set' : 
+    Double ANG_POS 'get set' : 
+    Double TILT_POS 'get set' : 
+    Double Z_POS 'get set' : 
+    Double Y_POS 'get set' : 
+    Double X_POS 'get set' : 
+    Int32 DET_ID 'get ' : 
+  Methods:
+    get_DET_ID(): PrivateScope, Public, HideBySig, SpecialName
+    get_X_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Y_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_TILT_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_TILT_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ANG_POS(): PrivateScope, Public, HideBySig, SpecialName
+    set_ANG_POS(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_AXIS_MOVE_STEP(): PrivateScope, Public, HideBySig, SpecialName
+    set_AXIS_MOVE_STEP(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_ANG_MOVE_STEP(): PrivateScope, Public, HideBySig, SpecialName
+    set_ANG_MOVE_STEP(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Z_REL_BTN(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z_REL_BTN(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_X_REL_BTN(): PrivateScope, Public, HideBySig, SpecialName
+    set_X_REL_BTN(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    ZRelBtnPress(): PrivateScope, Public, HideBySig
+    ZRelBtnRelease(): PrivateScope, Public, HideBySig
+    XRelBtnPress(): PrivateScope, Public, HideBySig
+    XRelBtnRelease(): PrivateScope, Public, HideBySig
+    ZStepUp(): PrivateScope, Public, HideBySig
+    ZStepDown(): PrivateScope, Public, HideBySig
+    XStepUp(): PrivateScope, Public, HideBySig
+    XStepDown(): PrivateScope, Public, HideBySig
+    TiltUp(): PrivateScope, Public, HideBySig
+    TiltDown(): PrivateScope, Public, HideBySig
+    get_OP_MODE(): PrivateScope, Public, HideBySig, SpecialName
+    set_OP_MODE(ControlOpMode): PrivateScope, Public, HideBySig, SpecialName
+    PowerUp(): PrivateScope, Public, HideBySig
+    PowerOff(): PrivateScope, Public, HideBySig
+    OnCanDataReceivedEvent(List`1): PrivateScope, Public, HideBySig
+    CanDataHandlerFunc(): PrivateScope, Public, HideBySig
+    HeartBeatFunc(): PrivateScope, Public, HideBySig
+    InsertDetector(Byte): PrivateScope, Public, HideBySig
+    EjectDetector(): PrivateScope, Public, HideBySig
+    ChangeGridType(GridType): PrivateScope, Public, HideBySig

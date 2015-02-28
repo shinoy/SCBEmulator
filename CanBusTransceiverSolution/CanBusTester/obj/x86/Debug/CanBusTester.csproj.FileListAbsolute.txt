@@ -1,0 +1,15 @@
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\bin\x86\Debug\CanBusTester.exe.config
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\bin\x86\Debug\CanBusTester.exe
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\bin\x86\Debug\CanBusTester.pdb
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\bin\x86\Debug\CanBusChannel.dll
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\bin\x86\Debug\PositionerSimulation.dll
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\bin\x86\Debug\SCBProtocalWrapper.dll
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\bin\x86\Debug\CanBusChannel.pdb
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\bin\x86\Debug\PositionerSimulation.pdb
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\bin\x86\Debug\SCBProtocalWrapper.pdb
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\obj\x86\Debug\CanBusTester.csprojResolveAssemblyReference.cache
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\obj\x86\Debug\CanBusTester.Form1.resources
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\obj\x86\Debug\CanBusTester.Properties.Resources.resources
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\obj\x86\Debug\CanBusTester.csproj.GenerateResource.Cache
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\obj\x86\Debug\CanBusTester.exe
+E:\SCB develop\work\CanBusTransceiverSolution\CanBusTester\obj\x86\Debug\CanBusTester.pdb

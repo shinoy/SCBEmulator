@@ -1,0 +1,16 @@
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Debug\SCBEmulatorConsole.csprojResolveAssemblyReference.cache
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\SCBEmulatorConsole.exe.config
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\SCBEmulatorConsole.exe
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\SCBEmulatorConsole.pdb
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\CanBusChannel.dll
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\CommandLine.dll
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\PositionerSimulation.dll
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\SCBProtocalWrapper.dll
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\CanBusChannel.pdb
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\PositionerSimulation.pdb
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\SCBProtocalWrapper.pdb
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\CommandLine.xml
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Debug\SCBEmulatorConsole.exe
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Debug\SCBEmulatorConsole.pdb
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\ControlCAN.dll
+H:\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\CanBusTransceiver.dll

@@ -1,0 +1,273 @@
+﻿Build started 2/2/2015 6:35:41 PM.
+     1>Project "H:\CanBusTransceiverSolution\CanBusTransceiverSolution\CanBusChannel\CanBusChannel.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\CanBusChannel.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IH:\CanBusTransceiverSolution\CanBusTransceiver /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\CanBusChannel.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll" /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt CanBusChannel.cpp /d1clr:nostdlib 
+         CanBusChannel.cpp
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(25): error C2146: syntax error : missing ';' before identifier 'hw_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(26): error C2146: syntax error : missing ';' before identifier 'fw_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(27): error C2146: syntax error : missing ';' before identifier 'dr_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(28): error C2146: syntax error : missing ';' before identifier 'in_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(29): error C2146: syntax error : missing ';' before identifier 'irq_Num'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(30): error C2146: syntax error : missing ';' before identifier 'can_Num'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(31): error C2146: syntax error : missing ';' before identifier 'str_Serial_Num'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(31): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(32): error C2146: syntax error : missing ';' before identifier 'str_hw_Type'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(33): error C2146: syntax error : missing ';' before identifier 'Reserved'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(38): error C2146: syntax error : missing ';' before identifier 'ID'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(38): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(38): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(39): error C2146: syntax error : missing ';' before identifier 'TimeStamp'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(40): error C2146: syntax error : missing ';' before identifier 'TimeFlag'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(40): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(40): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(41): error C2146: syntax error : missing ';' before identifier 'SendType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(42): error C2146: syntax error : missing ';' before identifier 'RemoteFlag'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(43): error C2146: syntax error : missing ';' before identifier 'ExternFlag'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(43): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(43): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(44): error C2146: syntax error : missing ';' before identifier 'DataLen'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(44): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(44): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(45): error C2146: syntax error : missing ';' before identifier 'Data'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(46): error C2146: syntax error : missing ';' before identifier 'Reserved'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(51): error C2146: syntax error : missing ';' before identifier 'ErrInterrupt'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(51): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(51): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(52): error C2146: syntax error : missing ';' before identifier 'regMode'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(52): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(52): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(53): error C2146: syntax error : missing ';' before identifier 'regStatus'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(53): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(53): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(54): error C2146: syntax error : missing ';' before identifier 'regALCapture'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(54): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(54): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(55): error C2146: syntax error : missing ';' before identifier 'regECCapture'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(55): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(55): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(56): error C2146: syntax error : missing ';' before identifier 'regEWLimit'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(56): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(56): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(57): error C2146: syntax error : missing ';' before identifier 'regRECounter'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(57): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(57): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(58): error C2146: syntax error : missing ';' before identifier 'regTECounter'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(58): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(58): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(59): error C2146: syntax error : missing ';' before identifier 'Reserved'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(59): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(59): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(64): error C2146: syntax error : missing ';' before identifier 'ErrCode'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(64): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(64): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(65): error C2146: syntax error : missing ';' before identifier 'Passive_ErrData'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(65): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(65): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(66): error C2146: syntax error : missing ';' before identifier 'ArLost_ErrData'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(66): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(66): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(71): error C2146: syntax error : missing ';' before identifier 'AccCode'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(71): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(71): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(72): error C2146: syntax error : missing ';' before identifier 'AccMask'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(72): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(72): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(73): error C2146: syntax error : missing ';' before identifier 'Reserved'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(73): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(73): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(74): error C2146: syntax error : missing ';' before identifier 'Filter'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(74): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(75): error C2146: syntax error : missing ';' before identifier 'Timing0'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(75): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(75): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(76): error C2146: syntax error : missing ';' before identifier 'Timing1'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(76): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(76): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(77): error C2146: syntax error : missing ';' before identifier 'Mode'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(77): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(77): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(82): error C2146: syntax error : missing ';' before identifier 'ExtFrame'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(82): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(82): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(83): error C2146: syntax error : missing ';' before identifier 'Start'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(83): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(83): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(84): error C2146: syntax error : missing ';' before identifier 'End'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(84): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(84): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(91): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(91): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(91): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(91): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(91): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(91): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(92): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(92): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(92): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(92): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(92): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(92): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(93): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(93): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(93): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(93): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(93): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(93): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(95): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(95): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(95): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(95): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(95): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(95): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(96): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(96): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(96): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(96): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(96): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(96): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(97): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(97): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(97): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(97): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(97): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(97): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(99): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(99): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(99): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(99): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(99): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(99): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(100): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(100): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(100): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(100): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(100): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(100): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(102): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(102): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(102): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(102): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(102): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(102): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(103): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(103): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(103): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(103): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(103): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(103): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(105): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(105): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(105): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(105): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(105): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(105): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(106): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(106): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(106): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(106): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(106): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(106): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(108): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(108): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(108): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(108): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(108): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(108): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(109): error C2143: syntax error : missing ';' before '__stdcall'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(109): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(109): error C2146: syntax error : missing ')' before identifier 'DeviceType'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(109): warning C4229: anachronism used : modifiers on data are ignored
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(109): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(109): error C2059: syntax error : ')'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(116): error C2146: syntax error : missing ';' before identifier 'hw_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(116): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(116): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(117): error C2146: syntax error : missing ';' before identifier 'fw_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(117): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(117): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(118): error C2146: syntax error : missing ';' before identifier 'dr_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(118): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(118): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(119): error C2146: syntax error : missing ';' before identifier 'in_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(119): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(120): error C2146: syntax error : missing ';' before identifier 'irq_Num'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(120): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(120): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(121): error C2146: syntax error : missing ';' before identifier 'can_Num'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(121): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(121): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(122): error C2146: syntax error : missing ';' before identifier 'Reserved'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(122): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(122): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(123): error C2146: syntax error : missing ';' before identifier 'str_Serial_Num'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(123): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(123): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(124): error C2146: syntax error : missing ';' before identifier 'str_hw_Type'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(124): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(124): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(125): error C2146: syntax error : missing ';' before identifier 'str_Usb_Serial'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(125): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(125): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(130): error C2146: syntax error : missing ';' before identifier 'hw_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(130): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(130): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(131): error C2146: syntax error : missing ';' before identifier 'fw_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(131): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(131): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(132): error C2146: syntax error : missing ';' before identifier 'dr_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(132): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(132): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(133): error C2146: syntax error : missing ';' before identifier 'in_Version'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(133): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(133): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(134): error C2146: syntax error : missing ';' before identifier 'irq_Num'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(134): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(134): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(135): error C2146: syntax error : missing ';' before identifier 'can_Num'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(135): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(135): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(136): error C2146: syntax error : missing ';' before identifier 'Reserved'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(136): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(136): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(137): error C2146: syntax error : missing ';' before identifier 'str_Serial_Num'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(137): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(137): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(138): error C2146: syntax error : missing ';' before identifier 'str_hw_Type'
+     1>H:\CanBusTransceiverSolution\CanBusTransceiver\ControlCAN.h(138): fatal error C1003: error count exceeds 100; stopping compilation
+     1>Done Building Project "H:\CanBusTransceiverSolution\CanBusTransceiverSolution\CanBusChannel\CanBusChannel.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.23
