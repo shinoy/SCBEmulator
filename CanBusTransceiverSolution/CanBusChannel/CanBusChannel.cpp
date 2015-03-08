@@ -195,6 +195,7 @@ void CanBusChannelNS::CanBusChannelCls::Connect()
 	}
 	catch (CanException ex)
 	{
+		System::Windows::Forms::MessageBox::Show("Can bus connection error");
 		throw ex;
 	}
 	catch (exception ex)

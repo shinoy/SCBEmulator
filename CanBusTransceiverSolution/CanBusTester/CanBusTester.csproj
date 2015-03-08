@@ -118,24 +118,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CanBusChannel\CanBusChannel.vcxproj">
-      <Project>{166f9407-ce30-4eda-886a-47c7d0ecf221}</Project>
-      <Name>CanBusChannel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PCUSimulation\PCUSimulation.csproj">
-      <Project>{eb667c85-7e6f-4f3a-9c94-5f5c88c2c02b}</Project>
-      <Name>PCUSimulation</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PositionerSimulation\PositionerSimulation.vcxproj">
-      <Project>{e4588766-beb9-48cc-8ce1-85b0bfb34a01}</Project>
-      <Name>PositionerSimulation</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SCBProtocalWrapper\SCBProtocalWrapper.vcxproj">
-      <Project>{a8e81e14-06cf-42e6-8e8d-f7d9550b691c}</Project>
-      <Name>SCBProtocalWrapper</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="ControlCAN.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -157,6 +139,24 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CanBusChannel\CanBusChannel.vcxproj">
+      <Project>{166f9407-ce30-4eda-886a-47c7d0ecf221}</Project>
+      <Name>CanBusChannel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PCUSimulation\PCUSimulation.csproj">
+      <Project>{eb667c85-7e6f-4f3a-9c94-5f5c88c2c02b}</Project>
+      <Name>PCUSimulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PositionerSimulation\PositionerSimulation.vcxproj">
+      <Project>{e4588766-beb9-48cc-8ce1-85b0bfb34a01}</Project>
+      <Name>PositionerSimulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCBProtocalWrapper\SCBProtocalWrapper.vcxproj">
+      <Project>{a8e81e14-06cf-42e6-8e8d-f7d9550b691c}</Project>
+      <Name>SCBProtocalWrapper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

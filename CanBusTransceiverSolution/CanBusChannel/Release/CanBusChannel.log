@@ -1,9 +1,9 @@
-﻿Build started 3/1/2015 1:55:12 AM.
-     1>Project "D:\workspace\scbproject\CanBusTransceiverSolution\CanBusChannel\CanBusChannel.vcxproj" on node 3 (Rebuild target(s)).
+﻿Build started 3/8/2015 5:58:02 PM.
+     1>Project "D:\workspace\scbproject\CanBusTransceiverSolution\CanBusChannel\CanBusChannel.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /ID:\workspace\scbproject\CanBusTransceiverSolution\CanBusTransceiver /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\CanBusChannel.pch" /Fo"Release\\" /Fd"Release\vc90.pdb" /TP /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt Stdafx.cpp /d1clr:nostdlib 
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /ID:\workspace\scbproject\CanBusTransceiverSolution\CanBusTransceiver /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\CanBusChannel.pch" /Fo"Release\\" /Fd"Release\vc90.pdb" /TP /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt Stdafx.cpp /d1clr:nostdlib 
          Stdafx.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /ID:\workspace\scbproject\CanBusTransceiverSolution\CanBusTransceiver /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc90.pdb" /TP /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt AssemblyInfo.cpp CanBusChannel.cpp /d1clr:nostdlib 
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /ID:\workspace\scbproject\CanBusTransceiverSolution\CanBusTransceiver /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc90.pdb" /TP /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt AssemblyInfo.cpp CanBusChannel.cpp /d1clr:nostdlib 
          AssemblyInfo.cpp
          CanBusChannel.cpp
          正在生成代码...
@@ -19,6 +19,7 @@
          Release\AssemblyInfo.obj
          Release\CanBusChannel.obj
          Release\Stdafx.obj
+         D:\workspace\scbproject\CanBusTransceiverSolution\Release\CanBusTransceiver.lib
          CanBusChannel.vcxproj -> D:\workspace\scbproject\CanBusTransceiverSolution\Release\CanBusChannel.dll
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\workspace\scbproject\CanBusTransceiverSolution\Release\CanBusChannel.dll;#2" /manifest Release\CanBusChannel.dll.intermediate.manifest
@@ -26,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.95
+Time Elapsed 00:00:01.81

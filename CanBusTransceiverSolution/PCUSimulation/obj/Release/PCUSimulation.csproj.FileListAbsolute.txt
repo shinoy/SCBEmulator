@@ -23,6 +23,5 @@ D:\SCBEmulatorSolution\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSi
 D:\SCBEmulatorSolution\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSimulation.csprojResolveAssemblyReference.cache
 D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\bin\Release\PCUSimulation.dll
 D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\bin\Release\PCUSimulation.pdb
-D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSimulation.csprojResolveAssemblyReference.cache
 D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSimulation.dll
 D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSimulation.pdb
