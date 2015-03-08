@@ -2164,6 +2164,7 @@ Struct ControlOpMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldI
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
+    ControlOpMode Init = 1 : Public, Static, Literal, HasDefault
     ControlOpMode AsyTkWSD = 16 : Public, Static, Literal, HasDefault
     ControlOpMode Idle = 15 : Public, Static, Literal, HasDefault
     ControlOpMode AsyCollim = 14 : Public, Static, Literal, HasDefault
@@ -2179,7 +2180,6 @@ Struct ControlOpMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldI
     ControlOpMode ESTOP = 4 : Public, Static, Literal, HasDefault
     ControlOpMode MLock = 3 : Public, Static, Literal, HasDefault
     ControlOpMode NMtPara = 2 : Public, Static, Literal, HasDefault
-    ControlOpMode Init = 1 : Public, Static, Literal, HasDefault
     ControlOpMode NoInit = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.TrackMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
@@ -2235,11 +2235,11 @@ Struct SCBProtocalWrapper.AMoveStatus: AutoLayout, AnsiClass, Class, Public, Sea
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.AMoveStatus Abort = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.AMoveStatus Error = 2 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus AModeAccepted = 4 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus EnAccepted = 3 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus Complete = 0 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.AMoveStatus Abort = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.AMoveStatus Error = 2 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.CtlErrStatRespUpdateReason: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:

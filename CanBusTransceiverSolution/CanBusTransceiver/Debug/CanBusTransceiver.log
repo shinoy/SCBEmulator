@@ -1,40 +1,51 @@
-﻿Build started 2/2/2015 5:29:18 PM.
-     1>Project "H:\CanBusTransceiverSolution\CanBusTransceiver\CanBusTransceiver.vcxproj" on node 2 (build target(s)).
-     1>PrepareForBuild:
-         Creating directory "H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\".
-       InitializeBuildStatus:
-         Creating "Debug\CanBusTransceiver.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         Deleting file "Debug\CanBusTransceiver.pch".
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D CANBUSTRANSCEIVER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\CanBusTransceiver.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+﻿Build started 3/8/2015 12:24:22 PM.
+     1>Project "D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTransceiver\CanBusTransceiver.vcxproj" on node 3 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D CANBUSTRANSCEIVER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\CanBusTransceiver.pch" /Fo"Debug\\" /Fd"Debug\vc90.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
          stdafx.cpp
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D CANBUSTRANSCEIVER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\CanBusTransceiver.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CanBusTransceiver.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D CANBUSTRANSCEIVER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\CanBusTransceiver.pch" /Fo"Debug\\" /Fd"Debug\vc90.pdb" /Gd /TP /analyze- /errorReport:prompt CanBusTransceiver.cpp
          CanBusTransceiver.cpp
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D CANBUSTRANSCEIVER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D CANBUSTRANSCEIVER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc90.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
          dllmain.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /fo"Debug\CanBusTransceiver.res" CanBusTransceiver.rc 
+         Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+         
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\CanBusTransceiver.dll.embed.manifest.res" Debug\CanBusTransceiver_manifest.rc 
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /fo"Debug\CanBusTransceiver.dll.embed.manifest.res" Debug\CanBusTransceiver_manifest.rc 
+         Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+         
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\CanBusTransceiver.dll" /INCREMENTAL /NOLOGO ControlCAN.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CanBusTransceiver.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\CanBusTransceiver.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\CanBusTransceiver.lib" /MACHINE:X86 /DLL Debug\CanBusTransceiver.dll.embed.manifest.res
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTransceiver.dll" /INCREMENTAL /NOLOGO ControlCAN.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CanBusTransceiver.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTransceiver.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTransceiver.lib" /MACHINE:X86 /DLL Debug\CanBusTransceiver.res
+         Debug\CanBusTransceiver.dll.embed.manifest.res
          Debug\CanBusTransceiver.obj
          Debug\dllmain.obj
          Debug\stdafx.obj
-            Creating library H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\CanBusTransceiver.lib and object H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\CanBusTransceiver.exp
+            正在创建库 D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTransceiver.lib 和对象 D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTransceiver.exp
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\CanBusTransceiver.dll.embed.manifest" /manifest Debug\CanBusTransceiver.dll.intermediate.manifest
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\CanBusTransceiver.dll.embed.manifest.res" Debug\CanBusTransceiver_manifest.rc 
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /fo"Debug\CanBusTransceiver.dll.embed.manifest.res" Debug\CanBusTransceiver_manifest.rc 
+         Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+         
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         
        LinkEmbedManifest:
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\CanBusTransceiver.dll" /INCREMENTAL /NOLOGO ControlCAN.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CanBusTransceiver.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\CanBusTransceiver.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\CanBusTransceiver.lib" /MACHINE:X86 /DLL Debug\CanBusTransceiver.dll.embed.manifest.res
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTransceiver.dll" /INCREMENTAL /NOLOGO ControlCAN.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CanBusTransceiver.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTransceiver.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTransceiver.lib" /MACHINE:X86 /DLL Debug\CanBusTransceiver.res
+         Debug\CanBusTransceiver.dll.embed.manifest.res
          Debug\CanBusTransceiver.obj
          Debug\dllmain.obj
          Debug\stdafx.obj
-            Creating library H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\CanBusTransceiver.lib and object H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\CanBusTransceiver.exp
-         CanBusTransceiver.vcxproj -> H:\CanBusTransceiverSolution\CanBusTransceiverSolution\Debug\CanBusTransceiver.dll
-       FinalizeBuildStatus:
-         Deleting file "Debug\CanBusTransceiver.unsuccessfulbuild".
-         Touching "Debug\CanBusTransceiver.lastbuildstate".
-     1>Done Building Project "H:\CanBusTransceiverSolution\CanBusTransceiver\CanBusTransceiver.vcxproj" (build target(s)).
+            正在创建库 D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTransceiver.lib 和对象 D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTransceiver.exp
+         CanBusTransceiver.vcxproj -> D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTransceiver.dll
+     1>Done Building Project "D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTransceiver\CanBusTransceiver.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:08.92
+Time Elapsed 00:00:01.33

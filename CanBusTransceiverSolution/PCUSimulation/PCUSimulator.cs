@@ -72,6 +72,9 @@ namespace PCUSimulationNS
             comBuffer[3] = checkCommand[3] = addressVar;
             checkCommand[4] = 0x07;
             checkCommand[8] = GetCheckSum2();
+
+            preInStatus = Status.OFF;
+            expInStatus = Status.OFF;
         }
         #endregion
 
@@ -80,8 +83,8 @@ namespace PCUSimulationNS
         private Status preOutStatus = Status.OFF;
         private Status expOutStatus = Status.OFF;
         private Status buckyReadyStatus = Status.OFF;
-        private Status preInStatus = Status.OFF;
-        private Status expInStatus = Status.OFF;
+        private Status preInStatus ;
+        private Status expInStatus ;
         private Status buckyStartStatus = Status.OFF;
 
         #endregion 

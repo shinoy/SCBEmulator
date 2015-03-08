@@ -2,3 +2,7 @@ H:\CanBusTransceiverSolution\PCUSimulation\bin\Debug\PCUSimulation.dll
 H:\CanBusTransceiverSolution\PCUSimulation\bin\Debug\PCUSimulation.pdb
 H:\CanBusTransceiverSolution\PCUSimulation\obj\Debug\PCUSimulation.dll
 H:\CanBusTransceiverSolution\PCUSimulation\obj\Debug\PCUSimulation.pdb
+D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\bin\Debug\PCUSimulation.dll
+D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\bin\Debug\PCUSimulation.pdb
+D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\obj\Debug\PCUSimulation.dll
+D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\obj\Debug\PCUSimulation.pdb

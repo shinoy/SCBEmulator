@@ -1,50 +1,54 @@
-﻿Build started 1/7/2015 2:03:22 PM.
-     1>Project "H:\CanBusTransceiverSolution\SCBProtocalWrapper\SCBProtocalWrapper.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 3/8/2015 12:24:25 PM.
+     1>Project "D:\workspace\scbproject\CanBusTransceiverSolution\SCBProtocalWrapper\SCBProtocalWrapper.vcxproj" on node 3 (Rebuild target(s)).
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IH:\CanBusTransceiverSolution\CanBusTransceiver /I"E:\SCB develop\work\CanBusTransceiverSolution\CanBusChannel" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\SCBProtocalWrapper.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FUH:\CanBusTransceiverSolution\Debug\CanBusChannel.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /ID:\workspace\scbproject\CanBusTransceiverSolution\CanBusTransceiver /ID:\workspace\scbproject\CanBusTransceiverSolution\CanBusChannel /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\SCBProtocalWrapper.pch" /Fo"Debug\\" /Fd"Debug\vc90.pdb" /TP /FUD:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusChannel.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt Stdafx.cpp /d1clr:nostdlib 
          Stdafx.cpp
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IH:\CanBusTransceiverSolution\CanBusTransceiver /I"E:\SCB develop\work\CanBusTransceiverSolution\CanBusChannel" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\SCBProtocalWrapper.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FUH:\CanBusTransceiverSolution\Debug\CanBusChannel.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib AssemblyInfo.cpp SCBProtocalWrapper.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /ID:\workspace\scbproject\CanBusTransceiverSolution\CanBusTransceiver /ID:\workspace\scbproject\CanBusTransceiverSolution\CanBusChannel /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\SCBProtocalWrapper.pch" /Fo"Debug\\" /Fd"Debug\vc90.pdb" /TP /FUD:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusChannel.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt AssemblyInfo.cpp SCBProtocalWrapper.cpp /d1clr:nostdlib 
          AssemblyInfo.cpp
          SCBProtocalWrapper.cpp
-     1>SCBProtocalWrapper.cpp(7932): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7933): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7934): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7935): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7936): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7937): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7938): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7939): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7979): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7980): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7981): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7982): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7983): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7984): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7985): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(7986): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(8026): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(8027): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(8028): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(8029): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(8030): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(8031): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(8032): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(8033): warning C4244: '=' : conversion from 'wchar_t' to 'unsigned char', possible loss of data
-     1>SCBProtocalWrapper.cpp(8273): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IH:\CanBusTransceiverSolution\CanBusTransceiver /I"E:\SCB develop\work\CanBusTransceiverSolution\CanBusChannel" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /analyze- /errorReport:prompt "C:\Users\19006418\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cpp"
-         .NETFramework,Version=v4.5.AssemblyAttributes.cpp
+     1>SCBProtocalWrapper.cpp(7932): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7933): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7934): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7935): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7936): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7937): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7938): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7939): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7979): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7980): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7981): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7982): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7983): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7984): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7985): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(7986): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(8026): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(8027): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(8028): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(8029): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(8030): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(8031): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(8032): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(8033): warning C4244: “=”: 从“wchar_t”转换到“unsigned char”，可能丢失数据
+     1>SCBProtocalWrapper.cpp(8273): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
        ResourceCompile:
-         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /fo"Debug\app.res" app.rc 
+         Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+         
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Debug\app.res
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\SCBProtocalWrapper.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Debug\app.res
          Debug\AssemblyInfo.obj
          Debug\SCBProtocalWrapper.obj
          Debug\Stdafx.obj
-         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
-         SCBProtocalWrapper.vcxproj -> H:\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll
-     1>Done Building Project "H:\CanBusTransceiverSolution\SCBProtocalWrapper\SCBProtocalWrapper.vcxproj" (Rebuild target(s)).
+         SCBProtocalWrapper.vcxproj -> D:\workspace\scbproject\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll;#2" /manifest Debug\SCBProtocalWrapper.dll.intermediate.manifest
+     1>Done Building Project "D:\workspace\scbproject\CanBusTransceiverSolution\SCBProtocalWrapper\SCBProtocalWrapper.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.32
+Time Elapsed 00:00:01.25

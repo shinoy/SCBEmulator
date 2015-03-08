@@ -60,3 +60,13 @@ I:\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.csprojResolveAs
 I:\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.Form1.resources
 I:\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.Properties.Resources.resources
 I:\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.csproj.GenerateResource.Cache
+D:\workspace\scbproject\CanBusTransceiverSolution\Debug\ControlCAN.dll
+D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTester.exe.config
+D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTester.exe
+D:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusTester.pdb
+D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.csprojResolveAssemblyReference.cache
+D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.Form1.resources
+D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.Properties.Resources.resources
+D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.csproj.GenerateResource.Cache
+D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.exe
+D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.pdb

@@ -1,35 +1,35 @@
-﻿Build started 1/7/2015 2:03:26 PM.
-     1>Project "H:\CanBusTransceiverSolution\PositionerSimulation\PositionerSimulation.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 3/8/2015 12:24:27 PM.
+     1>Project "D:\workspace\scbproject\CanBusTransceiverSolution\PositionerSimulation\PositionerSimulation.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IH:\CanBusTransceiverSolution\SCBProtocalWrapper /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\PositionerSimulation.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FUH:\CanBusTransceiverSolution\Debug\CanBusChannel.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FUH:\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Stdafx.cpp
-         Stdafx.cpp
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IH:\CanBusTransceiverSolution\SCBProtocalWrapper /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\PositionerSimulation.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FUH:\CanBusTransceiverSolution\Debug\CanBusChannel.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FUH:\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib AssemblyInfo.cpp Collimator.cpp OTCABControl.cpp OTCXYZControl.cpp TableControl.cpp WallStandControl.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /ID:\workspace\scbproject\CanBusTransceiverSolution\SCBProtocalWrapper /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\PositionerSimulation.pch" /Fo"Debug\\" /Fd"Debug\vc90.pdb" /TP /FUD:\workspace\scbproject\CanBusTransceiverSolution\Debug\CanBusChannel.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /FUD:\workspace\scbproject\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt AssemblyInfo.cpp Collimator.cpp OTCABControl.cpp OTCXYZControl.cpp TableControl.cpp WallStandControl.cpp /d1clr:nostdlib 
          AssemblyInfo.cpp
          Collimator.cpp
-     1>Collimator.cpp(280): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
-     1>Collimator.cpp(282): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>Collimator.cpp(280): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>Collimator.cpp(282): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
          OTCABControl.cpp
          OTCXYZControl.cpp
          TableControl.cpp
          WallStandControl.cpp
-         Generating Code...
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IH:\CanBusTransceiverSolution\SCBProtocalWrapper /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /analyze- /errorReport:prompt "C:\Users\19006418\AppData\Local\Temp\.NETFramework,Version=v4.5.AssemblyAttributes.cpp"
-         .NETFramework,Version=v4.5.AssemblyAttributes.cpp
        ResourceCompile:
-         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\app.res" app.rc 
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /fo"Debug\app.res" app.rc 
+         Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+         
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\CanBusTransceiverSolution\Debug\PositionerSimulation.dll" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\CanBusTransceiverSolution\Debug\PositionerSimulation.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Debug\app.res
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\PositionerSimulation.dll" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\PositionerSimulation.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\PositionerSimulation.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Debug\app.res
          Debug\AssemblyInfo.obj
          Debug\Collimator.obj
          Debug\OTCABControl.obj
          Debug\OTCXYZControl.obj
-         Debug\Stdafx.obj
          Debug\TableControl.obj
          Debug\WallStandControl.obj
-         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
-         PositionerSimulation.vcxproj -> H:\CanBusTransceiverSolution\Debug\PositionerSimulation.dll
-     1>Done Building Project "H:\CanBusTransceiverSolution\PositionerSimulation\PositionerSimulation.vcxproj" (Rebuild target(s)).
+         PositionerSimulation.vcxproj -> D:\workspace\scbproject\CanBusTransceiverSolution\Debug\PositionerSimulation.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\workspace\scbproject\CanBusTransceiverSolution\Debug\PositionerSimulation.dll;#2" /manifest Debug\PositionerSimulation.dll.intermediate.manifest
+     1>Done Building Project "D:\workspace\scbproject\CanBusTransceiverSolution\PositionerSimulation\PositionerSimulation.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.80
+Time Elapsed 00:00:02.49

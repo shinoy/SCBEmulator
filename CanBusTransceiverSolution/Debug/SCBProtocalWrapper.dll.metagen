@@ -1,15 +1,17 @@
-ImageRuntimeVersion: v4.0.30319
+ImageRuntimeVersion: v2.0.50727
 Assembly SCBProtocalWrapper, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=SHA1, flags=PublicKey
-Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Assembly CanBusChannel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=None, flags=None
-Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+Assembly System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+Assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
 	hash=None, flags=None
 Struct SCBProtocalWrapper.SCBCtlReset: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
   :System.ValueType
@@ -2147,163 +2149,163 @@ Struct ControlHardType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFiel
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    ControlHardType DMC = 0 : Public, Static, Literal, HasDefault
-    ControlHardType TMC = 1 : Public, Static, Literal, HasDefault
     ControlHardType Invalid = 2 : Public, Static, Literal, HasDefault
+    ControlHardType TMC = 1 : Public, Static, Literal, HasDefault
+    ControlHardType DMC = 0 : Public, Static, Literal, HasDefault
 Struct ControlType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    ControlType OTCXYZ = 0 : Public, Static, Literal, HasDefault
-    ControlType OTCAB = 1 : Public, Static, Literal, HasDefault
-    ControlType WSD = 2 : Public, Static, Literal, HasDefault
     ControlType TBL = 3 : Public, Static, Literal, HasDefault
+    ControlType WSD = 2 : Public, Static, Literal, HasDefault
+    ControlType OTCAB = 1 : Public, Static, Literal, HasDefault
+    ControlType OTCXYZ = 0 : Public, Static, Literal, HasDefault
 Struct ControlOpMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
+    ControlOpMode AsyTkWSD = 16 : Public, Static, Literal, HasDefault
+    ControlOpMode AsyCollim = 14 : Public, Static, Literal, HasDefault
+    ControlOpMode LT = 13 : Public, Static, Literal, HasDefault
+    ControlOpMode MtNoInit = 12 : Public, Static, Literal, HasDefault
+    ControlOpMode TKOTC = 11 : Public, Static, Literal, HasDefault
+    ControlOpMode TkTBL = 10 : Public, Static, Literal, HasDefault
+    ControlOpMode TkWSD = 9 : Public, Static, Literal, HasDefault
+    ControlOpMode AMTP = 8 : Public, Static, Literal, HasDefault
+    ControlOpMode MMReq = 7 : Public, Static, Literal, HasDefault
+    ControlOpMode SoftDTMod = 6 : Public, Static, Literal, HasDefault
+    ControlOpMode NRmCal = 5 : Public, Static, Literal, HasDefault
+    ControlOpMode ESTOP = 4 : Public, Static, Literal, HasDefault
+    ControlOpMode MLock = 3 : Public, Static, Literal, HasDefault
+    ControlOpMode NMtPara = 2 : Public, Static, Literal, HasDefault
     ControlOpMode NoInit = 0 : Public, Static, Literal, HasDefault
     ControlOpMode Init = 1 : Public, Static, Literal, HasDefault
-    ControlOpMode NMtPara = 2 : Public, Static, Literal, HasDefault
-    ControlOpMode MLock = 3 : Public, Static, Literal, HasDefault
-    ControlOpMode ESTOP = 4 : Public, Static, Literal, HasDefault
-    ControlOpMode NRmCal = 5 : Public, Static, Literal, HasDefault
-    ControlOpMode SoftDTMod = 6 : Public, Static, Literal, HasDefault
-    ControlOpMode MMReq = 7 : Public, Static, Literal, HasDefault
-    ControlOpMode AMTP = 8 : Public, Static, Literal, HasDefault
-    ControlOpMode TkWSD = 9 : Public, Static, Literal, HasDefault
-    ControlOpMode TkTBL = 10 : Public, Static, Literal, HasDefault
-    ControlOpMode TKOTC = 11 : Public, Static, Literal, HasDefault
-    ControlOpMode MtNoInit = 12 : Public, Static, Literal, HasDefault
-    ControlOpMode LT = 13 : Public, Static, Literal, HasDefault
-    ControlOpMode AsyCollim = 14 : Public, Static, Literal, HasDefault
     ControlOpMode Idle = 15 : Public, Static, Literal, HasDefault
-    ControlOpMode AsyTkWSD = 16 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.TrackMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.TrackMode ABORT_AT = 0 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.TrackMode OTC_ATWSD = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.TrackMode OTC_ATTBL = 2 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.TrackMode WSD_ATOTC = 3 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.TrackMode TBL_ATOTC = 4 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TrackMode WSD_ATOTC = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TrackMode OTC_ATTBL = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TrackMode OTC_ATWSD = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TrackMode ABORT_AT = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.SCBDownloadTarget: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.SCBDownloadTarget OTCXYZ = 0 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.SCBDownloadTarget OTCAB = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.SCBDownloadTarget WSD = 2 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.SCBDownloadTarget TBL = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBDownloadTarget WSD = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBDownloadTarget OTCAB = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBDownloadTarget OTCXYZ = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.SCBTransferType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.SCBTransferType BootStrap = 0 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.SCBTransferType BootCode = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.SCBTransferType AppCode = 2 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.SCBTransferType FPGACode = 3 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.SCBTransferType MotorPara = 4 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.SCBTransferType CalFileDown = 5 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.SCBTransferType CalFileUp = 6 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType CalFileDown = 5 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType MotorPara = 4 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType FPGACode = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType AppCode = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType BootCode = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBTransferType BootStrap = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.SCBSFCode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.SCBSFCode TransferStart = 0 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.SCBSFCode TransferFinish = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SCBSFCode TransferStart = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.SyncStatus: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.SyncStatus SyncACK = 0 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.SyncStatus SyncDeny = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.SyncStatus SyncComplete = 2 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.SyncStatus AbortReq = 3 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.SyncStatus AbortErr = 4 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.SyncStatus AbortMM = 5 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SyncStatus AbortErr = 4 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SyncStatus AbortReq = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SyncStatus SyncComplete = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SyncStatus SyncDeny = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.SyncStatus SyncACK = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.ControlHWMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.ControlHWMode APP = 0 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.ControlHWMode BOOT = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.ControlHWMode APP = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.AMoveStatus: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.AMoveStatus AModeAccepted = 4 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.AMoveStatus EnAccepted = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.AMoveStatus Error = 2 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus Complete = 0 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus Abort = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.AMoveStatus Error = 2 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.AMoveStatus EnAccepted = 3 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.AMoveStatus AModeAccepted = 4 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.CtlErrStatRespUpdateReason: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.CtlErrStatRespUpdateReason SCBRequest = 0 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.CtlErrStatRespUpdateReason PeriodicUpdate = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.CtlErrStatRespUpdateReason SCBRequest = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.TBLRMOrientation: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.TBLRMOrientation LeftWall = 0 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.TBLRMOrientation BackWall = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.TBLRMOrientation RightWall = 2 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.TBLRMOrientation FrontWall = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRMOrientation RightWall = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRMOrientation BackWall = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRMOrientation LeftWall = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.WSDRMOrientation: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.WSDRMOrientation LeftWall = 0 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.WSDRMOrientation BackWall = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.WSDRMOrientation RightWall = 2 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.WSDRMOrientation FrontWall = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMOrientation RightWall = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMOrientation BackWall = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMOrientation LeftWall = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.WSDRMCalUpdateType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.WSDRMCalUpdateType Vertical = 0 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.WSDRMCalUpdateType Horizontal = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.WSDRMCalUpdateType VertToHoriz = 2 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.WSDRMCalUpdateType HorizToVert = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMCalUpdateType VertToHoriz = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMCalUpdateType Horizontal = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRMCalUpdateType Vertical = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.TBLMoveDict: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.TBLMoveDict LTR = 0 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.TBLMoveDict RTL = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLMoveDict LTR = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.TBLRoomLayout: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.TBLRoomLayout NotSet = 0 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.TBLRoomLayout Layout1 = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.TBLRoomLayout Layout2 = 2 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.TBLRoomLayout Layout3 = 3 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.TBLRoomLayout Layout4 = 4 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRoomLayout Layout3 = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRoomLayout Layout2 = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRoomLayout Layout1 = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.TBLRoomLayout NotSet = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.GridType: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Byte value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.GridType NotPresent = 0 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.GridType Type1 = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.GridType Type2 = 2 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.GridType Type3 = 3 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.GridType Type4 = 4 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.GridType Type5 = 5 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.GridType Type6 = 6 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.GridType Type7 = 7 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type6 = 6 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type5 = 5 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type4 = 4 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type3 = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type2 = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType Type1 = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.GridType NotPresent = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.WSDRoomLayout: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.WSDRoomLayout NotSet = 0 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.WSDRoomLayout Layout1 = 1 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.WSDRoomLayout Layout2 = 2 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.WSDRoomLayout Layout3 = 3 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.WSDRoomLayout Layout4 = 4 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRoomLayout Layout3 = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRoomLayout Layout2 = 2 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRoomLayout Layout1 = 1 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.WSDRoomLayout NotSet = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.CollimatorMode: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
   :System.Enum
   Fields:
