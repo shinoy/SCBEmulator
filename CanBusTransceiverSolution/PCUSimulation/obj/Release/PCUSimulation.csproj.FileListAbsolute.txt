@@ -25,3 +25,7 @@ D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\bin\Release\PCUS
 D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\bin\Release\PCUSimulation.pdb
 D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSimulation.dll
 D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSimulation.pdb
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\bin\Release\PCUSimulation.dll
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\bin\Release\PCUSimulation.pdb
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSimulation.dll
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSimulation.pdb

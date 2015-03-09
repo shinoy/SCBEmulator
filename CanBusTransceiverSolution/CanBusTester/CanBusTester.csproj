@@ -118,6 +118,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\Release\CanBusTransceiver.dll">
+      <Link>CanBusTransceiver.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="ControlCAN.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

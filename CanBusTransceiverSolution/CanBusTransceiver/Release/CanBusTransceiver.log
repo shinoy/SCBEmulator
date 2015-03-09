@@ -1,5 +1,5 @@
-﻿Build started 3/8/2015 5:58:00 PM.
-     1>Project "D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTransceiver\CanBusTransceiver.vcxproj" on node 3 (Rebuild target(s)).
+﻿Build started 3/9/2015 2:32:02 PM.
+     1>Project "E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTransceiver\CanBusTransceiver.vcxproj" on node 3 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D CANBUSTRANSCEIVER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\CanBusTransceiver.pch" /Fo"Release\\" /Fd"Release\vc90.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
          stdafx.cpp
@@ -8,25 +8,25 @@
          C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D CANBUSTRANSCEIVER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc90.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
          dllmain.cpp
        ResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /fo"Release\CanBusTransceiver.res" CanBusTransceiver.rc 
-         Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+         C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /fo"Release\CanBusTransceiver.res" CanBusTransceiver.rc 
+         Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
          
          Copyright (C) Microsoft Corporation.  All rights reserved.
          
          
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\workspace\scbproject\CanBusTransceiverSolution\Release\CanBusTransceiver.dll" /INCREMENTAL:NO /NOLOGO ControlCAN.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\CanBusTransceiver.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\workspace\scbproject\CanBusTransceiverSolution\Release\CanBusTransceiver.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\workspace\scbproject\CanBusTransceiverSolution\Release\CanBusTransceiver.lib" /MACHINE:X86 /DLL Release\CanBusTransceiver.res
+         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\CanBusTransceiver.dll" /INCREMENTAL:NO /NOLOGO ControlCAN.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\CanBusTransceiver.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\CanBusTransceiver.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\CanBusTransceiver.lib" /MACHINE:X86 /DLL Release\CanBusTransceiver.res
          Release\CanBusTransceiver.obj
          Release\dllmain.obj
          Release\stdafx.obj
-            正在创建库 D:\workspace\scbproject\CanBusTransceiverSolution\Release\CanBusTransceiver.lib 和对象 D:\workspace\scbproject\CanBusTransceiverSolution\Release\CanBusTransceiver.exp
-         正在生成代码
-         已完成代码的生成
-         CanBusTransceiver.vcxproj -> D:\workspace\scbproject\CanBusTransceiverSolution\Release\CanBusTransceiver.dll
+            Creating library E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\CanBusTransceiver.lib and object E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\CanBusTransceiver.exp
+         Generating code
+         Finished generating code
+         CanBusTransceiver.vcxproj -> E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\CanBusTransceiver.dll
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\workspace\scbproject\CanBusTransceiverSolution\Release\CanBusTransceiver.dll;#2" /manifest Release\CanBusTransceiver.dll.intermediate.manifest
-     1>Done Building Project "D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTransceiver\CanBusTransceiver.vcxproj" (Rebuild target(s)).
+         C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\CanBusTransceiver.dll;#2" /manifest Release\CanBusTransceiver.dll.intermediate.manifest
+     1>Done Building Project "E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTransceiver\CanBusTransceiver.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.26
+Time Elapsed 00:00:02.23

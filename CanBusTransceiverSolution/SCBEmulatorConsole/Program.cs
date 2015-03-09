@@ -102,7 +102,7 @@ namespace SCBEmulatorConsole
 
         private static CollimatorCLS col = new CollimatorCLS(bus);
 
-        private static PCUSimulator pcu = new PCUSimulator("COM2", "COM1");
+        private static PCUSimulator pcu = new PCUSimulator("COM18", "COM19");
 
         private static bool busStarted = false;
 

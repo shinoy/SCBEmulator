@@ -26,7 +26,7 @@ namespace CanBusTester
 
         private CollimatorCLS col = null;
 
-        private PCUSimulator pcu = new PCUSimulator("COM2", "COM1");
+        private PCUSimulator pcu = new PCUSimulator("COM18", "COM19");
 
         public delegate void RefreshDelegate();
         
