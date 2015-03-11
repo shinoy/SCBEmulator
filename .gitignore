@@ -16,6 +16,7 @@ Thumbs.db
 *.suo
 *.tlb
 *.tlh
+*.sdf
 *.bak
 *.cache
 *.ilk
@@ -30,3 +31,4 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 *.opensdf
 *.sdf
+
