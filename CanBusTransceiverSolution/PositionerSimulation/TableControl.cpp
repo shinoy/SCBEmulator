@@ -167,7 +167,7 @@ namespace PositionerSimulationNS {
 		detectorType = DetectorType::DRX1;
 
 		//set the detector id
-		detectorID = 0x01;
+		detectorID = 0x02;
 
 		//set the motion controller status
 		motionControl.floatSolenAssert = motionControl.longMotorRun = motionControl.zMotorRun = sensors.floatCollison = false;

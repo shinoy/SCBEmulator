@@ -14,6 +14,8 @@ using System.Threading;
 
 namespace CanBusTester
 {
+    public enum BuckyType {WSD,TBL,None};
+
     public partial class Form1 : Form
     {
         private CanBusChannelCls bus = new CanBusChannelCls();
@@ -27,6 +29,12 @@ namespace CanBusTester
         private CollimatorCLS col = null;
 
         private PCUSimulator pcu = new PCUSimulator("COM18", "COM19");
+
+        private int detectorId1 = 1;
+        private int detectorId2 = 2;
+
+        private BuckyType detectorBucky1 = BuckyType.WSD;
+        private BuckyType detectorBucky2 = BuckyType.TBL;
 
         public delegate void RefreshDelegate();
         
@@ -361,16 +369,31 @@ namespace CanBusTester
 
         private void DetectorSelectBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (this.DetectorSelectBox.SelectedIndex == 0)
+            switch (detectorBucky1)
             {
-                tbl.EjectDetector();
-                wsd.InsertDetector(0x01);
-               
+                case BuckyType.WSD:
+                    wsd.EjectDetector();
+                    break;
+                case BuckyType.TBL:
+                    tbl.EjectDetector();
+                    break;
+                default:
+                    break;
             }
-            if (this.DetectorSelectBox.SelectedIndex == 1)
+            if 
+             (this.DetectorSelectBox1.SelectedIndex == 0)
             {
-                wsd.EjectDetector();
-                tbl.InsertDetector(0x01);
+                wsd.InsertDetector((byte)detectorId1);
+                detectorBucky1 = BuckyType.WSD;
+            }
+            if (this.DetectorSelectBox1.SelectedIndex == 1)
+            {
+                tbl.InsertDetector((byte)detectorId1);
+                detectorBucky1 = BuckyType.TBL;
+            }
+            if (this.DetectorSelectBox1.SelectedIndex == 2)
+            {
+                detectorBucky1 = BuckyType.None;
             }
         }
 
@@ -401,6 +424,46 @@ namespace CanBusTester
             {
                 tbl.SetGrid(false);
             }
+        }
+
+        private void DetectorSelectBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (detectorBucky2)
+            {
+                case BuckyType.WSD:
+                    wsd.EjectDetector();
+                    break;
+                case BuckyType.TBL:
+                    tbl.EjectDetector();
+                    break;
+                default:
+                    break;
+            }
+            if
+             (this.DetectorSelectBox2.SelectedIndex == 0)
+            {
+                wsd.InsertDetector((byte)detectorId2);
+                detectorBucky2 = BuckyType.WSD;
+            }
+            if (this.DetectorSelectBox2.SelectedIndex == 1)
+            {
+                tbl.InsertDetector((byte)detectorId2);
+                detectorBucky2 = BuckyType.TBL;
+            }
+            if (this.DetectorSelectBox2.SelectedIndex == 2)
+            {
+                detectorBucky2 = BuckyType.None;
+            }
+        }
+
+        private void detidSelectBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            detectorId1 = detidSelectBox1.SelectedIndex + 1;
+        }
+
+        private void detidSelectBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            detectorId2 = detidSelectBox2.SelectedIndex + 1;
         }
            
        
