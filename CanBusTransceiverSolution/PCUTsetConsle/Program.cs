@@ -12,7 +12,7 @@ namespace PCUTsetConsle
         static void Main(string[] args)
         {
 
-            PCUSimulator pcu = new PCUSimulator("COM18", "COM5");
+            PCUSimulator pcu = new PCUSimulator("COM18", "COM19");
             pcu.Connect();
             Console.Read();
         }

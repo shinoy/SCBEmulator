@@ -29,4 +29,3 @@ E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\bin\Release\
 E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\bin\Release\PCUSimulation.pdb
 E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSimulation.dll
 E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSimulation.pdb
-E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\obj\Release\PCUSimulation.csprojResolveAssemblyReference.cache

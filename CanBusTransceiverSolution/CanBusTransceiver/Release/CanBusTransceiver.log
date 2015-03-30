@@ -1,4 +1,4 @@
-﻿Build started 3/11/2015 3:48:36 PM.
+﻿Build started 3/30/2015 10:31:34 AM.
      1>Project "E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTransceiver\CanBusTransceiver.vcxproj" on node 3 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D CANBUSTRANSCEIVER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\CanBusTransceiver.pch" /Fo"Release\\" /Fd"Release\vc90.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
@@ -29,4 +29,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:07.21
+Time Elapsed 00:00:02.70

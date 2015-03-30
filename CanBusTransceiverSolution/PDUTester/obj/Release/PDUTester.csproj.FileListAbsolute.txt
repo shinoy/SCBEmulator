@@ -31,3 +31,14 @@ D:\SCBEmulatorSolution\CanBusTransceiverSolution\PDUTester\obj\Release\PDUTester
 D:\SCBEmulatorSolution\CanBusTransceiverSolution\PDUTester\obj\Release\PDUTester.csproj.GenerateResource.Cache
 D:\SCBEmulatorSolution\CanBusTransceiverSolution\PDUTester\obj\Release\PDUTester.exe
 D:\SCBEmulatorSolution\CanBusTransceiverSolution\PDUTester\obj\Release\PDUTester.pdb
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\bin\Release\PDUTester.exe.config
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\bin\Release\PDUTester.exe
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\bin\Release\PDUTester.pdb
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\bin\Release\PCUSimulation.dll
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\bin\Release\PCUSimulation.pdb
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\obj\Release\PDUTester.csprojResolveAssemblyReference.cache
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\obj\Release\PDUTester.Form1.resources
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\obj\Release\PDUTester.Properties.Resources.resources
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\obj\Release\PDUTester.csproj.GenerateResource.Cache
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\obj\Release\PDUTester.exe
+E:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\obj\Release\PDUTester.pdb
