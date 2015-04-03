@@ -1259,7 +1259,7 @@ namespace PositionerSimulationNS {
 	//ctor
 	OTCXYZControllerCLS::OTCXYZControllerCLS(CanBusChannelCls ^ bus)
 	{
-		hardwareVersion = 0x01;
+		hardwareVersion = UINT8::Parse(System::Configuration::ConfigurationSettings::AppSettings["hardwareVersion"]);
 		bootTagVersion = 0x34;
 		bootRevision = 0x18F8;
 		fpgaTagVersion = 0x01;
