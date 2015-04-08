@@ -11,6 +11,7 @@ using namespace CanBusChannelNS;
 using namespace SCBProtocalWrapper;
 using namespace System::Collections::Generic;
 using namespace System::Threading;
+using namespace System::Xml;
 
 namespace PositionerSimulationNS {
 

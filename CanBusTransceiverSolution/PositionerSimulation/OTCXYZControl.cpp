@@ -1259,7 +1259,95 @@ namespace PositionerSimulationNS {
 	//ctor
 	OTCXYZControllerCLS::OTCXYZControllerCLS(CanBusChannelCls ^ bus)
 	{
-		hardwareVersion = UINT8::Parse(System::Configuration::ConfigurationSettings::AppSettings["hardwareVersion"]);
+		XmlReader ^ reader = XmlReader::Create(System::AppDomain::CurrentDomain->BaseDirectory + "\\firmwareVer.xml");
+		while (reader->Read())
+		{
+			if (reader->NodeType == XmlNodeType::Element)
+			{
+				String ^ nodeName = reader->Name;
+				if (nodeName == "hardwareVersion")
+				{
+					if (reader->Read())
+					{
+						hardwareVersion = UINT8::Parse(reader->Value);
+					}
+				}
+				if (nodeName == "bootTagVersion")
+				{
+					if (reader->Read())
+					{
+						bootTagVersion = UINT8::Parse(reader->Value);
+					}
+				}
+				if (nodeName == "bootRevision")
+				{
+					if (reader->Read())
+					{
+						bootRevision = UINT16::Parse(reader->Value);
+					}
+				}
+				if (nodeName == "fpgaTagVersion")
+				{
+					if (reader->Read())
+					{
+						fpgaTagVersion = UINT8::Parse(reader->Value);
+					}
+				}
+				if (nodeName == "fpgaRevision")
+				{
+					if (reader->Read())
+					{
+						fpgaRevision = UINT16::Parse(reader->Value);
+					}
+				}
+				if (nodeName == "appTagVersion")
+				{
+					if (reader->Read())
+					{
+						appTagVersion = UINT8::Parse(reader->Value);
+					}
+				}
+				if (nodeName == "appRevision")
+				{
+					if (reader->Read())
+					{
+						appRevision = UINT16::Parse(reader->Value);
+					}
+				}
+				if (nodeName == "motoParaTagVersion")
+				{
+					if (reader->Read())
+					{
+						motoParaTagVersion = UINT8::Parse(reader->Value);
+					}
+				}
+				if (nodeName == "motoParaRevision")
+				{
+					if (reader->Read())
+					{
+						motoParaRevision = UINT16::Parse(reader->Value);
+					}
+				}
+				if (nodeName == "bootStrapTagVersion")
+				{
+					if (reader->Read())
+					{
+						bootStrapTagVersion = UINT8::Parse(reader->Value);
+					}
+				}
+				if (nodeName == "bootStrapRevision")
+				{
+					if (reader->Read())
+					{
+						bootStrapRevision = UINT16::Parse(reader->Value);
+					}
+				}
+
+			}
+		}
+
+		reader->Close();
+	/*	hardwareVersion = UINT8::Parse(System::Configuration::ConfigurationSettings::AppSettings["hardwareVersion"]);
 		bootTagVersion = 0x34;
 		bootRevision = 0x18F8;
 		fpgaTagVersion = 0x01;
@@ -1269,7 +1357,7 @@ namespace PositionerSimulationNS {
 		motoParaTagVersion = 0x34;
 		motoParaRevision = 0x18F8;
 		bootStrapTagVersion = 0x34;
-		bootStrapRevision = 0x18F8;
+		bootStrapRevision = 0x18F8;*/
 
 		swCode = OTCTYPE3;
 		withIR = false;
