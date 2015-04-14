@@ -94,11 +94,12 @@ namespace PCUSimulationNS
         /// </summary>
         public void Connect()
         {
+            ioport.READ_TIMEOUT = 200;
             ioport.OpenPort();
             consoleport.OpenPort();
             this.isConnected = true;
             handSwitchCheckThread = new Thread(new ThreadStart(CheckHandSwitch));
-            handSwitchCheckThread.IsBackground = true;
+          //  handSwitchCheckThread.IsBackground = true;
             handSwitchCheckThread.Start();
            
             pcuCommunicationThread = new Thread(new ThreadStart(ConsoleUPSCommandHandle));
@@ -203,7 +204,8 @@ namespace PCUSimulationNS
 
                         break;
                     default:
-                        throw new Exception("Unknow UPS Command Received");
+                       // throw new Exception("Unknow UPS Command Received");
+                        break;
                 }
             }
         }
@@ -213,18 +215,22 @@ namespace PCUSimulationNS
         /// </summary>
         private void CheckHandSwitch()
         {
+            int readCount = 0;
             ioport.ClearReadBuffer();
             while(isConnected)
             {
-               // Console.WriteLine("checking");
+                Console.WriteLine("checking "+isConnected.ToString());
                 try
                 {
                     ioport.Write(checkCommand);
-
-                    if (ioport.ReadReply(ref receiveBuffer, FRAMESIZE) != FRAMESIZE)
+                    Thread.Sleep(60);
+                    Console.WriteLine("Write command to UPS");
+                    if ((readCount = ioport.ReadReply(ref receiveBuffer, FRAMESIZE)) != FRAMESIZE)
                     {
-                        throw new Exception("Checking input status error,don't receive correct frame length");
+                        Console.WriteLine("Checking input status error,don't receive correct frame length");
+                        //   throw new Exception("Checking input status error,don't receive correct frame length");
                     }
+                    Console.WriteLine("Read reply from UPS");
                     if ((receiveBuffer[0] == HEADER0) && (receiveBuffer[1] == HEADER1))
                     {
                         if ((receiveBuffer[6] & 0x01) != 0)
@@ -242,9 +248,10 @@ namespace PCUSimulationNS
                             {
                                 PRE_OUT = Status.ON;
                             }
-                            
-                            
+
+
                         }
+                        Console.WriteLine("Check pre");
                         if ((receiveBuffer[6] & 0x02) != 0)
                         {
                             expInStatus = Status.OFF;
@@ -261,6 +268,7 @@ namespace PCUSimulationNS
                                 EXP_OUT = Status.ON;
                             }
                         }
+                        Console.WriteLine("Check Exp");
                         if ((receiveBuffer[6] & 0x04) != 0)
                         {
                             buckyStartStatus = Status.OFF;
@@ -271,22 +279,31 @@ namespace PCUSimulationNS
                             {
                                 if (BuckyStartEvent != null)
                                 {
+                                    Console.WriteLine("bucky start...");
                                     BuckyStartEvent();
                                 }
-                              
+
                                 buckyStartStatus = Status.ON;
                             }
-                           
+
                         }
+                        Console.WriteLine("Check bucky start");
                     }
                     else
                     {
-                        throw new Exception("Checking input status error,don't receive correct frame format");
+                        Console.WriteLine("Checking input status error,don't receive correct frame format");
+                        // throw new Exception("Checking input status error,don't receive correct frame format");
                     }
+                }
+                catch (TimeoutException e)
+                {
+                    Console.WriteLine("timeout occurs once: "+e.Message);
+                    continue;
                 }
                 catch (Exception e)
                 {
-                    throw new Exception("Checking input status error as" + e.Message);
+                    Console.WriteLine("error while checking handswitch " + e.Message);
+                    //throw new Exception("Checking input status error as" + e.Message);
                 }
             }
         }
@@ -304,12 +321,13 @@ namespace PCUSimulationNS
                 {
                     commandReceived = consoleport.ReadCommand();
                     handleConsoleCmdThread = new Thread(new ParameterizedThreadStart(ProcessUPSCommand));
-                    handleConsoleCmdThread.Priority = ThreadPriority.Highest;
+                    handleConsoleCmdThread.Priority = ThreadPriority.Normal;
                     handleConsoleCmdThread.Start(commandReceived);
                 }
                 catch (Exception e)
                 {
-                    throw new Exception("UPS command received error: "+e.Message);
+                    MessageBox.Show(e.Message);
+                   // throw new Exception("UPS command received error: "+e.Message);
                 }
             }
         }

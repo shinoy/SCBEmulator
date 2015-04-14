@@ -29,6 +29,12 @@ namespace PCUSimulationNS
             set { port = value; }
         }
 
+        public int READ_TIMEOUT
+        {
+            get { return serialport.ReadTimeout; }
+            set { serialport.ReadTimeout = value; }
+        }
+
         #region Constructor
         /// <summary>
         /// Default Constructor
@@ -203,11 +209,15 @@ namespace PCUSimulationNS
                             {
                                 break;
                             }
+                            if (value == 0)
+                            {
+                                throw new TimeoutException("read timeout");
+                            }
                             else
                             {
-                                for (int i = 0; i<value; i++)
+                                for (int i = 0; i < value; i++)
                                 {
-                                    input[count - countLeft+i] = tempBuffer[i];
+                                    input[count - countLeft + i] = tempBuffer[i];
                                 }
                                 countLeft = countLeft - value;
                                 readCount += value;
