@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDUTester", "PDUTester\PDUT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCUTsetConsle", "PCUTsetConsle\PCUTsetConsle.csproj", "{188A42E5-F39F-4E9F-8F23-9D8DF1E7810B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmultorWrapper", "EmultorWrapper\EmultorWrapper.csproj", "{78BE11C2-C249-409A-BDD3-1000E839F85D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -184,6 +186,18 @@ Global
 		{188A42E5-F39F-4E9F-8F23-9D8DF1E7810B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{188A42E5-F39F-4E9F-8F23-9D8DF1E7810B}.Release|Win32.ActiveCfg = Release|Any CPU
 		{188A42E5-F39F-4E9F-8F23-9D8DF1E7810B}.Release|x64.ActiveCfg = Release|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Release|Win32.ActiveCfg = Release|Any CPU
+		{78BE11C2-C249-409A-BDD3-1000E839F85D}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

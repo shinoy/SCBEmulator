@@ -98,20 +98,3 @@ D:\workspace\scbproject\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release
 D:\workspace\scbproject\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Release\SCBEmulatorConsole.csprojResolveAssemblyReference.cache
 D:\workspace\scbproject\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Release\SCBEmulatorConsole.exe
 D:\workspace\scbproject\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Release\SCBEmulatorConsole.pdb
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\CanBusTransceiver.dll
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\ControlCAN.dll
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\SCBEmulatorConsole.exe.config
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\SCBEmulatorConsole.exe
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\SCBEmulatorConsole.pdb
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\CanBusChannel.dll
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\CommandLine.dll
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\PCUSimulation.dll
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\PositionerSimulation.dll
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\SCBProtocalWrapper.dll
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\CanBusChannel.pdb
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\PositionerSimulation.pdb
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\SCBProtocalWrapper.pdb
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Release\PCUSimulation.pdb
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Release\SCBEmulatorConsole.csprojResolveAssemblyReference.cache
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Release\SCBEmulatorConsole.exe
-H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Release\SCBEmulatorConsole.pdb

@@ -2235,9 +2235,9 @@ Struct SCBProtocalWrapper.AMoveStatus: AutoLayout, AnsiClass, Class, Public, Sea
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.AMoveStatus Error = 2 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus AModeAccepted = 4 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus EnAccepted = 3 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.AMoveStatus Error = 2 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus Abort = 1 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus Complete = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.CtlErrStatRespUpdateReason: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
@@ -2310,5 +2310,5 @@ Struct SCBProtocalWrapper.CollimatorMode: AutoLayout, AnsiClass, Class, Public, 
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    SCBProtocalWrapper.CollimatorMode Manual = 1 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.CollimatorMode Auto = 0 : Public, Static, Literal, HasDefault
+    SCBProtocalWrapper.CollimatorMode Manual = 1 : Public, Static, Literal, HasDefault
