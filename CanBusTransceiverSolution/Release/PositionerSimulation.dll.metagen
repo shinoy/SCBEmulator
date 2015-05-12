@@ -115,7 +115,7 @@ Class PositionerSimulationNS.OTCXYZControllerCLS: AutoLayout, AnsiClass, Class, 
     OnCanDataReceivedEvent(List`1): PrivateScope, Public, HideBySig
     CanDataHandlerFunc(): PrivateScope, Public, HideBySig
     HeartBeatFunc(): PrivateScope, Public, HideBySig
-Class PositionerSimulationNS.TBLControllerCLS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class PositionerSimulationNS.TBLControllerCLS: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
     Void .ctor(CanBusChannelNS.CanBusChannelCls): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Properties:
     ControlOpMode OP_MODE 'get ' : 

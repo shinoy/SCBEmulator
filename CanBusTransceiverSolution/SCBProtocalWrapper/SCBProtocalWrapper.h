@@ -2879,6 +2879,7 @@ namespace SCBProtocalWrapper {
 	//   2. TBL Status Message (0x230) /
 	/********************************************************************/
 	//   2. TBL Status Message (0x230) message
+	[Serializable]
 	[StructLayout(LayoutKind::Explicit, Size = 80)]
 	public value struct TBLStatusMsg
 	{
@@ -2893,37 +2894,39 @@ namespace SCBProtocalWrapper {
 		[FieldOffset(8)] WORD id;
 	};
 
+	[Serializable]
 	public value struct TBLSwStatus
 	{
 		bool autoCenterSW, autoTrackSW, estopSW, zUpPedal, zDownPedal, floatPedal;
 	};
 
+	[Serializable]
 	public value struct TBLMtControls
 	{
 		bool longMotorRun, zMotorRun, floatSolenAssert;
 	};
-
+	[Serializable]
 	public value struct TBLMtSensors
 	{
 		bool longBuckySensor, gridPresent, dtIntable, dtExtend, buckyInPortrait, buckyInLand, floatCollison;
 	};
-
+	[Serializable]
 	public value struct TBLStatusUpdateReason
 	{
 		bool swStatusChange, xAxisStatusChange, mtSensorChange, softDtChange, opModeChange, scbRequest, detectorIdCHANGE;
 	};
-
+	[Serializable]
 	public value struct TBLKeyPadStatus
 	{
 		bool relTransSW, relLongSW, relBothSW, tblDownSW, tblUpSW;
 	};
-
+	[Serializable]
 	public value struct TBLIndicatorStatus
 	{
 		bool gridPresent, autoTrack;
 	};
 
-
+	[Serializable]
 	public ref class TBLStatusMsgPS
 	{
 	private:
@@ -3014,6 +3017,7 @@ namespace SCBProtocalWrapper {
 	/*************************************/
 	//  3. TBL Heartbeat Message (0x330)  message
 	[StructLayout(LayoutKind::Explicit, Size = 80)]
+	[Serializable]
 	public value struct TBLHBMsg
 	{
 		[FieldOffset(0)] Byte XPosL;
@@ -3033,11 +3037,13 @@ namespace SCBProtocalWrapper {
 		[FieldOffset(8)] WORD id;
 	};
 
+	[Serializable]
 	public value struct TBLHBUpdateReason
 	{
 		bool hbTimeOut, scbRequest, movementOccur, calStatusChange;
 	};
 
+	[Serializable]
 	public value struct TBLCalStatus
 	{
 		bool zMinSet, longMinSet, zMaxSet, longMaxSet, tblLocEst, rmCalDone, pinCalDone;
@@ -3045,7 +3051,7 @@ namespace SCBProtocalWrapper {
 
 	public enum struct TBLRoomLayout :int{ NotSet, Layout1, Layout2, Layout3, Layout4 };
 
-
+	[Serializable]
 	public ref class TBLHBMsgPS
 	{
 	private:
@@ -3105,6 +3111,7 @@ namespace SCBProtocalWrapper {
 	//   4. TBL LLI Status Message (0x335)            //
 	/**************************************************/
 	//  4. TBL LLI Status Message (0x335) message
+	[Serializable]
 	[StructLayout(LayoutKind::Explicit, Size = 80)]
 	public value struct TBLLLIStatusMsg
 	{
@@ -3126,6 +3133,7 @@ namespace SCBProtocalWrapper {
 		[FieldOffset(8)] WORD id;
 	};
 
+	[Serializable]
 	public ref class TBLLLIStatusMsgPS
 	{
 	private:

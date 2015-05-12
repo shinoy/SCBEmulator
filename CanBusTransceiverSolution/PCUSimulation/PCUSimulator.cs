@@ -15,10 +15,10 @@ namespace PCUSimulationNS
 
     public delegate void BuckyStartEventHandler();
 
-    public class PCUSimulator
+    public class PCUSimulator : MarshalByRefObject
     {
-        private SerialClass ioport = null;
-        private SerialClass consoleport = null;
+        private static SerialClass ioport = new SerialClass("COM18");
+        private static SerialClass consoleport = new SerialClass("COM19", 19200, 8, System.IO.Ports.StopBits.One, System.IO.Ports.Parity.None);
         private bool isConnected = false;
         private bool isAutoExpMode = false;
 
@@ -28,7 +28,7 @@ namespace PCUSimulationNS
         private Thread pcuCommunicationThread = null;
         private Thread handleConsoleCmdThread = null;
 
-        public event BuckyStartEventHandler BuckyStartEvent;
+        public static event BuckyStartEventHandler BuckyStartEvent;
 
         Byte[] comBuffer = new Byte[9];
         Byte[] checkCommand = new Byte[9];
@@ -62,10 +62,8 @@ namespace PCUSimulationNS
         #endregion
 
         #region constructor
-        public PCUSimulator(string controlBoardPort,string consolePort)
+        public PCUSimulator()
         {
-            ioport = new SerialClass(controlBoardPort);
-            consoleport = new SerialClass(consolePort, 19200, 8, System.IO.Ports.StopBits.One, System.IO.Ports.Parity.None);
             comBuffer[0] = checkCommand[0] = HEADER0;
             comBuffer[1] = checkCommand[1] = HEADER1;
             comBuffer[2] = checkCommand[2] = DEVICE_CLASS;
@@ -76,6 +74,21 @@ namespace PCUSimulationNS
             preInStatus = Status.OFF;
             expInStatus = Status.OFF;
         }
+
+        //public PCUSimulator(string controlBoardPort,string consolePort)
+        //{
+        //    ioport = new SerialClass(controlBoardPort);
+        //    consoleport = new SerialClass(consolePort, 19200, 8, System.IO.Ports.StopBits.One, System.IO.Ports.Parity.None);
+        //    comBuffer[0] = checkCommand[0] = HEADER0;
+        //    comBuffer[1] = checkCommand[1] = HEADER1;
+        //    comBuffer[2] = checkCommand[2] = DEVICE_CLASS;
+        //    comBuffer[3] = checkCommand[3] = addressVar;
+        //    checkCommand[4] = 0x07;
+        //    checkCommand[8] = GetCheckSum2();
+
+        //    preInStatus = Status.OFF;
+        //    expInStatus = Status.OFF;
+        //}
         #endregion
 
         #region SW Defination
@@ -94,7 +107,7 @@ namespace PCUSimulationNS
         /// </summary>
         public void Connect()
         {
-            ioport.READ_TIMEOUT = 200;
+            ioport.READ_TIMEOUT = 50;
             ioport.OpenPort();
             consoleport.OpenPort();
             this.isConnected = true;
@@ -137,6 +150,13 @@ namespace PCUSimulationNS
                 sum += comBuffer[i];
             }
             return (byte)sum;
+        }
+
+
+        public void TestRomote()
+        {
+           
+           // MessageBox.Show("remote channel ok");
         }
 
         /// <summary>
@@ -221,11 +241,14 @@ namespace PCUSimulationNS
             ioport.ClearReadBuffer();
             while(isConnected)
             {
+                if (isAutoExpMode == true)
+                {
+                    continue;
+                }
              //   Console.WriteLine("checking "+isConnected.ToString());
                 try
                 {
                     ioport.Write(checkCommand);
-                    Thread.Sleep(60);
                    // Console.WriteLine("Write command to UPS");
                     if ((readCount = ioport.ReadReply(ref receiveBuffer, FRAMESIZE)) != FRAMESIZE)
                     {
@@ -289,7 +312,7 @@ namespace PCUSimulationNS
                             }
 
                         }
-                        Console.WriteLine("Check bucky start");
+                       // Console.WriteLine("Check bucky start");
                     }
                     else
                     {
@@ -449,67 +472,42 @@ namespace PCUSimulationNS
 
         public void Pre()
         {
-            if (isAutoExpMode)
-            {
-                PRE_OUT = Status.ON;
-            }
-            else
-            {
-                throw new Exception("not in autoexp mode");
-            }
+            PRE_OUT = Status.ON;
         }
 
-        public void UnPre()
+        public void Release()
         {
-            if (isAutoExpMode)
-            {
-                PRE_OUT = Status.OFF;
-            }
-            else
-            {
-                throw new Exception("not in autoexp mode");
-            }
+            PRE_OUT = Status.OFF;
+            EXP_OUT = Status.OFF;
+            buckyStartStatus = Status.OFF;
         }
+   
 
         public void Expose()
         {
-            if (isAutoExpMode)
-            {
+           
                 EXP_OUT = Status.ON;
-            }
-            else
-            {
-                throw new Exception("not in autoexp mode");
-            }
+                if (BuckyStartEvent != null)
+                {
+                    // Console.WriteLine("bucky start...");
+                    BuckyStartEvent();
+                }
+
+                buckyStartStatus = Status.ON;
+           
         }
 
-        public void UnExpose()
-        {
-            if (isAutoExpMode)
-            {
-                EXP_OUT = Status.OFF;
-            }
-            else
-            {
-                throw new Exception("not in autoexp mode");
-            }
-        }
 
         public void RegExp(int preTime, int expTime)
         {
-            if (isAutoExpMode)
-            {
+      
                 PRE_OUT = Status.ON;
                 Thread.Sleep(preTime);
                 EXP_OUT = Status.ON;
                 Thread.Sleep(expTime);
                 EXP_OUT = Status.OFF;
                 PRE_OUT = Status.OFF;
-            }
-            else
-            {
-                throw new Exception("not in autoexp mode");
-            }
+      
         }
         #endregion
     }

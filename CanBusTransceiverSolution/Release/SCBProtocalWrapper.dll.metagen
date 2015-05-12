@@ -1447,7 +1447,7 @@ Class SCBProtocalWrapper.TBLSyncMoveStartPS: AutoLayout, AnsiClass, Class, Publi
     get_AT_SPEED_DELAY(): PrivateScope, Public, HideBySig, SpecialName
     set_AT_SPEED_DELAY(UInt16): PrivateScope, Public, HideBySig, SpecialName
     GetFrame(): PrivateScope, Public, HideBySig
-Struct SCBProtocalWrapper.TBLStatusMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+Struct SCBProtocalWrapper.TBLStatusMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, Serializable, BeforeFieldInit
   :System.ValueType
   Fields:
     Byte SwStatus : Public
@@ -1459,7 +1459,7 @@ Struct SCBProtocalWrapper.TBLStatusMsg: AutoLayout, AnsiClass, Class, Public, Ex
     Byte KeyPadStatus : Public
     Byte IndDetctorId : Public
     UInt16 id : Public
-Struct SCBProtocalWrapper.TBLSwStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+Struct SCBProtocalWrapper.TBLSwStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
   :System.ValueType
   Fields:
     Boolean autoCenterSW : Public
@@ -1468,13 +1468,13 @@ Struct SCBProtocalWrapper.TBLSwStatus: AutoLayout, AnsiClass, Class, Public, Seq
     Boolean zUpPedal : Public
     Boolean zDownPedal : Public
     Boolean floatPedal : Public
-Struct SCBProtocalWrapper.TBLMtControls: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+Struct SCBProtocalWrapper.TBLMtControls: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
   :System.ValueType
   Fields:
     Boolean longMotorRun : Public
     Boolean zMotorRun : Public
     Boolean floatSolenAssert : Public
-Struct SCBProtocalWrapper.TBLMtSensors: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+Struct SCBProtocalWrapper.TBLMtSensors: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
   :System.ValueType
   Fields:
     Boolean longBuckySensor : Public
@@ -1484,7 +1484,7 @@ Struct SCBProtocalWrapper.TBLMtSensors: AutoLayout, AnsiClass, Class, Public, Se
     Boolean buckyInPortrait : Public
     Boolean buckyInLand : Public
     Boolean floatCollison : Public
-Struct SCBProtocalWrapper.TBLStatusUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+Struct SCBProtocalWrapper.TBLStatusUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
   :System.ValueType
   Fields:
     Boolean swStatusChange : Public
@@ -1494,7 +1494,7 @@ Struct SCBProtocalWrapper.TBLStatusUpdateReason: AutoLayout, AnsiClass, Class, P
     Boolean opModeChange : Public
     Boolean scbRequest : Public
     Boolean detectorIdCHANGE : Public
-Struct SCBProtocalWrapper.TBLKeyPadStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+Struct SCBProtocalWrapper.TBLKeyPadStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
   :System.ValueType
   Fields:
     Boolean relTransSW : Public
@@ -1502,12 +1502,12 @@ Struct SCBProtocalWrapper.TBLKeyPadStatus: AutoLayout, AnsiClass, Class, Public,
     Boolean relBothSW : Public
     Boolean tblDownSW : Public
     Boolean tblUpSW : Public
-Struct SCBProtocalWrapper.TBLIndicatorStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+Struct SCBProtocalWrapper.TBLIndicatorStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
   :System.ValueType
   Fields:
     Boolean gridPresent : Public
     Boolean autoTrack : Public
-Class SCBProtocalWrapper.TBLStatusMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class SCBProtocalWrapper.TBLStatusMsgPS: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     SCBProtocalWrapper.TBLStatusMsg data : Public
@@ -1544,7 +1544,7 @@ Class SCBProtocalWrapper.TBLStatusMsgPS: AutoLayout, AnsiClass, Class, Public, B
     get_DETECTOR_ID(): PrivateScope, Public, HideBySig, SpecialName
     set_DETECTOR_ID(Byte): PrivateScope, Public, HideBySig, SpecialName
     GetFrame(): PrivateScope, Public, HideBySig
-Struct SCBProtocalWrapper.TBLHBMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+Struct SCBProtocalWrapper.TBLHBMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, Serializable, BeforeFieldInit
   :System.ValueType
   Fields:
     Byte XPosL : Public
@@ -1559,14 +1559,14 @@ Struct SCBProtocalWrapper.TBLHBMsg: AutoLayout, AnsiClass, Class, Public, Explic
     Byte AxisCalStatus : Public
     Byte UpdatereasonOr : Public
     UInt16 id : Public
-Struct SCBProtocalWrapper.TBLHBUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+Struct SCBProtocalWrapper.TBLHBUpdateReason: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
   :System.ValueType
   Fields:
     Boolean hbTimeOut : Public
     Boolean scbRequest : Public
     Boolean movementOccur : Public
     Boolean calStatusChange : Public
-Struct SCBProtocalWrapper.TBLCalStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+Struct SCBProtocalWrapper.TBLCalStatus: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
   :System.ValueType
   Fields:
     Boolean zMinSet : Public
@@ -1576,7 +1576,7 @@ Struct SCBProtocalWrapper.TBLCalStatus: AutoLayout, AnsiClass, Class, Public, Se
     Boolean tblLocEst : Public
     Boolean rmCalDone : Public
     Boolean pinCalDone : Public
-Class SCBProtocalWrapper.TBLHBMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class SCBProtocalWrapper.TBLHBMsgPS: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     SCBProtocalWrapper.TBLHBMsg data : Public
@@ -1601,7 +1601,7 @@ Class SCBProtocalWrapper.TBLHBMsgPS: AutoLayout, AnsiClass, Class, Public, Befor
     get_LAYOUT(): PrivateScope, Public, HideBySig, SpecialName
     set_LAYOUT(TBLRoomLayout): PrivateScope, Public, HideBySig, SpecialName
     GetFrame(): PrivateScope, Public, HideBySig
-Struct SCBProtocalWrapper.TBLLLIStatusMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, BeforeFieldInit
+Struct SCBProtocalWrapper.TBLLLIStatusMsg: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed, Serializable, BeforeFieldInit
   :System.ValueType
   Fields:
     Byte BuckyLLIPosByte4 : Public
@@ -1616,7 +1616,7 @@ Struct SCBProtocalWrapper.TBLLLIStatusMsg: AutoLayout, AnsiClass, Class, Public,
     Byte BuckyTravStartM : Public
     UInt16 BuckyTravStart : Public
     UInt16 id : Public
-Class SCBProtocalWrapper.TBLLLIStatusMsgPS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class SCBProtocalWrapper.TBLLLIStatusMsgPS: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     SCBProtocalWrapper.TBLLLIStatusMsg data : Public
@@ -2235,9 +2235,9 @@ Struct SCBProtocalWrapper.AMoveStatus: AutoLayout, AnsiClass, Class, Public, Sea
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
+    SCBProtocalWrapper.AMoveStatus Error = 2 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus AModeAccepted = 4 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus EnAccepted = 3 : Public, Static, Literal, HasDefault
-    SCBProtocalWrapper.AMoveStatus Error = 2 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus Abort = 1 : Public, Static, Literal, HasDefault
     SCBProtocalWrapper.AMoveStatus Complete = 0 : Public, Static, Literal, HasDefault
 Struct SCBProtocalWrapper.CtlErrStatRespUpdateReason: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit

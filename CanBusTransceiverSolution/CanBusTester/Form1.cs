@@ -11,6 +11,9 @@ using SCBProtocalWrapper;
 using PositionerSimulationNS;
 using PCUSimulationNS;
 using System.Threading;
+using System.Runtime.Remoting;
+using System.Runtime.Remoting.Channels;
+using System.Runtime.Remoting.Channels.Tcp;
 
 namespace CanBusTester
 {
@@ -28,7 +31,7 @@ namespace CanBusTester
 
         private CollimatorCLS col = null;
 
-        private PCUSimulator pcu = new PCUSimulator("COM18", "COM19");
+        private PCUSimulator pcu = null;
 
         private int detectorId1 = 1;
         private int detectorId2 = 2;
@@ -42,7 +45,82 @@ namespace CanBusTester
         {
             InitializeComponent();
             bus.Connect();
+            UnregisterPCUService();
+            Thread.Sleep(500);
+            RegisterPCUService();
+            pcu = getPCUObject();
             pcu.Connect();
+        }
+
+        private void BuckyStartHandler()
+        {
+        //   MessageBox.Show("Bucky Start Event");
+            tbl.BuckyStartEventHandler();
+        }
+
+        private void UnregisterPCUService()
+        {
+
+            try
+            {
+                IChannel[] channels = ChannelServices.RegisteredChannels;
+
+
+                foreach (IChannel eachChannel in channels)
+                {
+                    if (eachChannel.ChannelName == "PCUChannel")
+                    {
+                        TcpChannel tcpChannel = (TcpChannel)eachChannel;
+
+
+                        tcpChannel.StopListening(null);
+
+                        ChannelServices.UnregisterChannel(tcpChannel);
+                    }
+                }
+            }
+            catch (Exception)
+            { 
+            
+            }
+        }
+
+        private void RegisterPCUService()
+        {
+            try
+            {
+                TcpServerChannel serverChannel = new TcpServerChannel("PCUChannel",6688);
+                ChannelServices.RegisterChannel(serverChannel, false);
+                RemotingConfiguration.RegisterWellKnownServiceType(typeof(PCUSimulator), "PCUSimulater", WellKnownObjectMode.Singleton);
+                PCUSimulator.BuckyStartEvent += new BuckyStartEventHandler(BuckyStartHandler);
+            }
+            catch (RemotingException)
+            {
+                MessageBox.Show("Register PCU Remote Service Fail");
+            }
+            
+        }
+
+        private PCUSimulator getPCUObject()
+        {
+            try
+            {
+                ChannelServices.RegisterChannel(new TcpClientChannel(), false);
+                PCUSimulator simulator = (PCUSimulator)Activator.GetObject(typeof(PCUSimulator), "tcp://localhost:6688/PCUSimulater");
+                simulator.TestRomote();
+                if (simulator != null)
+                {
+
+                  //  MessageBox.Show("成功获取remote PCU");
+                }
+                return simulator;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("获取失败："+ex.Message);
+                return null;
+            }
         }
 
         private void RefreshData()
@@ -83,7 +161,6 @@ namespace CanBusTester
             wsd.PowerUp();
             tbl.PowerUp();
             col.PowerUp();
-            pcu.BuckyStartEvent += tbl.BuckyStartEventHandler;
             this.textBox1.Text = otcxyz.X_POS.ToString();
             this.textBox2.Text = otcxyz.Y_POS.ToString();
             this.textBox3.Text = otcxyz.Z_POS.ToString();
@@ -147,7 +224,6 @@ namespace CanBusTester
             otcxyz.PowerOff();
             wsd.PowerOff();
             tbl.PowerOff();
-            pcu.BuckyStartEvent -= tbl.BuckyStartEventHandler;
             bus.StopBus();
             
 
@@ -464,6 +540,38 @@ namespace CanBusTester
         private void detidSelectBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             detectorId2 = detidSelectBox2.SelectedIndex + 1;
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            this.pcu.Pre();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            this.pcu.Expose();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            this.pcu.Release();
+        }
+
+        private void checkBox12_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox12.Checked)
+            {
+                this.pcu.EnAutoExp();
+            }
+            else
+            {
+                this.pcu.DisAutoExp();
+            }
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            UnregisterPCUService();
         }
            
        

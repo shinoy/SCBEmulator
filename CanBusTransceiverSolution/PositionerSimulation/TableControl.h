@@ -16,6 +16,7 @@ namespace PositionerSimulationNS {
 
 	public enum class DetectorType :int{ Trixell, Varian, DRX1, Undefined };
 
+	[Serializable]
 	public ref class TBLControllerCLS
 	{
 	private:

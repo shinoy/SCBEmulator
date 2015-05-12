@@ -16,6 +16,7 @@ using namespace System::Threading;
 
 namespace CanBusChannelNS {
 
+	[Serializable]
 	public value struct AxisCtlProtoStuct
 	{
 		UINT id;
@@ -26,6 +27,7 @@ namespace CanBusChannelNS {
 
 	public delegate void CanDataReceivedDelegate(List<AxisCtlProtoStuct> ^ dataQueue);
 
+	[Serializable]
 	public ref class CanBusChannelCls
 	{
 	private:

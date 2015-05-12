@@ -98,6 +98,10 @@
             this.label18 = new System.Windows.Forms.Label();
             this.detidSelectBox2 = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -630,7 +634,6 @@
             this.DetectorSelectBox1.Name = "DetectorSelectBox1";
             this.DetectorSelectBox1.Size = new System.Drawing.Size(99, 21);
             this.DetectorSelectBox1.TabIndex = 57;
-            this.DetectorSelectBox1.SelectedIndex = 0;
             this.DetectorSelectBox1.SelectedIndexChanged += new System.EventHandler(this.DetectorSelectBox_SelectedIndexChanged);
             // 
             // checkBox10
@@ -686,7 +689,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 61;
-            this.comboBox1.SelectedIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label13
@@ -717,7 +719,6 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 64;
-            this.comboBox2.SelectedIndex = 0;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label15
@@ -740,7 +741,6 @@
             this.DetectorSelectBox2.Name = "DetectorSelectBox2";
             this.DetectorSelectBox2.Size = new System.Drawing.Size(100, 21);
             this.DetectorSelectBox2.TabIndex = 66;
-            this.DetectorSelectBox2.SelectedIndex = 1;
             this.DetectorSelectBox2.SelectedIndexChanged += new System.EventHandler(this.DetectorSelectBox2_SelectedIndexChanged);
             // 
             // label16
@@ -768,7 +768,6 @@
             this.detidSelectBox1.Name = "detidSelectBox1";
             this.detidSelectBox1.Size = new System.Drawing.Size(32, 21);
             this.detidSelectBox1.TabIndex = 68;
-            this.detidSelectBox1.SelectedIndex = 0;
             this.detidSelectBox1.SelectedIndexChanged += new System.EventHandler(this.detidSelectBox1_SelectedIndexChanged);
             // 
             // groupBox1
@@ -843,7 +842,6 @@
             this.detidSelectBox2.Name = "detidSelectBox2";
             this.detidSelectBox2.Size = new System.Drawing.Size(32, 21);
             this.detidSelectBox2.TabIndex = 74;
-            this.detidSelectBox2.SelectedIndex = 1;
             this.detidSelectBox2.SelectedIndexChanged += new System.EventHandler(this.detidSelectBox2_SelectedIndexChanged);
             // 
             // label19
@@ -855,11 +853,56 @@
             this.label19.TabIndex = 75;
             this.label19.Text = "in";
             // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(644, 353);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(75, 23);
+            this.button21.TabIndex = 76;
+            this.button21.Text = "Pre";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(725, 353);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(75, 23);
+            this.button22.TabIndex = 77;
+            this.button22.Text = "Exp";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(806, 353);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(75, 23);
+            this.button23.TabIndex = 78;
+            this.button23.Text = "Release";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(629, 334);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(96, 17);
+            this.checkBox12.TabIndex = 79;
+            this.checkBox12.Text = "AutoExp Mode";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkBox12.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(926, 390);
+            this.Controls.Add(this.checkBox12);
+            this.Controls.Add(this.button23);
+            this.Controls.Add(this.button22);
+            this.Controls.Add(this.button21);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.detidSelectBox2);
             this.Controls.Add(this.label18);
@@ -921,6 +964,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Virtual Evo Lab";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1004,6 +1048,10 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox detidSelectBox2;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.CheckBox checkBox12;
     }
 }
 
