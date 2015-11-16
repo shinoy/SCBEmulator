@@ -11,7 +11,11 @@ using namespace SCBProtocalWrapper;
 using namespace System::Collections::Generic;
 using namespace System::Threading;
 
+
 namespace PositionerSimulationNS {
+
+	// collimator blades position update delegate
+	public delegate void BladePositionUpdateDelegate();
 
 	public ref class CollimatorCLS
 	{
@@ -26,13 +30,15 @@ namespace PositionerSimulationNS {
 
 		int  vSid, lSid;
 		int  crossBladeSize, longBladeSize;
-		Byte filterType;
+		static Byte filterType;
 		
 		bool lampOn;
 		static bool isPowOn = false;
 		double lampTime, rampTime;
 
 		CollimatorMode opMode;
+
+		static bool manSwitchStatus;
 	
 		/***************************** controller network system  *******************************/
 		//the can bus which OTCXYZ controller will connect on
@@ -94,6 +100,9 @@ namespace PositionerSimulationNS {
 		//ctor
 		CollimatorCLS(CanBusChannelCls^ bus);
 
+		//
+		event BladePositionUpdateDelegate ^ BladePositionUpdateEvent;
+
 		//Power up the Collimator
 		void PowerUp();
 
@@ -110,6 +119,34 @@ namespace PositionerSimulationNS {
 		property bool POW_ON
 		{
 			bool get();
+		}
+
+		//collimator manual switch
+		property bool MAN_SWITCH_ON
+		{
+			void set(bool);
+			bool get();
+		}
+
+		//Long blades position
+		property int LONG_BLADE
+		{
+			void set(int);
+			int get();
+		}
+
+		//Cross blades position
+		property int CROSS_BLADE
+		{
+			void set(int);
+			int get();
+		}
+
+		//Filter position selection
+		property byte FILTER_POSITION
+		{
+			void set(byte);
+			byte get();
 		}
 	};
 }

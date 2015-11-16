@@ -435,6 +435,13 @@ namespace PositionerSimulationNS {
 		//change the grid type
 		void ChangeGridType(GridType);
 
+		//change bucky orientation
+		void ChangeBuckyOrientation(bool);
 
+		//change detector orientation
+		void ChangeDetOrientation(bool,bool);
+
+		//extract wall bucky
+		void ExtractWallBucky(double);
 	};
 }

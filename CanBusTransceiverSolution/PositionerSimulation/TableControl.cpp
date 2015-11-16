@@ -174,6 +174,7 @@ namespace PositionerSimulationNS {
 
 		//set the motion sensors
 		sensors.dtIntable = true;
+		sensors.dtExtend = false;
 		sensors.longBuckySensor = false;
 	    sensors.buckyInPortrait = true;
 		sensors.buckyInLand = false;
@@ -203,20 +204,20 @@ namespace PositionerSimulationNS {
 		reason.xAxisStatusChange = true;
 
 		initResponse->Add(GetStatusMsg(reason));
-
+		
 		// Init heartbeat message
 		TBLHBUpdateReason heartbeatReason;
 		heartbeatReason.calStatusChange = true;
 		heartbeatReason.movementOccur = true;
 		heartbeatReason.scbRequest = true;
-
+		
 		initResponse->Add(GetHeartBeatMsg(heartbeatReason));
 
 		// Error Message
 		CtlErrStatRespMsgPS ^ errorResponse = gcnew CtlErrStatRespMsgPS(ControlType::TBL);
 		errorResponse->ERROR_CODE = 0;
 		errorResponse->UPDATEREASON = CtlErrStatRespUpdateReason::PeriodicUpdate;
-		initResponse->Clear();
+		//initResponse->Clear();
 		initResponse->Add(errorResponse->GetFrame());
 
 		//App init update
@@ -248,6 +249,7 @@ namespace PositionerSimulationNS {
 
 		heartBeatThread->Abort();
 		canDataHanlerThread->Abort();
+		zMotoMoveThread->Abort();
 
 		runMode = ControlHWMode::BOOT;
 		operateMode = ControlOpMode::NoInit;
@@ -1853,6 +1855,74 @@ namespace PositionerSimulationNS {
 			updateResponse->Add(GetStatusMsg(reason));
 			canBus->Send(updateResponse);
 		}
+	}
+	
+	//change the detector orientation
+	void TBLControllerCLS::ChangeDetOrientation(bool value)
+	{
+		if (value)
+		{
+			sensors.buckyInPortrait = true;
+			sensors.buckyInLand = false;
+		}
+		else
+		{
+			sensors.buckyInPortrait = false;
+			sensors.buckyInLand = true;
+		}
+		List<AxisCtlProtoStuct> ^ updateResponse = gcnew List<AxisCtlProtoStuct>;
+		TBLStatusUpdateReason reason;
+		reason.mtSensorChange = true;
+		updateResponse->Add(GetStatusMsg(reason));
+		canBus->Send(updateResponse);
+	}
+
+	//bucky extracted or inserted
+	void TBLControllerCLS::BuckyExtractOrInsert(int value)
+	{
+		if (0 == value)
+		{
+			sensors.dtIntable = true;
+			sensors.dtExtend = false;
+			operateMode = ControlOpMode::Idle;
+			List<AxisCtlProtoStuct> ^ updateResponse = gcnew List<AxisCtlProtoStuct>;
+			TBLStatusUpdateReason reason;
+			reason.mtSensorChange = true;
+			updateResponse->Add(GetStatusMsg(reason));
+			canBus->Send(updateResponse);
+		}
+		else if (value != 0 && value != 530)
+		{
+			sensors.dtIntable = false;
+			sensors.dtExtend = false;
+			operateMode = ControlOpMode::MMReq;
+			yPosition = -8192;
+			List<AxisCtlProtoStuct> ^ updateResponse = gcnew List<AxisCtlProtoStuct>;
+			TBLStatusUpdateReason reason;
+			reason.mtSensorChange = true;
+			updateResponse->Add(GetStatusMsg(reason));
+			canBus->Send(updateResponse);
+		}
+		else
+		{
+			sensors.dtIntable = false;
+			sensors.dtExtend = true;
+			operateMode = ControlOpMode::Idle;
+			List<AxisCtlProtoStuct> ^ updateResponse = gcnew List<AxisCtlProtoStuct>;
+			TBLStatusUpdateReason reason;
+			reason.mtSensorChange = true;
+			updateResponse->Add(GetStatusMsg(reason));
+			canBus->Send(updateResponse);
+		}
+
+		
+	}
+
+	//bucky extracted, y axis coordinate changed
+	void TBLControllerCLS::BuckyExtractYCoordinateChanged(double value)
+	{
+		yPosition = 416 + value;
+		//Console::WriteLine("{0}", value);
 	}
 
 }

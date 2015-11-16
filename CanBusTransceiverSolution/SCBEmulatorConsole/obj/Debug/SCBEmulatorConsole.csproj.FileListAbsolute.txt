@@ -31,3 +31,6 @@ D:\workspace\scbproject\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Debug\P
 D:\workspace\scbproject\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Debug\SCBEmulatorConsole.csprojResolveAssemblyReference.cache
 D:\workspace\scbproject\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Debug\SCBEmulatorConsole.exe
 D:\workspace\scbproject\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Debug\SCBEmulatorConsole.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Debug\SCBEmulatorConsole.csprojResolveAssemblyReference.cache
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Debug\SCBEmulatorConsole.exe
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Debug\SCBEmulatorConsole.pdb

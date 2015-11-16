@@ -9,3 +9,7 @@ H:\CanBusTransceiverSolution\PDUTester\obj\Debug\PDUTester.Properties.Resources.
 H:\CanBusTransceiverSolution\PDUTester\obj\Debug\PDUTester.csproj.GenerateResource.Cache
 H:\CanBusTransceiverSolution\PDUTester\obj\Debug\PDUTester.exe
 H:\CanBusTransceiverSolution\PDUTester\obj\Debug\PDUTester.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\obj\Debug\PDUTester.csprojResolveAssemblyReference.cache
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\obj\Debug\PDUTester.Form1.resources
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\obj\Debug\PDUTester.Properties.Resources.resources
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PDUTester\obj\Debug\PDUTester.csproj.GenerateResource.Cache

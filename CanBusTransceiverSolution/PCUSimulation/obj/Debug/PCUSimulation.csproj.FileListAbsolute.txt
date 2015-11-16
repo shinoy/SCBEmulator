@@ -6,3 +6,8 @@ D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\bin\Debug\PCUSim
 D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\bin\Debug\PCUSimulation.pdb
 D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\obj\Debug\PCUSimulation.dll
 D:\workspace\scbproject\CanBusTransceiverSolution\PCUSimulation\obj\Debug\PCUSimulation.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\bin\Debug\PCUSimulation.dll
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\bin\Debug\PCUSimulation.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\obj\Debug\PCUSimulation.dll
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\obj\Debug\PCUSimulation.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUSimulation\obj\Debug\PCUSimulation.csprojResolveAssemblyReference.cache

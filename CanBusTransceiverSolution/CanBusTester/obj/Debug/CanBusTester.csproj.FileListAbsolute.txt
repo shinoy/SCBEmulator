@@ -70,3 +70,12 @@ D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusT
 D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.csproj.GenerateResource.Cache
 D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.exe
 D:\workspace\scbproject\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.csprojResolveAssemblyReference.cache
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.Form1.resources
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.Properties.Resources.resources
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.csproj.GenerateResource.Cache
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\Debug\CanBusTester.exe.config
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\Debug\CanBusTester.exe
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\Debug\CanBusTester.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.exe
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Debug\CanBusTester.pdb

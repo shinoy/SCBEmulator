@@ -204,6 +204,7 @@ namespace PCUSimulationNS
                     {
                         try
                         {
+                            Thread.Sleep(100);//delay for debug
                             value = serialport.Read(tempBuffer, 0, countLeft);
                             if (value < 0)
                             {

@@ -2079,4 +2079,66 @@ namespace PositionerSimulationNS {
 		canBus->Send(updateResponse);
 	}
 
+	//Change the bucky orientaion
+	void WSDControllerCLS::ChangeBuckyOrientation(bool value)
+	{
+		if (value)
+		{
+			detectorSensor.buckyInPort = true;
+			detectorSensor.buckyInLand = false;
+		}
+		else
+		{
+			detectorSensor.buckyInPort = false;
+			detectorSensor.buckyInLand = true;
+		}
+		List<AxisCtlProtoStuct> ^ updateResponse = gcnew List<AxisCtlProtoStuct>;
+		WSDStatusMsgUpdateReason reason;
+		reason.buckyGridChange = true;
+		updateResponse->Add(GetStatusMsg(reason));
+		canBus->Send(updateResponse);
+
+	}
+		//change the detector orientation
+	void WSDControllerCLS::ChangeDetOrientation(bool value1, bool value2)
+	{
+		if (value1 == true)
+		{
+			detectorSensor.detInPort = true;
+			detectorSensor.detInLand = false;
+		}
+		else if (value2 == true)
+		{
+			detectorSensor.detInPort = false;
+			detectorSensor.detInLand = true;
+		}
+		else if(value1 == false && value2 == false)
+		{
+			detectorSensor.detInPort = false;
+			detectorSensor.detInLand = false;
+		}
+		List<AxisCtlProtoStuct> ^ updateResponse = gcnew List<AxisCtlProtoStuct>;
+		WSDStatusMsgUpdateReason reason;
+		reason.buckyGridChange = true;
+		updateResponse->Add(GetStatusMsg(reason));
+		canBus->Send(updateResponse);
+	}
+
+	//extract wall bucky
+	void WSDControllerCLS::ExtractWallBucky(double value)
+	{
+		if (0 == value)
+		{
+			sensors.isTrayIn = true;
+		}
+		else
+		{
+			sensors.isTrayIn = false;
+		}
+		List<AxisCtlProtoStuct> ^ updateResponse = gcnew List<AxisCtlProtoStuct>;
+		WSDStatusMsgUpdateReason reason;
+		reason.buckyGridChange = true;
+		updateResponse->Add(GetStatusMsg(reason));
+		canBus->Send(updateResponse);
+	}
 }

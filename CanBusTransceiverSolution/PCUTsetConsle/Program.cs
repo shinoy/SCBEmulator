@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using PCUSimulationNS;
 
 namespace PCUTsetConsle
@@ -12,7 +11,7 @@ namespace PCUTsetConsle
         static void Main(string[] args)
         {
 
-            PCUSimulator pcu = new PCUSimulator("COM18", "COM19");
+            PCUSimulator pcu = new PCUSimulator();
             pcu.Connect();
             Console.Read();
         }

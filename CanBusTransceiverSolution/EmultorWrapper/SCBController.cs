@@ -7,6 +7,9 @@ using PositionerSimulationNS;
 using PCUSimulationNS;
 using System.Threading;
 using CanBusChannelNS;
+using System.Runtime.Remoting;
+using System.Runtime.Remoting.Channels;
+using System.Runtime.Remoting.Channels.Tcp;
 
 namespace EmultorWrapper
 {
@@ -49,7 +52,7 @@ namespace EmultorWrapper
 
         private CollimatorCLS col = null;
 
-        private PCUSimulator pcu = new PCUSimulator("COM18", "COM19");
+        private PCUSimulator pcu = null;
 
         /****************   Buttons status **************/
         // OTC buttons
@@ -71,6 +74,11 @@ namespace EmultorWrapper
         {
             otcBtn.ARelBtn = otcBtn.BRelBtn = otcBtn.XRelBtn = otcBtn.XYZRelBtn = otcBtn.YRelBtn = otcBtn.ZRelBtn = false;
             wsdBtn.ZRelBtn = tblBtn.FloatRelBtn = false;
+            UnregisterPCUService();
+            Thread.Sleep(500);
+            RegisterPCUService();
+            pcu = getPCUObject();
+            pcu.Connect();
             bus.Connect();
             otcxyz = new OTCXYZControllerCLS(bus);
             wsd = new WSDControllerCLS(bus);
@@ -81,6 +89,79 @@ namespace EmultorWrapper
 
         #endregion
 
+        #region private methods
+
+        private void BuckyStartHandler()
+        {
+            //   MessageBox.Show("Bucky Start Event");
+            tbl.BuckyStartEventHandler();
+        }
+
+        private void UnregisterPCUService()
+        {
+
+            try
+            {
+                IChannel[] channels = ChannelServices.RegisteredChannels;
+
+
+                foreach (IChannel eachChannel in channels)
+                {
+                    if (eachChannel.ChannelName == "PCUChannel")
+                    {
+                        TcpChannel tcpChannel = (TcpChannel)eachChannel;
+
+
+                        tcpChannel.StopListening(null);
+
+                        ChannelServices.UnregisterChannel(tcpChannel);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void RegisterPCUService()
+        {
+            try
+            {
+                TcpServerChannel serverChannel = new TcpServerChannel("PCUChannel", 6688);
+                ChannelServices.RegisterChannel(serverChannel, false);
+                RemotingConfiguration.RegisterWellKnownServiceType(typeof(PCUSimulator), "PCUSimulater", WellKnownObjectMode.Singleton);
+                PCUSimulator.BuckyStartEvent += new BuckyStartEventHandler(BuckyStartHandler);
+            }
+            catch (RemotingException)
+            {
+                
+            }
+
+        }
+
+        private PCUSimulator getPCUObject()
+        {
+            try
+            {
+                ChannelServices.RegisterChannel(new TcpClientChannel(), false);
+                PCUSimulator simulator = (PCUSimulator)Activator.GetObject(typeof(PCUSimulator), "tcp://localhost:6688/PCUSimulater");
+                simulator.TestRomote();
+                if (simulator != null)
+                {
+
+                    //  MessageBox.Show("成功获取remote PCU");
+                }
+                return simulator;
+
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+        #endregion
+
         #region public methods
 
         /// <summary>
@@ -88,13 +169,17 @@ namespace EmultorWrapper
         /// </summary>
         public void PowerUp()
         {
+            UnregisterPCUService();
+            Thread.Sleep(500);
+            RegisterPCUService();
+            pcu = getPCUObject();
+            pcu.Connect();
             bus.StartBus();
             otcxyz.PowerUp();
             wsd.PowerUp();
             tbl.PowerUp();
             col.PowerUp();
             pcu.Connect();
-            pcu.BuckyStartEvent += tbl.BuckyStartEventHandler;
             isPowerOn = true;
         }
 
@@ -104,11 +189,13 @@ namespace EmultorWrapper
         public void PowerOff()
         {
             isPowerOn = false;
+            pcu.Disconnect();
+            UnregisterPCUService();
             otcxyz.PowerOff();
             wsd.PowerOff();
             tbl.PowerOff();
-            pcu.BuckyStartEvent -= tbl.BuckyStartEventHandler;
             bus.StopBus();
+
         }
 
         /****************   OTC Buttons method **************/

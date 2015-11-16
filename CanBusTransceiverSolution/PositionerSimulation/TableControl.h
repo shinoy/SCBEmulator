@@ -417,5 +417,14 @@ namespace PositionerSimulationNS {
 		//TBL BuckyStart Event Handler
 		void BuckyStartEventHandler();
 
+		//change the detector orientation
+		void ChangeDetOrientation(bool);
+
+		//bucky extract or insert
+		void BuckyExtractOrInsert(int);
+
+		//bucky extract y axis coordinate changed
+		void BuckyExtractYCoordinateChanged(double);
+
 	};
 }

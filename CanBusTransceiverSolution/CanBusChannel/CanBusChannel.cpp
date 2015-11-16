@@ -146,6 +146,7 @@ void CanBusChannelNS::CanBusChannelCls::ReceiveThreadFunc()
 		Monitor::Enter(receiveLockObject);
 		receiveQueue->AddRange(tempQueue);
 		Monitor::Exit(receiveLockObject);
+
 	}
 	delete[] receiveBuffer;
 
@@ -160,7 +161,8 @@ void CanBusChannelNS::CanBusChannelCls::DistThreadFunc()
 		if (currentCount > 0)
 		{
 			Monitor::Enter(receiveLockObject);
-			List<AxisCtlProtoStuct> ^ tempQueue = receiveQueue->GetRange(0, currentCount);
+			//List<AxisCtlProtoStuct> ^ tempQueue = receiveQueue->GetRange(0, currentCount);
+			tempQueue = receiveQueue->GetRange(0, currentCount);
 			receiveQueue->RemoveRange(0, currentCount);
 			Monitor::Exit(receiveLockObject);
 			CanDataReceivedEvent(tempQueue);
@@ -235,16 +237,19 @@ void CanBusChannelNS::CanBusChannelCls::StartBus()
 	receiveThread->IsBackground = true;
 	distThread->IsBackground = true;
 
-	receiveThread->Start();
+	
 	sendThread->Start();
+	receiveThread->Start();
 	distThread->Start();
 }
 
 void CanBusChannelNS::CanBusChannelCls::StopBus()
 {
+	tempQueue->Clear();
 	receiveThread->Abort();
 	sendThread->Abort();
 	distThread->Abort();
+	
 }
 
 void CanBusChannelNS::CanBusChannelCls::Send(List<AxisCtlProtoStuct> ^ sendBuffer)

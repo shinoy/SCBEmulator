@@ -1,29 +1,8 @@
-﻿Build started 5/6/2015 4:54:34 PM.
-     1>Project "H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\ConsoleApplication2\ConsoleApplication2.vcxproj" on node 2 (Rebuild target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\EmulatorTester.pch" /Fo"Release\\" /Fd"Release\vc90.pdb" /TP /FU"H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\CanBusChannel.dll" /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt stdafx.cpp /d1clr:nostdlib 
-         stdafx.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\\" /AIC:\Windows\Microsoft.NET\Framework\v3.5\ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\\" /AIC:\Windows\Microsoft.NET\Framework\v3.0\ /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\EmulatorTester.pch" /Fo"Release\\" /Fd"Release\vc90.pdb" /TP /FU"H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\CanBusChannel.dll" /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt AssemblyInfo.cpp ConsoleApplication2.cpp /d1clr:nostdlib 
-         AssemblyInfo.cpp
-         ConsoleApplication2.cpp
-         Generating Code...
-       ResourceCompile:
-         C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /fo"Release\app.res" app.rc 
-         Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
-         
-         Copyright (C) Microsoft Corporation.  All rights reserved.
-         
-         
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\EmulatorTester.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:"Release\EmulatorTester.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\EmulatorTester.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
-         Release\AssemblyInfo.obj
-         Release\ConsoleApplication2.obj
-         Release\stdafx.obj
-         ConsoleApplication2.vcxproj -> H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\EmulatorTester.exe
-       Manifest:
-         C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin\mt.exe /nologo /verbose /outputresource:"H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\EmulatorTester.exe;#1" /manifest Release\EmulatorTester.exe.intermediate.manifest
-     1>Done Building Project "H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\ConsoleApplication2\ConsoleApplication2.vcxproj" (Rebuild target(s)).
+﻿Build started 7/24/2015 5:12:51 PM.
+     1>Project "E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\ConsoleApplication2\ConsoleApplication2.vcxproj" on node 5 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.Platform.targets(64,5): error MSB8020: The build tools for Visual Studio 2008 (Platform Toolset = 'v90') cannot be found. To build using the v90 build tools, please install Visual Studio 2008 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Upgrade Solution...".
+     1>Done Building Project "E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\ConsoleApplication2\ConsoleApplication2.vcxproj" (Rebuild target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:07.87
+Time Elapsed 00:00:00.59

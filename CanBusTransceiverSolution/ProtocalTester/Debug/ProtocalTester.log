@@ -1,25 +1,25 @@
-﻿Build started 3/8/2015 12:19:16 PM.
-     1>Project "D:\workspace\scbproject\CanBusTransceiverSolution\ProtocalTester\ProtocalTester.vcxproj" on node 2 (Build target(s)).
+﻿Build started 9/27/2015 11:37:02 PM.
+     1>Project "E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\ProtocalTester\ProtocalTester.vcxproj" on node 3 (Rebuild target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of Stdafx.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\PositionerSimulation\Stdafx.cpp, stdafx.cpp.
      1>ClCompile:
-         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\ProtocalTester.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FUD:\workspace\scbproject\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\ProtocalTester.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FUE:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
          stdafx.cpp
-         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ProtocalTester.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FUD:\workspace\scbproject\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib ..\PositionerSimulation\Stdafx.cpp AssemblyInfo.cpp ProtocalTester.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ProtocalTester.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FUE:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\Debug\SCBProtocalWrapper.dll /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib ..\PositionerSimulation\Stdafx.cpp AssemblyInfo.cpp ProtocalTester.cpp
          Stdafx.cpp
-     1>..\PositionerSimulation\Stdafx.cpp(5): fatal error C1854: cannot overwrite information formed during creation of the precompiled header in object file: 'd:\workspace\scbproject\canbustransceiversolution\protocaltester\debug\stdafx.obj'
+     1>..\PositionerSimulation\Stdafx.cpp(5): fatal error C1854: cannot overwrite information formed during creation of the precompiled header in object file: 'e:\emulator_system\scb_solution\scbemulator\canbustransceiversolution\protocaltester\debug\stdafx.obj'
          AssemblyInfo.cpp
-     1>AssemblyInfo.cpp(1): fatal error C1093: API call 'ImportFile' failed '0x80070002' : ErrorMessage: 系统找不到指定的文件。
+     1>AssemblyInfo.cpp(1): fatal error C1093: API call 'ImportFile' failed '0x80070002' : ErrorMessage: The system cannot find the file specified.
          
-         Description: 系统找不到指定的文件。
+         Description: The system cannot find the file specified.
          HelpFile: complib.hlp
          ProtocalTester.cpp
-     1>ProtocalTester.cpp(3): fatal error C1093: API call 'ImportFile' failed '0x80070002' : ErrorMessage: 系统找不到指定的文件。
+     1>ProtocalTester.cpp(3): fatal error C1093: API call 'ImportFile' failed '0x80070002' : ErrorMessage: The system cannot find the file specified.
          
-         Description: 系统找不到指定的文件。
+         Description: The system cannot find the file specified.
          HelpFile: complib.hlp
          Generating Code...
-     1>Done Building Project "D:\workspace\scbproject\CanBusTransceiverSolution\ProtocalTester\ProtocalTester.vcxproj" (Build target(s)) -- FAILED.
+     1>Done Building Project "E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\ProtocalTester\ProtocalTester.vcxproj" (Rebuild target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.49
+Time Elapsed 00:00:00.92

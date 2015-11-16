@@ -102,7 +102,7 @@ namespace SCBEmulatorConsole
 
         private static CollimatorCLS col = new CollimatorCLS(bus);
 
-        private static PCUSimulator pcu = new PCUSimulator("COM18", "COM19");
+        private static PCUSimulator pcu = new PCUSimulator(); //new PCUSimulator("COM18", "COM19");
 
         private static bool busStarted = false;
 
@@ -114,7 +114,7 @@ namespace SCBEmulatorConsole
             try
             {
                 bus.Connect();
-                pcu.BuckyStartEvent += tbl.BuckyStartEventHandler;
+                pcu.BuckyStartEvent += tbl.BuckyStartEventHandler;//PCUSimulator.BuckyStartEvent += tbl.BuckyStartEventHandler;
                 pcu.Connect();
             }
             catch (Exception ex)

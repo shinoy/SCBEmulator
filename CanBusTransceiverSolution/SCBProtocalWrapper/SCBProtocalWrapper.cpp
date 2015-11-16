@@ -8057,7 +8057,7 @@ namespace SCBProtocalWrapper
 	ASR2Status1MsgPS::ASR2Status1MsgPS()
 	{
 		data.id = 0x7F0;
-		mode = CollimatorMode::Auto;
+		mode = CollimatorMode::Auto;//CollimatorMode::Auto;
 		vsid = 0;
 		crossSize = longSize = 0;
 	}

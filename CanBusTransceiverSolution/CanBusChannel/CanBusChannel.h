@@ -43,6 +43,7 @@ namespace CanBusChannelNS {
 		// the protocal data queue
 		static List<AxisCtlProtoStuct> ^ receiveQueue = gcnew List<AxisCtlProtoStuct>;
 		static List<AxisCtlProtoStuct> ^ sendQueue = gcnew List<AxisCtlProtoStuct>;
+		static List<AxisCtlProtoStuct> ^ tempQueue = gcnew List<AxisCtlProtoStuct>;// 2015 0925
 
 		//The reading and sending thread
 		ThreadStart ^sendThreadStart;

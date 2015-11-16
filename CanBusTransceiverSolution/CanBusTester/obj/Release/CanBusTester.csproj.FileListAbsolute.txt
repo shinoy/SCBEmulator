@@ -124,3 +124,62 @@ H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\C
 H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.csproj.GenerateResource.Cache
 H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.exe
 H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.pdb
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusTransceiver.dll
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\ControlCAN.dll
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusTester.exe.config
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusTester.exe
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusTester.pdb
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusChannel.dll
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PCUSimulation.dll
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PositionerSimulation.dll
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\SCBProtocalWrapper.dll
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusChannel.pdb
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PositionerSimulation.pdb
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\SCBProtocalWrapper.pdb
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PCUSimulation.pdb
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.csprojResolveAssemblyReference.cache
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.Form1.resources
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.Properties.Resources.resources
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.csproj.GenerateResource.Cache
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.exe
+G:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.pdb
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.csprojResolveAssemblyReference.cache
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.Form1.resources
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.Properties.Resources.resources
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.csproj.GenerateResource.Cache
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.exe
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.pdb
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusTester.exe.config
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusTester.exe
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusTester.pdb
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusChannel.dll
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PCUSimulation.dll
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PositionerSimulation.dll
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\SCBProtocalWrapper.dll
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusChannel.pdb
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PositionerSimulation.pdb
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\SCBProtocalWrapper.pdb
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PCUSimulation.pdb
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.csprojResolveAssemblyReference.cache
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.Form1.resources
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.Properties.Resources.resources
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.csproj.GenerateResource.Cache
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.exe
+E:\Emulator_backup\SCB_Solution_backup10.19.2015\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusTester.exe.config
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusTester.exe
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusTester.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusChannel.dll
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PCUSimulation.dll
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PositionerSimulation.dll
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\SCBProtocalWrapper.dll
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\CanBusChannel.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PositionerSimulation.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\SCBProtocalWrapper.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\bin\Release\PCUSimulation.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.csprojResolveAssemblyReference.cache
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.Form1.resources
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.Properties.Resources.resources
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.csproj.GenerateResource.Cache
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.exe
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\CanBusTester\obj\Release\CanBusTester.pdb

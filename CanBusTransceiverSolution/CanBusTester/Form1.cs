@@ -18,6 +18,8 @@ using System.Runtime.Remoting.Channels.Tcp;
 namespace CanBusTester
 {
     public enum BuckyType {WSD,TBL,None};
+    public enum FilterPosition {_1mmAI02mmCu,_1mmAI01mmCu,_1mmAI,NoFilter};
+    
 
     public partial class Form1 : Form
     {
@@ -35,11 +37,21 @@ namespace CanBusTester
 
         private int detectorId1 = 1;
         private int detectorId2 = 2;
+        private int detectorId3 = 3;
 
         private BuckyType detectorBucky1 = BuckyType.WSD;
         private BuckyType detectorBucky2 = BuckyType.TBL;
+        private BuckyType detectorBucky3 = BuckyType.None;
 
         public delegate void RefreshDelegate();
+
+        // the implementation of Table bucky extracted or inserted by pulling down or pulling up vScrollBar1, 
+        // so use static value useToBeCompare to judge pulling down or pulling up message to calculate y axis
+        // coordinate.
+        public static int useToBeCompare = 0;
+
+        //
+        public static string storeWallDetOrientation = "";
         
         public Form1()
         {
@@ -107,7 +119,7 @@ namespace CanBusTester
             {
                 ChannelServices.RegisterChannel(new TcpClientChannel(), false);
                 PCUSimulator simulator = (PCUSimulator)Activator.GetObject(typeof(PCUSimulator), "tcp://localhost:6688/PCUSimulater");
-                simulator.TestRomote();
+                //simulator.TestRomote();
                 if (simulator != null)
                 {
 
@@ -143,6 +155,8 @@ namespace CanBusTester
                     this.textBox9.Text = tbl.X_POS.ToString();
                     this.textBox10.Text = tbl.Y_POS.ToString();
                     this.textBox11.Text = tbl.Z_POS.ToString();
+                    this.textBox12.Text = col.LONG_BLADE.ToString();
+                    this.textBox13.Text = col.CROSS_BLADE.ToString();
                
             }
          
@@ -165,7 +179,10 @@ namespace CanBusTester
             this.textBox2.Text = otcxyz.Y_POS.ToString();
             this.textBox3.Text = otcxyz.Z_POS.ToString();
 
+            this.comboBox3.SelectedIndex =(int)FilterPosition.NoFilter;
+
             otcxyz.PositionUpdateEvent += new PositonUpdateDelegate(RefreshData);
+            col.BladePositionUpdateEvent += new BladePositionUpdateDelegate(RefreshData);
 
             this.button2.Enabled = true;
             this.button1.Enabled = false;
@@ -190,15 +207,28 @@ namespace CanBusTester
             this.checkBox4.Enabled = true;
             this.checkBox5.Enabled = true;
             this.checkBox6.Enabled = true;
-            
+            this.checkBox13.Enabled = true;
+            this.radioButton1.Enabled = true;
+            this.radioButton2.Enabled = true;
+            this.radioButton3.Enabled = true;
+            this.radioButton4.Enabled = true;
+            this.radioButton5.Enabled = true;
+            this.radioButton6.Enabled = true;
+            this.vScrollBar1.Enabled = true;
+            this.hScrollBar3.Enabled = true;
 
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-            this.button1.Enabled = true;
+            this.radioButton1.Checked = true;
+            this.radioButton2.Checked = false;
+            this.radioButton3.Checked = true;
+            this.radioButton4.Checked = false;
+            this.radioButton5.Checked = true;
+            this.radioButton6.Checked = false;
+            
             this.button2.Enabled = false;
             this.button3.Enabled = false;
             this.button4.Enabled = false;
@@ -220,12 +250,30 @@ namespace CanBusTester
             this.checkBox4.Enabled = false;
             this.checkBox5.Enabled = false;
             this.checkBox6.Enabled = false;
+            this.checkBox13.Enabled = false;
+            this.textBox12.Enabled = false;
+            this.textBox13.Enabled = false;
+            this.checkBox13.Checked = false;
+            this.radioButton1.Enabled = false;
+            this.radioButton2.Enabled = false;
+            this.radioButton3.Enabled = false;
+            this.radioButton4.Enabled = false;
+            this.radioButton5.Enabled = false;
+            this.radioButton6.Enabled = false;
+            this.vScrollBar1.Enabled = false;
+            this.hScrollBar3.Enabled = false;
 
             otcxyz.PowerOff();
             wsd.PowerOff();
             tbl.PowerOff();
+            col.PowerOff();
             bus.StopBus();
-            
+
+          
+            this.button1.Enabled = true;
+            this.vScrollBar1.Value = 0;
+            this.hScrollBar3.Value = 0;
+            useToBeCompare = 0;
 
            
         }
@@ -569,9 +617,175 @@ namespace CanBusTester
             }
         }
 
+        private void checkBox13_CheckedChanged(object sender, EventArgs e)
+        {
+            if(this.checkBox13.Checked==true)
+            {
+                //this.hScrollBar1.Enabled = true;
+                //this.hScrollBar2.Enabled = true;
+                this.textBox14.Visible = true;
+                this.textBox14.Text = "0";
+                this.textBox15.Visible = true;
+                this.textBox15.Text = "0";
+                col.MAN_SWITCH_ON = true;
+            }
+            else
+            {
+                //this.hScrollBar1.Enabled = false;
+                //this.hScrollBar2.Enabled = false;
+                this.textBox14.Visible = false;
+                this.textBox15.Visible = false;
+                col.MAN_SWITCH_ON = false;
+            }
+        }
+
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             UnregisterPCUService();
+        }
+
+       
+
+        private void detidSelectBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            detectorId3 = detidSelectBox3.SelectedIndex + 1;
+        }
+
+        private void DetectorSelectBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (detectorBucky3)
+            {
+                case BuckyType.WSD:
+                    wsd.EjectDetector();
+                    break;
+                case BuckyType.TBL:
+                    tbl.EjectDetector();
+                    break;
+                default:
+                    break;
+            }
+            if
+             (this.DetectorSelectBox3.SelectedIndex == 0)
+            {
+                wsd.InsertDetector((byte)detectorId3);
+                detectorBucky3 = BuckyType.WSD;
+            }
+            if (this.DetectorSelectBox3.SelectedIndex == 1)
+            {
+                tbl.InsertDetector((byte)detectorId3);
+                detectorBucky3 = BuckyType.TBL;
+            }
+            if (this.DetectorSelectBox3.SelectedIndex == 2)
+            {
+                detectorBucky3 = BuckyType.None;
+            }
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.comboBox3.Text == "1mm AI, 0.2mm Cu")
+            {
+                col.FILTER_POSITION =(Byte)FilterPosition._1mmAI02mmCu;
+            }
+            if(this.comboBox3.Text == "1mm AI, 0.1mm Cu")
+            {
+                col.FILTER_POSITION = (Byte)FilterPosition._1mmAI01mmCu;
+            }
+            if (this.comboBox3.Text == "1mm AI")
+            {
+                col.FILTER_POSITION = (Byte)FilterPosition._1mmAI;
+            }
+            if (this.comboBox3.Text == "no filter")
+            {
+                col.FILTER_POSITION = (Byte)FilterPosition.NoFilter;
+            }
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+            this.hScrollBar1.Value = Convert.ToInt32(this.textBox12.Text);
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+            this.hScrollBar2.Value = Convert.ToInt32(this.textBox13.Text);
+        }
+
+        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            this.textBox14.Text = this.hScrollBar1.Value.ToString();
+        }
+
+        private void hScrollBar2_Scroll(object sender, ScrollEventArgs e)
+        {
+            this.textBox15.Text = this.hScrollBar2.Value.ToString();
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            wsd.ChangeBuckyOrientation(this.radioButton1.Checked);
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            wsd.ChangeDetOrientation(this.radioButton3.Checked,this.radioButton4.Checked);
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            tbl.ChangeDetOrientation(this.radioButton5.Checked);
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            tbl.BuckyExtractOrInsert(this.vScrollBar1.Value);
+            if (/*(useToBeCompare - this.vScrollBar1.Value) <= 0 &&*/  530 == this.vScrollBar1.Value)
+            {
+                tbl.BuckyExtractYCoordinateChanged(-this.vScrollBar1.Value);
+            }
+            else if (0 == this.vScrollBar1.Value)
+            {
+                tbl.BuckyExtractYCoordinateChanged(this.vScrollBar1.Value);
+            }
+            useToBeCompare = this.vScrollBar1.Value;
+        }
+
+        private void hScrollBar3_Scroll(object sender, ScrollEventArgs e)
+        {
+            wsd.ExtractWallBucky(this.hScrollBar3.Value);
+            if((this.hScrollBar3.Value != 0)&&(this.radioButton3.Checked == true || this.radioButton4.Checked == true))
+            {
+                if(this.radioButton3.Checked)
+                {
+                    this.radioButton3.Checked = false;
+                    storeWallDetOrientation = "Portrait";
+                    wsd.ChangeDetOrientation(this.radioButton3.Checked, this.radioButton4.Checked);
+                }
+                else if (this.radioButton4.Checked)
+                {
+                    this.radioButton4.Checked = false;
+                    storeWallDetOrientation = "Landscape";
+                    wsd.ChangeDetOrientation(this.radioButton3.Checked, this.radioButton4.Checked);
+                }
+                this.radioButton3.Enabled = false;
+                this.radioButton4.Enabled = false;
+            }
+            else if ((this.hScrollBar3.Value == 0) && (this.radioButton3.Checked == false && this.radioButton4.Checked == false))
+            {
+                if (storeWallDetOrientation == "Portrait")
+                {
+                    this.radioButton3.Checked = true;
+                    wsd.ChangeDetOrientation(this.radioButton3.Checked, this.radioButton4.Checked);
+                }
+                else if (storeWallDetOrientation == "Landscape")
+                {
+                    this.radioButton4.Checked = true;
+                    wsd.ChangeDetOrientation(this.radioButton3.Checked, this.radioButton4.Checked);
+                }
+                this.radioButton3.Enabled = true;
+                this.radioButton4.Enabled = true;
+            }
+            //Console.WriteLine("{0}",storeWallDetOrientation);
         }
            
        

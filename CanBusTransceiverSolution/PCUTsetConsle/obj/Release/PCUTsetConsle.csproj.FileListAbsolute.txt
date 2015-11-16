@@ -30,3 +30,19 @@ H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\bin\Release\
 H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\obj\Release\PCUTsetConsle.csprojResolveAssemblyReference.cache
 H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\obj\Release\PCUTsetConsle.exe
 H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\obj\Release\PCUTsetConsle.pdb
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\bin\Release\PCUTsetConsle.exe.config
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\bin\Release\PCUTsetConsle.exe
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\bin\Release\PCUTsetConsle.pdb
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\bin\Release\PCUSimulation.dll
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\bin\Release\PCUSimulation.pdb
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\obj\Release\PCUTsetConsle.csprojResolveAssemblyReference.cache
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\obj\Release\PCUTsetConsle.exe
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\obj\Release\PCUTsetConsle.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\bin\Release\PCUTsetConsle.exe.config
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\bin\Release\PCUTsetConsle.exe
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\bin\Release\PCUTsetConsle.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\bin\Release\PCUSimulation.dll
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\bin\Release\PCUSimulation.pdb
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\obj\Release\PCUTsetConsle.csprojResolveAssemblyReference.cache
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\obj\Release\PCUTsetConsle.exe
+E:\emulator_system\SCB_Solution\SCBEmulator\CanBusTransceiverSolution\PCUTsetConsle\obj\Release\PCUTsetConsle.pdb

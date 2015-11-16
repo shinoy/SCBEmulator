@@ -253,7 +253,7 @@ namespace PCUSimulationNS
                     if ((readCount = ioport.ReadReply(ref receiveBuffer, FRAMESIZE)) != FRAMESIZE)
                     {
                         Console.WriteLine("Checking input status error,don't receive correct frame length");
-                        //   throw new Exception("Checking input status error,don't receive correct frame length");
+                      //  throw new Exception("Checking input status error,don't receive correct frame length");
                     }
                   //  Console.WriteLine("Read reply from UPS");
                     if ((receiveBuffer[0] == HEADER0) && (receiveBuffer[1] == HEADER1))
@@ -317,18 +317,17 @@ namespace PCUSimulationNS
                     else
                     {
                         Console.WriteLine("Checking input status error,don't receive correct frame format");
-                        // throw new Exception("Checking input status error,don't receive correct frame format");
+                      //  throw new Exception("Checking input status error,don't receive correct frame format");
                     }
                 }
                 catch (TimeoutException e)
                 {
                     Console.WriteLine("timeout occurs once: "+e.Message);
-                    continue;
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("error while checking handswitch " + e.Message);
-                    //throw new Exception("Checking input status error as" + e.Message);
+                   Console.WriteLine("error while checking handswitch " + e.Message);
+                  //throw new Exception("Checking input status error as" + e.Message);
                 }
             }
         }

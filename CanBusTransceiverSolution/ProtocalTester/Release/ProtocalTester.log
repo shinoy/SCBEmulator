@@ -1,25 +1,13 @@
-﻿Build started 5/6/2015 4:54:45 PM.
-     1>Project "H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\ProtocalTester\ProtocalTester.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 7/24/2015 5:12:52 PM.
+     1>Project "E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\ProtocalTester\ProtocalTester.vcxproj" on node 4 (Rebuild target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of Stdafx.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\PositionerSimulation\Stdafx.cpp, stdafx.cpp.
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\ProtocalTester.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\SCBProtocalWrapper.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\ProtocalTester.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\SCBProtocalWrapper.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib stdafx.cpp
          stdafx.cpp
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\ProtocalTester.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\SCBProtocalWrapper.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib ..\PositionerSimulation\Stdafx.cpp AssemblyInfo.cpp ProtocalTester.cpp
-         Stdafx.cpp
-     1>..\PositionerSimulation\Stdafx.cpp(5): fatal error C1854: cannot overwrite information formed during creation of the precompiled header in object file: 'h:\scb solution\scbemulator\canbustransceiversolution\protocaltester\release\stdafx.obj'
-         AssemblyInfo.cpp
-     1>AssemblyInfo.cpp(1): fatal error C1093: API call 'ImportFile' failed '0x80070002' : ErrorMessage: The system cannot find the file specified.
-         
-         Description: The system cannot find the file specified.
-         HelpFile: complib.hlp
-         ProtocalTester.cpp
-     1>ProtocalTester.cpp(3): fatal error C1093: API call 'ImportFile' failed '0x80070002' : ErrorMessage: The system cannot find the file specified.
-         
-         Description: The system cannot find the file specified.
-         HelpFile: complib.hlp
-         Generating Code...
-     1>Done Building Project "H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\ProtocalTester\ProtocalTester.vcxproj" (Rebuild target(s)) -- FAILED.
+     1>stdafx.cpp : fatal error C1192: #using failed on 'E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\Release\SCBProtocalWrapper.dll'
+                 'The system cannot find the file specified.'
+     1>Done Building Project "E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\ProtocalTester\ProtocalTester.vcxproj" (Rebuild target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:03.86
+Time Elapsed 00:00:02.70

@@ -115,3 +115,4 @@ H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\bin\Rel
 H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Release\SCBEmulatorConsole.csprojResolveAssemblyReference.cache
 H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Release\SCBEmulatorConsole.exe
 H:\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Release\SCBEmulatorConsole.pdb
+E:\emulator system\SCB Solution\SCBEmulator\CanBusTransceiverSolution\SCBEmulatorConsole\obj\Release\SCBEmulatorConsole.csprojResolveAssemblyReference.cache

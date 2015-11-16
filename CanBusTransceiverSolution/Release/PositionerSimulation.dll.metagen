@@ -1,30 +1,53 @@
-ImageRuntimeVersion: v2.0.50727
+ImageRuntimeVersion: v4.0.30319
 Assembly PositionerSimulation, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=SHA1, flags=PublicKey
-Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Assembly CanBusChannel, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=None, flags=None
 Assembly SCBProtocalWrapper, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=None, flags=None
-Assembly System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Assembly Microsoft.VisualC, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Class PositionerSimulationNS.BladePositionUpdateDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
 Class PositionerSimulationNS.CollimatorCLS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(CanBusChannelNS.CanBusChannelCls): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Properties:
+    Byte FILTER_POSITION 'get set' : 
+    Int32 CROSS_BLADE 'get set' : 
+    Int32 LONG_BLADE 'get set' : 
+    Boolean MAN_SWITCH_ON 'get set' : 
     Boolean POW_ON 'get ' : 
+  Events:
+    PositionerSimulationNS.BladePositionUpdateDelegate BladePositionUpdateEvent: SpecialName
   Methods:
+    add_BladePositionUpdateEvent(BladePositionUpdateDelegate): PrivateScope, Public, HideBySig, SpecialName
+    remove_BladePositionUpdateEvent(BladePositionUpdateDelegate): PrivateScope, Public, HideBySig, SpecialName
     PowerUp(): PrivateScope, Public, HideBySig
     PowerOff(): PrivateScope, Public, HideBySig
     OnCanDataReceivedEvent(List`1): PrivateScope, Public, HideBySig
     CanDataHandlerFunc(): PrivateScope, Public, HideBySig
     get_POW_ON(): PrivateScope, Public, HideBySig, SpecialName
+    set_MAN_SWITCH_ON(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_MAN_SWITCH_ON(): PrivateScope, Public, HideBySig, SpecialName
+    set_LONG_BLADE(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_LONG_BLADE(): PrivateScope, Public, HideBySig, SpecialName
+    set_CROSS_BLADE(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CROSS_BLADE(): PrivateScope, Public, HideBySig, SpecialName
+    set_FILTER_POSITION(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_FILTER_POSITION(): PrivateScope, Public, HideBySig, SpecialName
 Class PositionerSimulationNS.OTCABControllerCLS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(CanBusChannelNS.CanBusChannelCls): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Properties:
@@ -182,10 +205,10 @@ Struct PositionerSimulationNS.DetectorType: AutoLayout, AnsiClass, Class, Public
   :System.Enum
   Fields:
     Int32 value__ : Public, SpecialName, RTSpecialName
-    PositionerSimulationNS.DetectorType Undefined = 3 : Public, Static, Literal, HasDefault
-    PositionerSimulationNS.DetectorType DRX1 = 2 : Public, Static, Literal, HasDefault
-    PositionerSimulationNS.DetectorType Varian = 1 : Public, Static, Literal, HasDefault
     PositionerSimulationNS.DetectorType Trixell = 0 : Public, Static, Literal, HasDefault
+    PositionerSimulationNS.DetectorType Varian = 1 : Public, Static, Literal, HasDefault
+    PositionerSimulationNS.DetectorType DRX1 = 2 : Public, Static, Literal, HasDefault
+    PositionerSimulationNS.DetectorType Undefined = 3 : Public, Static, Literal, HasDefault
 Class PositionerSimulationNS.WSDKeypadCLS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(CanBusChannelNS.CanBusChannelCls): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Properties:
