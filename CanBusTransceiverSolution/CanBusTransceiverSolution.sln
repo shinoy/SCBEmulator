@@ -32,8 +32,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCBWrapperTest", "SCBWrappe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmuTest", "EmuTest\EmuTest.csproj", "{19A76813-B969-46F2-92AE-B1287DDE878D}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Virtual Lab System", "Virtual Lab System\Virtual Lab System.vdproj", "{6031545D-1495-4CF2-8C8C-DA432F699A38}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -253,16 +251,6 @@ Global
 		{19A76813-B969-46F2-92AE-B1287DDE878D}.Release|Win32.ActiveCfg = Release|Any CPU
 		{19A76813-B969-46F2-92AE-B1287DDE878D}.Release|x64.ActiveCfg = Release|Any CPU
 		{19A76813-B969-46F2-92AE-B1287DDE878D}.Release|x86.ActiveCfg = Release|Any CPU
-		{6031545D-1495-4CF2-8C8C-DA432F699A38}.Debug|Any CPU.ActiveCfg = Debug
-		{6031545D-1495-4CF2-8C8C-DA432F699A38}.Debug|Mixed Platforms.ActiveCfg = Debug
-		{6031545D-1495-4CF2-8C8C-DA432F699A38}.Debug|Win32.ActiveCfg = Debug
-		{6031545D-1495-4CF2-8C8C-DA432F699A38}.Debug|x64.ActiveCfg = Debug
-		{6031545D-1495-4CF2-8C8C-DA432F699A38}.Debug|x86.ActiveCfg = Debug
-		{6031545D-1495-4CF2-8C8C-DA432F699A38}.Release|Any CPU.ActiveCfg = Release
-		{6031545D-1495-4CF2-8C8C-DA432F699A38}.Release|Mixed Platforms.ActiveCfg = Release
-		{6031545D-1495-4CF2-8C8C-DA432F699A38}.Release|Win32.ActiveCfg = Release
-		{6031545D-1495-4CF2-8C8C-DA432F699A38}.Release|x64.ActiveCfg = Release
-		{6031545D-1495-4CF2-8C8C-DA432F699A38}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
